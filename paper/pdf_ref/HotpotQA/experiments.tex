@@ -1,0 +1,296 @@
+\section{Experiments} \label{sec:exp}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=.45\textwidth]{images/model.pdf}
+    \vskip -1em
+    \caption{Our model architecture. Strong supervision over supporting facts is used in a multi-task setting.} \label{fig:model}
+%    \vskip -2em
+\end{figure}
+
+\subsection{Model Architecture and Training} \label{sec:baseline}
+
+To test the performance of leading QA systems on our data, we reimplemented the architecture described in \citet{clark2017simple} as our baseline model. We note that our implementation without weight averaging achieves performance very close to what the authors reported on \squad{} (about 1 point worse in \fone{}). Our implemented model subsumes the latest technical advances on question answering, including character-level models, self-attention \cite{wang2017gated}, and bi-attention \cite{seo2016bidirectional}.
+Combining these three key components is becoming standard practice, and various state-of-the-art or competitive architectures \cite{liu2017stochastic,clark2017simple,wang2017gated,seo2016bidirectional,pan2017memen,salant2017contextualized,xiong2017dcn+} on SQuAD can be viewed as similar to our implemented model.
+% =======
+% We implemented a question answering model based on the state-of-the-art architectures on SQuAD.
+% Our model uses a convolutional network to obtain a character-based word embedding, which is concatenated with a pretrained word embedding, and followed by a recurrent layer to encode the contextual information.
+% The above layers are applied to both the question and the paragraphs.
+% After that, a bi-directional attention layer \cite{seo2016bidirectional} is employed to fuse the representations of the question and the paragraphs.
+% After using another recurrent layer, we then add a self-attention layer \cite{wang2017gated} followed by a residual connection.
+% Two additional recurrent layers are then applied before prediction is made, using
+% two linear layers to predict the start and end tokens of the answer span respectively.
+% Our model includes the latest technical advances on \squad{}-like question answering, including character-level models, self-attention, and bi-attention. Combining these three key components is becoming standard practice, and various state-of-the-art or competitive architectures \cite{liu2017stochastic,clark2017simple,wang2017gated,seo2016bidirectional,pan2017memen,salant2017contextualized,xiong2017dcn+} on \squad{} can be viewed as similar to our implemented model.
+% >>>>>>> 0f7fe9642fbf6c5e94f9f45af762e73c4ffa5d25
+%In addition, to deal with our multi-paragraph setting, we follow \citet{clark2017simple} to use a softmax over the concatenation of multiple paragraphs.
+To accommodate yes/no questions, we also add a 3-way classifier after the last recurrent layer to produce the probabilities of ``yes'', ``no'', and span-based answers.
+% We optimize a cross-entropy loss for this 3-way prediction, along with the standard loss over the start and end tokens.
+During decoding, we first use the 3-way output to determine whether the answer is ``yes'', ``no'', or a text span. If it is a text span, we further search for the most probable span.
+
+% \todo{Need illustration for model architecture. Might be best suited for the appendix though.}
+
+% We implemented a question answering model based on the state-of-the-art architectures on SQuAD.
+% Our model uses a convolutional network to obtain a character-based word embedding, which is concatenated with a pretrained word embedding, and followed by a recurrent layer to encode the contextual information.
+% The above layers are applied to both the question and the paragraphs.
+% After that, a bi-directional attention layer \cite{seo2016bidirectional} is employed to fuse the representations of the question and the paragraphs.
+% After using another recurrent layer, we then add a self-attention layer \cite{wang2017gated} followed by a residual connection.
+% Two additional recurrent layers are then applied before prediction is made, using
+% two linear layers to predict the start and end tokens of the answer span respectively.
+% Our model includes the latest technical advances on SQuAD-like question answering, including character-level models, self-attention, and bi-attention.
+
+
+
+\paragraph{Supporting Facts as Strong Supervision.}
+To evaluate the baseline model's performance in predicting explainable supporting facts, as well as how much they improve QA performance, we additionally design a component to incorporate such strong supervision into our model.
+For each sentence, we concatenate the output of the self-attention layer at the first and last positions, and use a binary linear classifier to predict the probability that the current sentence is a supporting fact.
+We minimize a binary cross entropy loss for this classifier.
+This %supporting fact prediction
+objective is jointly optimized with the normal question answering objective in a multi-task learning setting, and they share the same low-level representations.
+% The logit of this probability is fed into the next recurrent layer of the question answering network.
+%This is in essence a multi-task setting, where a model is trained to jointly predict supporting facts and the answer.
+%Meanwhile, the supporting fact outputs are used to predict the answer.
+With this classifier, the model can also be evaluated on the task of supporting fact prediction to gauge its explainability.
+Our overall architecture is illustrated in Figure \ref{fig:model}.
+Though it is possible to build a pipeline system, in this work we focus on an end-to-end one, which is easier to tune and faster to train.
+
+
+% \todo{R1Q1: I am wondering if the "strong supervision" in Figure 3 really helps the overall performance? No number shows this. Based on this subsystem, i assume the existing of a pipeline system: first predict the supporting sentences, then predict the answer on the kept supporting sentences.
+
+% \todo{R3Q1: you state, based on the ablation test, that (a) strong supervision and (b) the self-attn/char model are essentially a big deal (not in so many words). But the difference is only a point or two. Actually, what I take away from this is the complete opposite -- the things that you'd THiNK help a lot only contribute a small performance gain. Especially the supervision -- only 1.5\% \fone{}! This isn't a "question" per se, but something I would **really** like addressed. }
+
+\subsection{Results}
+
+\begin{table*}
+    \small
+    \centering
+    \begin{tabular}{llcccccc}
+        \toprule
+        \multirow{2}{*}{Setting} & \multirow{2}{*}{Split} & \multicolumn{2}{c}{Answer} & \multicolumn{2}{c}{Sup Fact} & \multicolumn{2}{c}{Joint} \\
+        \cmidrule{3-8}
+        & & EM & \fone & EM & \fone & EM & \fone \\
+        \midrule
+        distractor & dev & 44.44 & 58.28 & 21.95 & 66.66 & 11.56 & 40.86 \\
+        distractor & test & 45.46 & 58.99 & 22.24 & 66.62 & 12.04 & 41.37 \\
+        \midrule
+        full wiki & dev & 24.68 & 34.36 & \phantom{0}5.28 & 40.98 & \phantom{0}2.54 & 17.73 \\
+        full wiki & test & 25.23 & 34.40 & \phantom{0}5.07 & 40.69 & \phantom{0}2.63 & 17.85 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Main results: the performance of question answering and supporting fact prediction in the two benchmark settings. We encourage researchers to report these metrics when evaluating their methods.} \label{tab:main}
+    \vskip -0.7em
+\end{table*}
+
+\begin{table}[t]
+    \small
+    \centering
+    \begin{tabular}{lcccc}
+        \toprule
+        Set & MAP & Mean Rank & Hits@2 & Hits@10 \\
+        \midrule
+        dev & 43.93 & 314.71& 39.43 & 56.06  \\
+        test & 43.21 & 314.05& 38.67 & 55.88 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Retrieval performance in the full wiki setting. Mean Rank is averaged over the ranks of two gold paragraphs.} \label{tab:fullwiki_ir}
+    \vskip -0.2em
+\end{table}
+
+% \begin{table}[t]
+%     \small
+%     \centering
+%     \begin{tabular}{lcccc}
+%         \toprule
+%         Setting & dev EM & dev \fone{} & test EM & test \fone{} \\
+%         \midrule
+%         gold only & 51.08 & 66.33 & 51.01 & 66.10 \\
+%         distractor & 47.84 & 62.52 & 47.80 & 62.60 \\
+%         full wiki & 25.83 & 35.36 & 25.14 & 34.48 \\
+%         \bottomrule
+%     \end{tabular}
+%     \caption{Question answering performance on three benchmark settings.} \label{tab:benchmark}
+%     \vskip -0.2em
+% \end{table}
+
+% \begin{table}[t]
+%     \small
+%     \centering
+%     \begin{tabular}{lcccc}
+%         \toprule
+%         Setting & Precision & Recall & \fone{} & test \fone{} \\
+%         \midrule
+%         gold only & 88.24 & 82.49 & 83.76 & 83.51 \\
+%         distractor & 65.50 & 49.94 & 53.93 & 53.68 \\
+%         \bottomrule
+%     \end{tabular}
+%     \caption{Supporting fact prediction performance on the benchmark settings. The first three columns are on the dev test while the last column is on the test set.} \label{tab:sp-pred}
+%     \vskip -0.2em
+% \end{table}
+
+\begin{table}[t]
+    \small
+    \centering
+    \begin{tabular}{lcccc}
+        \toprule
+        Setting & Br EM & Br \fone & Cp EM & Cp \fone \\
+        \midrule
+        % gold only & 51.70 & 69.23 & 48.72 & 55.10 \\
+        distractor & 43.41 & 59.09 & 48.55 & 55.05 \\
+        full wiki & 19.76 & 30.42 & 43.87 & 50.70 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Performance breakdown over different question types on the dev set in the distractor setting. ``Br'' denotes questions collected using bridge entities, and ``Cp'' denotes comparison questions.} \label{tab:break}
+    \vskip -0.2em
+\end{table}
+
+% \todo{Discuss R3Q1? In table 7, we observed the large drop of performance with the full wiki setting. Does the drop originated from the low recall of bridge entities in the retrieval process?\\
+%     R3Q5: is the worse performance on full wiki only because of the 50\% hits@7? I.e., 35\% \fone{} is roughly 50\% of 66\%...?}
+
+\begin{table}[t]
+    \small
+    \centering
+    \begin{tabular}{lcc}
+        \toprule
+        Setting & EM & \fone \\
+        \midrule
+        our model & 44.44 & 58.28 \\
+        \midrule
+        -- sup fact & 42.79 & 56.19 \\
+        \midrule
+        -- sup fact, self attention & 41.59 & 55.19 \\
+        -- sup fact, char model & 41.66 & 55.25 \\
+        \midrule
+        -- sup fact, train-easy & 41.61 & 55.12 \\
+        -- sup fact, train-easy, train-medium & 31.07 & 43.61 \\
+        \midrule
+        gold only & 48.38 & 63.58 \\
+        sup fact only & 51.95 & 66.98 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Ablation study of question answering performance on the dev set in the distractor setting. ``-- sup fact'' means removing strong supervision over supporting facts from our model. ``-- train-easy'' and ``-- train-medium'' means discarding the according data splits from training. ``gold only'' and ``sup fact only'' refer to using the gold paragraphs or the supporting facts as the only context input to the model.} \label{tab:ablation}
+    \vskip -0.2em
+\end{table}
+
+% \todo{right now it is unclear that all of our baseline experiments are run with supporting facts as strong supervision. Need to clarify.}
+
+We evaluate our model in the two benchmark settings.
+In the full wiki setting, to enable efficient tf-idf retrieval among 5,000,000+ wiki paragraphs, given a question we first return a candidate pool of at most 5,000 paragraphs using an inverted-index-based filtering strategy\footnote{See Appendix \ref{sec:fullwiki_details} for details.} and then select the top 10 paragraphs in the pool as the final candidates using bigram tf-idf.\footnote{We choose the number of final candidates as 10 to stay consistent with the distractor setting where candidates are 2 gold paragraphs plus 8 distractors.}
+Retrieval performance is shown in Table \ref{tab:fullwiki_ir}.
+After retrieving these 10 paragraphs, we then use the model trained in the distractor setting to evaluate its performance on these final candidate paragraphs.
+
+%\todo{Describe joint metrics, cf R1Q2: For the evaluation "EM" and "\fone{}", do they require that the predicted span and the gold span both appear in the same supporting sentence? If gold supporting sentences are put into consideration, it does not make sense that a system predicts a perfect text string, which, however, is in a non-supporting sentence. In this case, the system might give a high score, but the answer does not make sense. }
+
+Following previous work \cite{rajpurkar2016squad}, we use exact match (EM) and \fone{} as two evaluation metrics.
+To assess the explainability of the models, we further introduce two sets of metrics involving the supporting facts.
+The first set focuses on evaluating the supporting facts directly, namely EM and \fone{} on the set of supporting fact sentences as compared to the gold set.
+The second set features joint metrics that combine the evaluation of answer spans and supporting facts as follows.
+For each example, given its precision and recall on the answer span ($P^{\text{(ans)}}, R^{\text{(ans)}}$) and the supporting facts ($P^{\text{(sup)}}, R^{\text{(sup)}}$), respectively, we calculate joint \fone{} as
+\begin{align*}
+% P^{\text{(joint)}} =& P^{\text{(ans)}}P^{\text{(sup)}},\\
+% R^{\text{(joint)}} =& R^{\text{(ans)}}R^{\text{(sup)}},\\
+% \text{\fone} =& \frac{2 P^{\text{(joint)}} R^{\text{(joint)}}}{P^{\text{(joint)}} + R^{\text{(joint)}}}.
+P^{\text{(joint)}} = P^{\text{(ans)}}P^{\text{(sup)}}, ~~R^{\text{(joint)}} = R^{\text{(ans)}}R^{\text{(sup)}},
+\end{align*}
+\vspace{-2em}
+\begin{align*}
+\text{Joint \fone} = \frac{2 P^{\text{(joint)}} R^{\text{(joint)}}}{P^{\text{(joint)}} + R^{\text{(joint)}}}.
+\end{align*}
+Joint EM is 1 only if both tasks achieve an exact match and otherwise 0.
+Intuitively, these metrics penalize systems that perform poorly on either task.
+All metrics are evaluated example-by-example, and then averaged over examples in the evaluation set.
+
+The performance of our model on the benchmark settings is reported in Table \ref{tab:main}, where all numbers are obtained with strong supervision over supporting facts. From the distractor setting to the full wiki setting, expanding the scope of the context increases the difficulty of question answering.
+The performance in the full wiki setting is substantially lower, which poses a challenge to existing techniques on retrieval-based question answering.
+Overall, model performance in all settings is significantly lower than human performance as shown in Section \ref{sec:human}, which indicates that more technical advancements are needed in future work.
+
+We also investigate the explainability of our model by measuring supporting fact prediction performance.
+Our model achieves 60+ supporting fact prediction \fone{} and $\sim$40 joint \fone{}, which indicates there is room for further improvement in terms of explainability.
+
+% We obtain reasonable \fone{} on the gold only setting, which indicates that the model displays explainability to some extent.
+% However, the performance on the distractor setting is much worse, which reflects the difficulty of the distractor setting.
+
+In Table \ref{tab:break}, we break down the performance on different question types.
+% In the distractor setting, comparison questions are more challenging than questions involving bridge entities (as defined in Section \ref{sec:collect}), which indicates that this novel question type might not be well-modeled by existing neural architectures.
+In the distractor setting, comparison questions have lower \fone{} scores than questions involving bridge entities (as defined in Section 2), which indicates that better modeling this novel question type might need better neural architectures.
+In the full wiki setting, the performance of bridge entity questions drops significantly while that of comparison questions decreases only marginally.
+This is because both entities usually appear in the comparison questions, and thus reduces the difficulty of retrieval.
+Combined with the retrieval performance in Table \ref{tab:fullwiki_ir}, we believe that the deterioration in the full wiki setting in Table \ref{tab:main} is largely due to the difficulty of retrieving both entities.
+
+We perform an ablation study in the distractor setting, and report the results in Table \ref{tab:ablation}.
+Both self-attention and character-level models contribute notably to the final performance, which is consistent with prior work.
+This means that techniques targeted at single-hop QA are still somewhat effective in our setting.
+Moreover, removing strong supervision over supporting facts decreases performance, which demonstrates the effectiveness of our approach and the usefulness of the supporting facts.
+We establish an estimate of the upper bound of strong supervision by only considering the supporting facts as the oracle context input to our model, which achieves a 10+ \fone{} improvement over not using the supporting facts.
+Compared with the gain of strong supervision in our model ($\sim$2 points in \fone{}), our proposed method of incorporating supporting facts supervision is most likely suboptimal, and we leave the challenge of better modeling to future work.
+At last, we show that combining all data splits (\textit{train-easy}, \textit{train-medium}, and \textit{train-hard}) yields the best performance, which is adopted as the default setting.
+
+% \todo{explain settings, metrics (EM/\fone{}), interpret results}
+
+\subsection{Establishing Human Performance} \label{sec:human}
+
+To establish human performance on our dataset, we randomly sampled 1,000 examples from the dev and test sets, and had at least three additional Turkers provide answers and supporting facts for these examples.
+As a baseline, we treat the original Turker during data collection as the prediction, and the newly collected answers and supporting facts as references, to evaluate human performance.
+For each example, we choose the answer and supporting fact reference that maximize the \fone{} score to report the final metrics to reduce the effect of ambiguity \cite{rajpurkar2016squad}.
+
+As can be seen in Table \ref{tab:human_perf}, the original crowd worker achieves very high performance in both finding supporting facts, and answering the question correctly.
+If the baseline model were provided with the correct supporting paragraphs to begin with, it achieves parity with the crowd worker in finding supporting facts, but still falls short at finding the actual answer.
+When distractor paragraphs are present,  the performance gap between the baseline model and the crowd worker on both tasks is enlarged to $\sim$30\% for both EM and \fone{}.
+
+We further establish the upper bound of human performance in \datasetname, by taking the maximum EM and \fone{} for each example.
+Here, we use each Turker's answer in turn as the prediction, and evaluate it against all other workers' answers.
+As can be seen in Table \ref{tab:human_perf}, most of the metrics are close to 100\%, illustrating that on most examples, at least a subset of Turkers agree with each other, showing high inter-annotator agreement.
+We also note that crowd workers agree less on supporting facts, which could reflect that this task is inherently more subjective than answering the question.
+
+\setlength{\tabcolsep}{4pt}
+\begin{table}
+    \small
+    \centering
+    \begin{tabular}{lcccccc}
+        \toprule
+        \multirow{2}{*}{Setting} & \multicolumn{2}{c}{Answer} & \multicolumn{2}{c}{Sp Fact} & \multicolumn{2}{c}{Joint} \\
+        \cmidrule{2-7}
+        & EM & \fone & EM & \fone & EM & \fone \\
+        \midrule
+        gold only & 65.87 & 74.67 & 59.76 & 90.41 & 41.54 & 68.15 \\
+        distractor & 60.88 & 68.99 & 30.99 & 74.67 & 20.06 & 52.37 \\
+        \midrule
+        Human & 83.60 & 91.40 & 61.50 & 90.04 & 52.30 & 82.55 \\
+        Human UB & 96.80 & 98.77 & 87.40 & 97.56 & 84.60 & 96.37 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Comparing baseline model performance with human performance on 1,000 random samples. ``Human UB'' stands for the upper bound on annotator performance on \datasetname. For details please refer to the main body.} \label{tab:human_perf}
+\end{table}
+\setlength{\tabcolsep}{6pt}
+
+% 999 {'ans_em': 65.86586586586587, 'ans_f1': 74.66539019915925, 'sup_em': 59.75975975975976, 'sup_f1': 90.40770929659776, 'joint_em': 41.54154154154154, 'joint_f1': 68.15217162689132}
+% 997 {'ans_em': 60.88264794383149, 'ans_f1': 68.99489810770709, 'sup_em': 30.992978936810434, 'sup_f1': 74.67173526351031, 'joint_em': 20.060180541624874, 'joint_f1': 52.36788981102808}
+% 1000 {'ans_em': 83.6, 'ans_f1': 91.40385829340927, 'sup_em': 61.5, 'sup_f1': 90.03963203463167, 'joint_em': 52.300000000000004, 'joint_f1': 82.54824255777369}
+% {'ans_em': 96.8, 'ans_f1': 98.76880230880228, 'sup_em': 87.4, 'sup_f1': 97.56339826839829, 'joint_em': 84.6, 'joint_f1': 96.3654862914863}
+
+% \begin{table}
+%     \small
+%     \centering
+%     \begin{tabular}{lcccccc}
+%         \toprule
+%         Setting & EM & \fone{} & S-Prec & S-Rec & S-\fone{} \\
+%         \midrule
+%         gold only & 51.08 & 66.33 & 88.24 & 82.49 & 83.76 \\
+%         distractor & 48.38 & 63.38 & 76.06 & 67.98 & 68.79 \\
+%         full wiki & & & & \\
+%         \bottomrule
+%     \end{tabular}
+%     \caption{\small Model performance on three benchmark settings. EM and \fone{} are standard answer prediction measures. S-Prec, S-Rec, and S-\fone{} denote the precision, recall, and \fone{} of supporting fact prediction.} \label{tab:benchmark}
+% \end{table}
+
+
+% \begin{table*}
+%     \centering
+%     \begin{tabular}{lcccccc}
+%         \toprule
+%         \multirow{2}{*}{System} & \multicolumn{2}{c}{Two-Doc} & \multicolumn{2}{c}{Multi-Doc} & \multicolumn{2}{c}{Full-Wiki} \\
+%         \cmidrule{2-7}
+%         & EM & \fone{} & EM & \fone{} & EM & \fone{} \\
+%         \midrule
+%         Something \\
+%         \bottomrule
+%     \end{tabular}
+% \end{table*}

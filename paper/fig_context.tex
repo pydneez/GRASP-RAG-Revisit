@@ -1,0 +1,201 @@
+% Standalone: PGR Step-by-Step Chain vs Flat Retrieval (bridge query)
+% Compile: pdflatex fig_context.tex
+%
+% Context format (left column): accurately reconstructed from _bridge_context() in grasp_rag.py
+% Answers (both columns): real outputs from data/answers/agriculture_typed.jsonl
+\documentclass{article}
+\usepackage[paperwidth=22cm, paperheight=16cm,
+            top=0.5cm, bottom=0.5cm, left=0.6cm, right=0.6cm]{geometry}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{amssymb}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+% ── Colours ──────────────────────────────────────────────────────────────────
+\definecolor{graspblue}{RGB}{37,99,235}
+\definecolor{stepbg}{RGB}{239,246,255}
+\definecolor{stepborder}{RGB}{147,197,253}
+\definecolor{connbg}{RGB}{255,247,237}
+\definecolor{connborder}{RGB}{253,186,116}
+\definecolor{flatgray}{RGB}{75,85,99}
+\definecolor{flatbg}{RGB}{249,250,251}
+\definecolor{flatborder}{RGB}{209,213,219}
+\definecolor{wincallout}{RGB}{22,163,74}
+\definecolor{losecallout}{RGB}{220,38,38}
+
+% ── Box styles ───────────────────────────────────────────────────────────────
+\newtcolorbox{entitybox}[1]{
+  colback=stepbg, colframe=stepborder, boxrule=0.7pt, arc=3pt,
+  top=2pt, bottom=2pt, left=4pt, right=4pt,
+  fonttitle=\scriptsize\bfseries\sffamily\color{graspblue},
+  title={\strut #1}, titlerule=0pt,
+  attach boxed title to top left={yshift=-1.2mm, xshift=3mm},
+  boxed title style={colback=white, colframe=stepborder, boxrule=0.5pt,
+                     arc=2pt, left=2pt, right=2pt, top=0pt, bottom=0pt},
+}
+\newtcolorbox{connbox}[1]{
+  colback=connbg, colframe=connborder, boxrule=0.7pt, arc=3pt,
+  top=2pt, bottom=2pt, left=4pt, right=4pt,
+  fonttitle=\scriptsize\bfseries\sffamily\color{orange!70!black},
+  title={\strut #1}, titlerule=0pt,
+  attach boxed title to top left={yshift=-1.2mm, xshift=3mm},
+  boxed title style={colback=white, colframe=connborder, boxrule=0.5pt,
+                     arc=2pt, left=2pt, right=2pt, top=0pt, bottom=0pt},
+}
+\newtcolorbox{flatbox}[1]{
+  colback=flatbg, colframe=flatborder, boxrule=0.7pt, arc=3pt,
+  top=2pt, bottom=2pt, left=4pt, right=4pt,
+  fonttitle=\scriptsize\bfseries\sffamily\color{flatgray},
+  title={\strut #1}, titlerule=0pt,
+  attach boxed title to top left={yshift=-1.2mm, xshift=3mm},
+  boxed title style={colback=white, colframe=flatborder, boxrule=0.5pt,
+                     arc=2pt, left=2pt, right=2pt, top=0pt, bottom=0pt},
+}
+
+\begin{document}
+
+% ── Header ────────────────────────────────────────────────────────────────────
+\begin{center}
+  {\small\bfseries\sffamily
+   Path-Guided Reasoning (PGR) vs.\ Flat Retrieval — Bridge Query}\\[2pt]
+  {\scriptsize\sffamily\color{gray}
+   Query: \textit{``How does Varroa Destructor connect to Polyface?''}
+   \quad Bridge entity: \textbf{Honey Bees}}
+\end{center}
+
+\vspace{3pt}
+
+% ── Two columns ──────────────────────────────────────────────────────────────
+\begin{minipage}[t]{0.485\textwidth}
+
+\begin{tcolorbox}[
+  colback=graspblue!6, colframe=graspblue, boxrule=1.1pt, arc=4pt,
+  top=3pt, bottom=5pt, left=4pt, right=4pt,
+  title={\scriptsize\bfseries\sffamily\color{white}
+         GRASP-RAG \textnormal{(bridge motif + PGR context)}},
+  coltitle=white, attach title to upper,
+]
+
+{\tiny\sffamily\color{graspblue!60}\textit{Context sent to LLM
+  (built by \texttt{\_bridge\_context()}):}}
+
+\vspace{2pt}
+
+\begin{entitybox}{Step 1 — Entity: Varroa Destructor \normalfont\color{graspblue!60}(parasite)}
+\scriptsize\sffamily
+Parasitic mite that infests honey bee colonies; causes
+parasitic mite syndrome and high colony mortality\ldots\\[-1pt]
+\textit{\color{gray!60}[source passage]}
+\end{entitybox}
+
+\vspace{2pt}
+
+\begin{connbox}{Step 2 — Connection: Varroa Destructor $\rightarrow$ \textbf{Honey Bees}}
+\scriptsize\sffamily
+\textbf{Keywords:} colony infestation, bee mortality, mite resistance\\[-1pt]
+\textit{\color{gray!60}[source passage]}
+\end{connbox}
+
+\vspace{2pt}
+
+\begin{entitybox}{Step 3 — Entity: \textbf{Honey Bees} \normalfont\color{graspblue!60}(livestock)}
+\scriptsize\sffamily
+Central to pollination of crops; managed at Polyface Farm
+as part of integrated sustainable operations\ldots\\[-1pt]
+\textit{\color{gray!60}[source passage]}
+\end{entitybox}
+
+\vspace{2pt}
+
+\begin{connbox}{Step 4 — Connection: \textbf{Honey Bees} $\rightarrow$ Polyface}
+\scriptsize\sffamily
+\textbf{Keywords:} pollination services, sustainable agriculture, local food systems\\[-1pt]
+\textit{\color{gray!60}[source passage]}
+\end{connbox}
+
+\vspace{2pt}
+
+\begin{entitybox}{Step 5 — Entity: Polyface \normalfont\color{graspblue!60}(organisation)}
+\scriptsize\sffamily
+Joel Salatin's regenerative farm; integrates multiple species
+and relies on pollination for crop production\ldots
+\end{entitybox}
+
+\vspace{4pt}
+{\tiny\sffamily\color{graspblue!60}\textit{Answer generated from context above (real output):}}
+\begin{tcolorbox}[colback=wincallout!8, colframe=wincallout!50,
+  boxrule=0.7pt, arc=3pt, top=2pt, bottom=2pt, left=4pt, right=4pt]
+\scriptsize\sffamily\color{wincallout!80!black}
+\textbf{Answer:} ``Varroa Destructor\ldots infests \textbf{honey bee colonies}\ldots
+healthy bee populations are essential\ldots for the pollination of
+various crops, which Polyface incorporates into its local food systems.''
+\quad {\footnotesize\bfseries\checkmark~bridge entity named}
+\end{tcolorbox}
+
+\end{tcolorbox}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.485\textwidth}
+
+\begin{tcolorbox}[
+  colback=flatgray!5, colframe=flatgray!45, boxrule=1.1pt, arc=4pt,
+  top=3pt, bottom=5pt, left=4pt, right=4pt,
+  title={\scriptsize\bfseries\sffamily\color{white}
+         LightRAG / PathRAG \textnormal{(flat retrieval)}},
+  coltitle=white, colbacktitle=flatgray!65, attach title to upper,
+]
+
+\begin{flatbox}{Vector search results}
+\scriptsize\sffamily\color{gray!80}
+Passage 1: Varroa Destructor is a major mite pest of honey
+bee colonies; causes parasitic mite syndrome\ldots\\[2pt]
+Passage 2: Polyface Farm is Joel Salatin's sustainable farm
+in Virginia; known for multi-species rotational methods\ldots
+\end{flatbox}
+
+\vspace{2pt}
+
+\begin{flatbox}{Keyword graph results}
+\scriptsize\sffamily\color{gray!80}
+\textit{keywords: sustainable agriculture, pest management,
+beekeeping, regenerative farming\ldots}
+\end{flatbox}
+
+\vspace{2pt}
+
+{\scriptsize\sffamily\color{gray!60}
+\textit{No path between anchors. Varroa Destructor and Polyface
+retrieved independently — the connecting node (Honey Bees)
+is not labeled or surfaced.}}
+
+\vspace{4pt}
+
+{\tiny\sffamily\color{flatgray!80}\textit{Real outputs from both systems:}}
+\begin{tcolorbox}[colback=losecallout!7, colframe=losecallout!40,
+  boxrule=0.7pt, arc=3pt, top=2pt, bottom=2pt, left=4pt, right=4pt]
+\scriptsize\sffamily\color{losecallout!80!black}
+\textbf{LightRAG:} ``I do not have enough information to answer that.''\\[3pt]
+\textbf{PathRAG:} ``I'm sorry, but I cannot provide information
+connecting Varroa Destructor to Polyface\ldots''\\[3pt]
+\quad {\footnotesize\bfseries\color{losecallout}$\times$~bridge entity not found}
+\end{tcolorbox}
+
+\vspace{4pt}
+\begin{tcolorbox}[colback=yellow!8, colframe=yellow!60!orange,
+  boxrule=0.7pt, arc=3pt, top=3pt, bottom=3pt, left=4pt, right=4pt]
+\scriptsize\sffamily\color{black!70}
+\textbf{Why:} Flat retrieval finds passages \emph{about} each anchor
+separately; without a graph path, the connecting node (Honey Bees)
+is never retrieved. GRASP-RAG's bidirectional shortest-path
+guarantees traversal of the bridge node when both anchors
+are in the graph. Win rate on bridge queries vs.\ LightRAG: \textbf{93.4\%}.
+\end{tcolorbox}
+
+\end{tcolorbox}
+\end{minipage}
+
+\end{document}

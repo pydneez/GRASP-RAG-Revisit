@@ -1,0 +1,2268 @@
+{
+  "agriculture": {
+    "results": {
+      "grasp_rag": {
+        "ber": 100.0,
+        "hit": 40,
+        "miss": 0,
+        "total": 40
+      },
+      "naive_rag": {
+        "ber": 55.00000000000001,
+        "hit": 22,
+        "miss": 18,
+        "total": 40
+      },
+      "lightrag": {
+        "ber": 67.5,
+        "hit": 27,
+        "miss": 13,
+        "total": 40
+      },
+      "pathrag": {
+        "ber": 77.5,
+        "hit": 31,
+        "miss": 9,
+        "total": 40
+      }
+    },
+    "misses": {
+      "naive_rag": [
+        {
+          "question": "How does Rational Grazing relate to Pasture?",
+          "ground_truth": "Cows",
+          "answer_snippet": "Rational grazing is a systematic approach to managing livestock grazing on pastures, focusing on the needs of both the grass and the animals. Here are the key concepts that outline how rational grazin",
+          "src": "Rational Grazing",
+          "bridge": "Cows",
+          "tgt": "Pasture"
+        },
+        {
+          "question": "How are Calcium and Grass linked in the context of agriculture?",
+          "ground_truth": "Nitrogen",
+          "answer_snippet": "Calcium plays a significant role in agriculture, particularly in relation to grass and pasture management. Here are the key points linking calcium to grass in the agricultural context:\n\n### Importance",
+          "src": "Calcium",
+          "bridge": "Nitrogen",
+          "tgt": "Grass"
+        },
+        {
+          "question": "What is the connection between Nitrogen and Fiber?",
+          "ground_truth": "N-Free Extract",
+          "answer_snippet": "The connection between nitrogen and fiber can be elaborated through the understanding of their roles in plant biology, particularly concerning grass and forage quality.\n\n**Nitrogen as a Critical Nutri",
+          "src": "Nitrogen",
+          "bridge": "N-Free Extract",
+          "tgt": "Fiber"
+        },
+        {
+          "question": "Through what mechanism does Oyster Mushrooms connect to Stropharia Rugosoannulata?",
+          "ground_truth": "Mushroom Mycelium",
+          "answer_snippet": "I do not have enough information to answer that question.",
+          "src": "Oyster Mushrooms",
+          "bridge": "Mushroom Mycelium",
+          "tgt": "Stropharia Rugosoannulata"
+        },
+        {
+          "question": "Through what mechanism does Organic Farming connect to Earthworms?",
+          "ground_truth": "Humus",
+          "answer_snippet": "Organic farming is closely linked to the health and activity of earthworms through several ecological mechanisms that enhance soil fertility and structure. Here is how this connection manifests:\n\n### ",
+          "src": "Organic Farming",
+          "bridge": "Humus",
+          "tgt": "Earthworms"
+        },
+        {
+          "question": "What connects Rational Grazing to Polyface Farm?",
+          "ground_truth": "Cows",
+          "answer_snippet": "### Connection between Rational Grazing and Polyface Farm\n\n**Rational grazing** is a key agricultural methodology employed at **Polyface Farm**, developed by *Joel Salatin*. The techniques of rational",
+          "src": "Rational Grazing",
+          "bridge": "Cows",
+          "tgt": "Polyface Farm"
+        },
+        {
+          "question": "How does Nitrogen relate to Mushroom Cultivation?",
+          "ground_truth": "Crop Rotation",
+          "answer_snippet": "Nitrogen plays a crucial role in mushroom cultivation, influencing various aspects of mycelial growth and fruiting. Here's how it relates:\n\n### Importance of Nitrogen\n1. **Essential Nutrient**: Nitrog",
+          "src": "Nitrogen",
+          "bridge": "Crop Rotation",
+          "tgt": "Mushroom Cultivation"
+        },
+        {
+          "question": "How does Bees relate to Cattle?",
+          "ground_truth": "Wildflowers",
+          "answer_snippet": "The relationship between bees and cattle primarily revolves around their respective roles in agriculture and the ecosystem. While they are different species—bees are pollinators (specifically, the Eur",
+          "src": "Bees",
+          "bridge": "Wildflowers",
+          "tgt": "Cattle"
+        },
+        {
+          "question": "What is the connection between King Stropharia and Autoclave?",
+          "ground_truth": "Sawdust Spawn",
+          "answer_snippet": "The connection between King Stropharia (_Stropharia rugosoannulata_) and the autoclave lies primarily in the context of mushroom cultivation and substrate preparation. An autoclave is a critical piece",
+          "src": "King Stropharia",
+          "bridge": "Sawdust Spawn",
+          "tgt": "Autoclave"
+        },
+        {
+          "question": "How does Bees relate to Rational Grazing?",
+          "ground_truth": "Cows",
+          "answer_snippet": "I do not have enough information to answer your query regarding the relationship between bees and rational grazing. The provided context primarily focuses on principles, practices, and effects of rati",
+          "src": "Bees",
+          "bridge": "Cows",
+          "tgt": "Rational Grazing"
+        },
+        {
+          "question": "Through what mechanism does Compost connect to Farming?",
+          "ground_truth": "Food",
+          "answer_snippet": "Composting plays a crucial role in farming by enhancing soil fertility and improving agricultural practices through various mechanisms. Here’s how compost connects to farming:\n\n### Soil Fertility Enha",
+          "src": "Compost",
+          "bridge": "Food",
+          "tgt": "Farming"
+        },
+        {
+          "question": "What connects Honey to Paddocks?",
+          "ground_truth": "White Clover",
+          "answer_snippet": "Honey is intricately connected to paddocks through the role of flowering plants that provide bees with nectar. Here's how this connection manifests:\n\n1. **Beekeeping Practices**: Paddocks often contai",
+          "src": "Honey",
+          "bridge": "White Clover",
+          "tgt": "Paddocks"
+        },
+        {
+          "question": "Through what mechanism does Farmer connect to Mites?",
+          "ground_truth": "Beekeeping",
+          "answer_snippet": "I do not have enough information to answer your query.",
+          "src": "Farmer",
+          "bridge": "Beekeeping",
+          "tgt": "Mites"
+        },
+        {
+          "question": "What is the connection between Oyster Mushrooms and Reishi?",
+          "ground_truth": "Bottle Culture",
+          "answer_snippet": "Oyster Mushrooms and Reishi mushrooms are both part of the larger family of fungi known as polypores, which are characterized by their woody texture and ability to decompose wood. While they are disti",
+          "src": "Oyster Mushrooms",
+          "bridge": "Bottle Culture",
+          "tgt": "Reishi"
+        },
+        {
+          "question": "What is the connection between Total Minerals and Rational Grazing?",
+          "ground_truth": "Nitrogen",
+          "answer_snippet": "I do not have enough information to answer.",
+          "src": "Total Minerals",
+          "bridge": "Nitrogen",
+          "tgt": "Rational Grazing"
+        },
+        {
+          "question": "How are Calcium and No-Till Farming linked in the context of agriculture?",
+          "ground_truth": "Soil",
+          "answer_snippet": "I do not have enough information to answer that.",
+          "src": "Calcium",
+          "bridge": "Soil",
+          "tgt": "No-Till Farming"
+        },
+        {
+          "question": "How does Cows relate to Water?",
+          "ground_truth": "Humans",
+          "answer_snippet": "Cows have a critical relationship with water, which is essential for their overall health and productivity. Here are key points to understand this relationship:\n\n### Importance of Water\n- **Hydration ",
+          "src": "Cows",
+          "bridge": "Humans",
+          "tgt": "Water"
+        },
+        {
+          "question": "How are Varroa Mite and Bees linked in the context of agriculture?",
+          "ground_truth": "Comb",
+          "answer_snippet": "The relationship between Varroa mites and bees is crucial within the context of agriculture, mainly because these mites significantly impact bee populations and, consequently, agricultural productivit",
+          "src": "Varroa Mite",
+          "bridge": "Comb",
+          "tgt": "Bees"
+        }
+      ],
+      "lightrag": [
+        {
+          "question": "How does Rational Grazing relate to Pasture?",
+          "ground_truth": "Cows",
+          "answer_snippet": "Rational Grazing is a systematic and comprehensive method of managing pasturelands that directly impacts the health of both the pasture and the grazing livestock. Here are some key points on how Ratio",
+          "src": "Rational Grazing",
+          "bridge": "Cows",
+          "tgt": "Pasture"
+        },
+        {
+          "question": "What is the connection between Nitrogen and Fiber?",
+          "ground_truth": "N-Free Extract",
+          "answer_snippet": "Nitrogen and fiber are closely interconnected in the context of agricultural practices and nutritional analyses of feed materials. Key points regarding their relationship include:\n\n1. **Nutritional Qu",
+          "src": "Nitrogen",
+          "bridge": "N-Free Extract",
+          "tgt": "Fiber"
+        },
+        {
+          "question": "How does Total Dry Matter relate to Crop Rotation?",
+          "ground_truth": "Nitrogen",
+          "answer_snippet": "Total Dry Matter (TDM) refers to the percentage of non-water content in various agricultural materials, which is significant for assessing the nutritional density and physical properties of these prod",
+          "src": "Total Dry Matter",
+          "bridge": "Nitrogen",
+          "tgt": "Crop Rotation"
+        },
+        {
+          "question": "Through what mechanism does Organic Farming connect to Earthworms?",
+          "ground_truth": "Humus",
+          "answer_snippet": "Organic Farming and earthworms are connected through several key mechanisms that enhance soil health and fertility:\n\n1. **Soil Structure Improvement**: Earthworms contribute to soil health by burrowin",
+          "src": "Organic Farming",
+          "bridge": "Humus",
+          "tgt": "Earthworms"
+        },
+        {
+          "question": "How does Nitrogen relate to Mushroom Cultivation?",
+          "ground_truth": "Crop Rotation",
+          "answer_snippet": "Nitrogen plays a crucial role in mushroom cultivation primarily in the form of nitrogen-rich additives, which are integral to the growth and development of mushrooms. Here are the key points detailing",
+          "src": "Nitrogen",
+          "bridge": "Crop Rotation",
+          "tgt": "Mushroom Cultivation"
+        },
+        {
+          "question": "How does Bees relate to Cattle?",
+          "ground_truth": "Wildflowers",
+          "answer_snippet": "The relationship between bees and cattle primarily revolves around their roles in agricultural systems and the contrast in their breeding practices and responses to treatment. \n\n### Key Points of Inte",
+          "src": "Bees",
+          "bridge": "Wildflowers",
+          "tgt": "Cattle"
+        },
+        {
+          "question": "What is the connection between King Stropharia and Autoclave?",
+          "ground_truth": "Sawdust Spawn",
+          "answer_snippet": "The connection between King Stropharia (Stropharia rugosoannulata) and autoclaves is primarily related to the sterilization processes involved in mushroom cultivation. Here's how they are related:\n\n1.",
+          "src": "King Stropharia",
+          "bridge": "Sawdust Spawn",
+          "tgt": "Autoclave"
+        },
+        {
+          "question": "How does Bees relate to Rational Grazing?",
+          "ground_truth": "Cows",
+          "answer_snippet": "Based on the provided context, there isn't a direct relationship outlined between Bees and Rational Grazing. However, Bees play a critical role in pollinating wildflowers, which are often beneficial f",
+          "src": "Bees",
+          "bridge": "Cows",
+          "tgt": "Rational Grazing"
+        },
+        {
+          "question": "What connects Honey to Paddocks?",
+          "ground_truth": "White Clover",
+          "answer_snippet": "The connection between **Honey** and **Paddocks** is primarily through the role of honey bees in pollination and the productivity of pastures. Here are the key points of this relationship:\n\n1. **Forag",
+          "src": "Honey",
+          "bridge": "White Clover",
+          "tgt": "Paddocks"
+        },
+        {
+          "question": "What is the connection between Oyster Mushrooms and Reishi?",
+          "ground_truth": "Bottle Culture",
+          "answer_snippet": "The connection between Oyster Mushrooms and Reishi, scientifically known as _Pleurotus_ (for Oyster Mushrooms) and _Ganoderma lucidum_ (for Reishi), primarily lies in their ecological roles and cultiv",
+          "src": "Oyster Mushrooms",
+          "bridge": "Bottle Culture",
+          "tgt": "Reishi"
+        },
+        {
+          "question": "What is the connection between Total Minerals and Rational Grazing?",
+          "ground_truth": "Nitrogen",
+          "answer_snippet": "I do not have enough information to answer that.",
+          "src": "Total Minerals",
+          "bridge": "Nitrogen",
+          "tgt": "Rational Grazing"
+        },
+        {
+          "question": "How does Cows relate to Water?",
+          "ground_truth": "Humans",
+          "answer_snippet": "Cows and water are closely related in several critical ways, particularly concerning their hydration needs and the overall management of livestock on farms. Here are the key aspects of this relationsh",
+          "src": "Cows",
+          "bridge": "Humans",
+          "tgt": "Water"
+        },
+        {
+          "question": "How are Varroa Mite and Bees linked in the context of agriculture?",
+          "ground_truth": "Comb",
+          "answer_snippet": "The link between Varroa Mites and Bees in the context of agriculture is significant and multifaceted, primarily revolving around the health of bee populations and their essential role in pollination.\n",
+          "src": "Varroa Mite",
+          "bridge": "Comb",
+          "tgt": "Bees"
+        }
+      ],
+      "pathrag": [
+        {
+          "question": "What is the connection between Nitrogen and Fiber?",
+          "ground_truth": "N-Free Extract",
+          "answer_snippet": "### Connection Between Nitrogen and Fiber in Agricultural Systems\n\nThe relationship between nitrogen and fiber in agricultural contexts primarily revolves around plant nutrition and the overall health",
+          "src": "Nitrogen",
+          "bridge": "N-Free Extract",
+          "tgt": "Fiber"
+        },
+        {
+          "question": "What connects Rational Grazing to Polyface Farm?",
+          "ground_truth": "Cows",
+          "answer_snippet": "Rational Grazing and Polyface Farm are intricately connected through their shared commitment to innovative and sustainable agricultural practices focused on optimizing pasture management and enhancing",
+          "src": "Rational Grazing",
+          "bridge": "Cows",
+          "tgt": "Polyface Farm"
+        },
+        {
+          "question": "How does Nitrogen relate to Mushroom Cultivation?",
+          "ground_truth": "Crop Rotation",
+          "answer_snippet": "### The Role of Nitrogen in Mushroom Cultivation\n\nNitrogen is an essential nutrient that plays a vital role in the cultivation of mushrooms. It is a fundamental component of amino acids and proteins, ",
+          "src": "Nitrogen",
+          "bridge": "Crop Rotation",
+          "tgt": "Mushroom Cultivation"
+        },
+        {
+          "question": "How does Bees relate to Cattle?",
+          "ground_truth": "Wildflowers",
+          "answer_snippet": "Bees and cattle, while both integral to agriculture, represent different aspects of farming practices and ecological contributions. Their relationship can be understood through several key dimensions:",
+          "src": "Bees",
+          "bridge": "Wildflowers",
+          "tgt": "Cattle"
+        },
+        {
+          "question": "What is the connection between King Stropharia and Autoclave?",
+          "ground_truth": "Sawdust Spawn",
+          "answer_snippet": "The connection between King Stropharia and an autoclave lies primarily in the cultivation process of King Stropharia mushrooms. An autoclave is an essential piece of equipment used for sterilizing sub",
+          "src": "King Stropharia",
+          "bridge": "Sawdust Spawn",
+          "tgt": "Autoclave"
+        },
+        {
+          "question": "What connects Honey to Paddocks?",
+          "ground_truth": "White Clover",
+          "answer_snippet": "The connection between **Honey** and **Paddocks** lies in the essential role both play in agricultural ecosystems, particularly through their interactions with bee populations and the management of la",
+          "src": "Honey",
+          "bridge": "White Clover",
+          "tgt": "Paddocks"
+        },
+        {
+          "question": "What is the connection between Oyster Mushrooms and Reishi?",
+          "ground_truth": "Bottle Culture",
+          "answer_snippet": "Oyster mushrooms and Reishi mushrooms represent two distinct yet significant species within the fungal kingdom, particularly valued for their unique characteristics and applications in culinary and me",
+          "src": "Oyster Mushrooms",
+          "bridge": "Bottle Culture",
+          "tgt": "Reishi"
+        },
+        {
+          "question": "How does Cows relate to Water?",
+          "ground_truth": "Humans",
+          "answer_snippet": "### Relationship Between Cows and Water\n\nCows and water share a critical interdependent relationship essential for both livestock health and agricultural productivity. Water acts as a fundamental reso",
+          "src": "Cows",
+          "bridge": "Humans",
+          "tgt": "Water"
+        },
+        {
+          "question": "How are Varroa Mite and Bees linked in the context of agriculture?",
+          "ground_truth": "Comb",
+          "answer_snippet": "The link between Varroa Mites and bees in the context of agriculture is significant, primarily due to the impact that these parasitic mites have on honey bee populations and, consequently, agricultura",
+          "src": "Varroa Mite",
+          "bridge": "Comb",
+          "tgt": "Bees"
+        }
+      ]
+    },
+    "q_meta": {
+      "How does Rational Grazing relate to Pasture?": {
+        "src": "Rational Grazing",
+        "bridge": "Cows",
+        "tgt": "Pasture",
+        "ground_truth": "Cows"
+      },
+      "How does Shiitake relate to Agaricus Brunnescens?": {
+        "src": "Shiitake",
+        "bridge": "Mushrooms",
+        "tgt": "Agaricus Brunnescens",
+        "ground_truth": "Mushrooms"
+      },
+      "How are Calcium and Grass linked in the context of agriculture?": {
+        "src": "Calcium",
+        "bridge": "Nitrogen",
+        "tgt": "Grass",
+        "ground_truth": "Nitrogen"
+      },
+      "What is the connection between Beekeeping and Colony Collapse Disorder (CCD)?": {
+        "src": "Beekeeping",
+        "bridge": "Honey Bees",
+        "tgt": "Colony Collapse Disorder (CCD)",
+        "ground_truth": "Honey Bees"
+      },
+      "What is the connection between Corn and Worker Bees?": {
+        "src": "Corn",
+        "bridge": "Honey Bees",
+        "tgt": "Worker Bees",
+        "ground_truth": "Honey Bees"
+      },
+      "What is the connection between Nitrogen and Fiber?": {
+        "src": "Nitrogen",
+        "bridge": "N-Free Extract",
+        "tgt": "Fiber",
+        "ground_truth": "N-Free Extract"
+      },
+      "How does Total Dry Matter relate to Crop Rotation?": {
+        "src": "Total Dry Matter",
+        "bridge": "Nitrogen",
+        "tgt": "Crop Rotation",
+        "ground_truth": "Nitrogen"
+      },
+      "Through what mechanism does Oyster Mushrooms connect to Stropharia Rugosoannulata?": {
+        "src": "Oyster Mushrooms",
+        "bridge": "Mushroom Mycelium",
+        "tgt": "Stropharia Rugosoannulata",
+        "ground_truth": "Mushroom Mycelium"
+      },
+      "How does Calcium relate to Casing?": {
+        "src": "Calcium",
+        "bridge": "Mushroom Mycelium",
+        "tgt": "Casing",
+        "ground_truth": "Mushroom Mycelium"
+      },
+      "Through what mechanism does Organic Farming connect to Earthworms?": {
+        "src": "Organic Farming",
+        "bridge": "Humus",
+        "tgt": "Earthworms",
+        "ground_truth": "Humus"
+      },
+      "What connects Rational Grazing to Polyface Farm?": {
+        "src": "Rational Grazing",
+        "bridge": "Cows",
+        "tgt": "Polyface Farm",
+        "ground_truth": "Cows"
+      },
+      "How does Nitrogen relate to Mushroom Cultivation?": {
+        "src": "Nitrogen",
+        "bridge": "Crop Rotation",
+        "tgt": "Mushroom Cultivation",
+        "ground_truth": "Crop Rotation"
+      },
+      "How does P. Ostreatus relate to Straw?": {
+        "src": "P. Ostreatus",
+        "bridge": "Oyster Mushrooms",
+        "tgt": "Straw",
+        "ground_truth": "Oyster Mushrooms"
+      },
+      "How does Bees relate to Cattle?": {
+        "src": "Bees",
+        "bridge": "Wildflowers",
+        "tgt": "Cattle",
+        "ground_truth": "Wildflowers"
+      },
+      "What is the connection between King Stropharia and Autoclave?": {
+        "src": "King Stropharia",
+        "bridge": "Sawdust Spawn",
+        "tgt": "Autoclave",
+        "ground_truth": "Sawdust Spawn"
+      },
+      "What is the connection between Varroa Destructor and Brood Nest?": {
+        "src": "Varroa Destructor",
+        "bridge": "Bees",
+        "tgt": "Brood Nest",
+        "ground_truth": "Bees"
+      },
+      "Through what mechanism does Sustainable Agriculture connect to Farming?": {
+        "src": "Sustainable Agriculture",
+        "bridge": "Sustainability",
+        "tgt": "Farming",
+        "ground_truth": "Sustainability"
+      },
+      "Through what mechanism does Protein connect to Grass Tetany?": {
+        "src": "Protein",
+        "bridge": "Grass",
+        "tgt": "Grass Tetany",
+        "ground_truth": "Grass"
+      },
+      "How does Bees relate to Rational Grazing?": {
+        "src": "Bees",
+        "bridge": "Cows",
+        "tgt": "Rational Grazing",
+        "ground_truth": "Cows"
+      },
+      "Through what mechanism does Rational Grazing connect to Crop Rotation?": {
+        "src": "Rational Grazing",
+        "bridge": "Nitrogen",
+        "tgt": "Crop Rotation",
+        "ground_truth": "Nitrogen"
+      },
+      "What is the connection between Corn and Colony Collapse Disorder (CCD)?": {
+        "src": "Corn",
+        "bridge": "Honey Bees",
+        "tgt": "Colony Collapse Disorder (CCD)",
+        "ground_truth": "Honey Bees"
+      },
+      "Through what mechanism does Compost connect to Farming?": {
+        "src": "Compost",
+        "bridge": "Food",
+        "tgt": "Farming",
+        "ground_truth": "Food"
+      },
+      "What connects Honey to Paddocks?": {
+        "src": "Honey",
+        "bridge": "White Clover",
+        "tgt": "Paddocks",
+        "ground_truth": "White Clover"
+      },
+      "What is the connection between Bees and Beekeeping Industry?": {
+        "src": "Bees",
+        "bridge": "Honey",
+        "tgt": "Beekeeping Industry",
+        "ground_truth": "Honey"
+      },
+      "What connects Honey Bees to Hives?": {
+        "src": "Honey Bees",
+        "bridge": "Bees",
+        "tgt": "Hives",
+        "ground_truth": "Bees"
+      },
+      "Through what mechanism does Farmer connect to Mites?": {
+        "src": "Farmer",
+        "bridge": "Beekeeping",
+        "tgt": "Mites",
+        "ground_truth": "Beekeeping"
+      },
+      "How are Agriculture and No-Till Farming linked in the context of agriculture?": {
+        "src": "Agriculture",
+        "bridge": "Soil",
+        "tgt": "No-Till Farming",
+        "ground_truth": "Soil"
+      },
+      "How does No-Till Farming relate to Cover Crops?": {
+        "src": "No-Till Farming",
+        "bridge": "Soil",
+        "tgt": "Cover Crops",
+        "ground_truth": "Soil"
+      },
+      "What is the connection between Oyster Mushrooms and Reishi?": {
+        "src": "Oyster Mushrooms",
+        "bridge": "Bottle Culture",
+        "tgt": "Reishi",
+        "ground_truth": "Bottle Culture"
+      },
+      "What connects Beekeeping Industry to Apis Mellifera?": {
+        "src": "Beekeeping Industry",
+        "bridge": "Honey",
+        "tgt": "Apis Mellifera",
+        "ground_truth": "Honey"
+      },
+      "How are Pasture and Crops linked in the context of agriculture?": {
+        "src": "Pasture",
+        "bridge": "Crop Rotation",
+        "tgt": "Crops",
+        "ground_truth": "Crop Rotation"
+      },
+      "How are Beekeeping and Worker Bees linked in the context of agriculture?": {
+        "src": "Beekeeping",
+        "bridge": "Colony",
+        "tgt": "Worker Bees",
+        "ground_truth": "Colony"
+      },
+      "What is the connection between Total Minerals and Rational Grazing?": {
+        "src": "Total Minerals",
+        "bridge": "Nitrogen",
+        "tgt": "Rational Grazing",
+        "ground_truth": "Nitrogen"
+      },
+      "What is the connection between Protein and Grass Growth?": {
+        "src": "Protein",
+        "bridge": "Nitrogen",
+        "tgt": "Grass Growth",
+        "ground_truth": "Nitrogen"
+      },
+      "How are Calcium and No-Till Farming linked in the context of agriculture?": {
+        "src": "Calcium",
+        "bridge": "Soil",
+        "tgt": "No-Till Farming",
+        "ground_truth": "Soil"
+      },
+      "How does Cover Crops relate to Water?": {
+        "src": "Cover Crops",
+        "bridge": "Soil",
+        "tgt": "Water",
+        "ground_truth": "Soil"
+      },
+      "How does Queen relate to Apiary?": {
+        "src": "Queen",
+        "bridge": "Bees",
+        "tgt": "Apiary",
+        "ground_truth": "Bees"
+      },
+      "What connects Honey Bee to Food Localization?": {
+        "src": "Honey Bee",
+        "bridge": "Honey",
+        "tgt": "Food Localization",
+        "ground_truth": "Honey"
+      },
+      "How does Cows relate to Water?": {
+        "src": "Cows",
+        "bridge": "Humans",
+        "tgt": "Water",
+        "ground_truth": "Humans"
+      },
+      "How are Varroa Mite and Bees linked in the context of agriculture?": {
+        "src": "Varroa Mite",
+        "bridge": "Comb",
+        "tgt": "Bees",
+        "ground_truth": "Comb"
+      }
+    }
+  },
+  "cs": {
+    "results": {
+      "grasp_rag": {
+        "ber": 87.5,
+        "hit": 35,
+        "miss": 5,
+        "total": 40
+      },
+      "naive_rag": {
+        "ber": 67.5,
+        "hit": 27,
+        "miss": 13,
+        "total": 40
+      },
+      "lightrag": {
+        "ber": 60.0,
+        "hit": 24,
+        "miss": 16,
+        "total": 40
+      },
+      "pathrag": {
+        "ber": 62.5,
+        "hit": 25,
+        "miss": 15,
+        "total": 40
+      }
+    },
+    "misses": {
+      "naive_rag": [
+        {
+          "question": "How are MsgBox and Access linked in the context of cs?",
+          "ground_truth": "Function Statement",
+          "answer_snippet": "In the context of VBA programming, the **MsgBox** function and Microsoft Access are linked in the way that MsgBox can be used within Access VBA code to interact with users, allowing them to receive in",
+          "src": "MsgBox",
+          "bridge": "Function Statement",
+          "tgt": "Access"
+        },
+        {
+          "question": "How does Covariance Matrix relate to Binomial Distribution?",
+          "ground_truth": "Mean",
+          "answer_snippet": "I do not have enough information to answer.",
+          "src": "Covariance Matrix",
+          "bridge": "Mean",
+          "tgt": "Binomial Distribution"
+        },
+        {
+          "question": "Through what mechanism does ActiveDocument connect to DAO Recordset?",
+          "ground_truth": "VBA",
+          "answer_snippet": "I do not have enough information to answer your query regarding the mechanism through which ActiveDocument connects to DAO Recordset.",
+          "src": "ActiveDocument",
+          "bridge": "VBA",
+          "tgt": "DAO Recordset"
+        },
+        {
+          "question": "How does RecordSet relate to DAO Recordset?",
+          "ground_truth": "Save Method",
+          "answer_snippet": "In Microsoft Access, **RecordSet** refers to a collection of records in a database, which can be accessed and manipulated through various programming interfaces such as DAO (Data Access Objects) and A",
+          "src": "RecordSet",
+          "bridge": "Save Method",
+          "tgt": "DAO Recordset"
+        },
+        {
+          "question": "Through what mechanism does Variant connect to ActiveWorkbook?",
+          "ground_truth": "Locals Window",
+          "answer_snippet": "The Variant data type in VBA can hold any type of data, including objects. To connect to the ActiveWorkbook, you typically use a variable declared as Variant, which can reference the ActiveWorkbook ob",
+          "src": "Variant",
+          "bridge": "Locals Window",
+          "tgt": "ActiveWorkbook"
+        },
+        {
+          "question": "What connects SQL Server to SELECT Statement?",
+          "ground_truth": "AdventureWorks2008",
+          "answer_snippet": "### Connecting SQL Server to the SELECT Statement\n\nThe **SELECT statement** is a fundamental part of SQL Server's functionality, serving as the primary means for querying data from databases. Here are",
+          "src": "SQL Server",
+          "bridge": "AdventureWorks2008",
+          "tgt": "SELECT Statement"
+        },
+        {
+          "question": "What is the connection between MsgBox and Word Document?",
+          "ground_truth": "Excel",
+          "answer_snippet": "The connection between `MsgBox` and Word documents primarily revolves around user interaction and feedback during automation processes in VBA (Visual Basic for Applications) for Word. \n\n### Usage of M",
+          "src": "MsgBox",
+          "bridge": "Excel",
+          "tgt": "Word Document"
+        },
+        {
+          "question": "How does ActivePresentation relate to String?",
+          "ground_truth": "MsgBox",
+          "answer_snippet": "Based on the provided context, the **ActivePresentation** object in PowerPoint represents the current active presentation within the PowerPoint application. It does not directly relate to the **String",
+          "src": "ActivePresentation",
+          "bridge": "MsgBox",
+          "tgt": "String"
+        },
+        {
+          "question": "How are Database and Probability Density Function linked in the context of cs?",
+          "ground_truth": "Normalization",
+          "answer_snippet": "In the context of computer science, databases and probability density functions (pdfs) are linked through their roles in handling, analyzing, and modeling data.\n\n### Data Management and Analysis\n1. **",
+          "src": "Database",
+          "bridge": "Normalization",
+          "tgt": "Probability Density Function"
+        },
+        {
+          "question": "How are Mean and Population linked in the context of cs?",
+          "ground_truth": "Correlation Coefficient",
+          "answer_snippet": "In the context of computer science, particularly in data analysis and statistics, the concepts of mean and population are closely linked through the process of estimating and understanding the charact",
+          "src": "Mean",
+          "bridge": "Correlation Coefficient",
+          "tgt": "Population"
+        },
+        {
+          "question": "What is the connection between Variable and String?",
+          "ground_truth": "Variant",
+          "answer_snippet": "In programming, particularly in languages like VBA and Java, the concepts of **variables** and **strings** are closely related as strings can be stored in variables. Here’s an overview of their connec",
+          "src": "Variable",
+          "bridge": "Variant",
+          "tgt": "String"
+        },
+        {
+          "question": "How are VBA and Array linked in the context of cs?",
+          "ground_truth": "MsgBox",
+          "answer_snippet": "In the context of computer science and particularly in Visual Basic for Applications (VBA), arrays are linked as data structures that allow the storage and manipulation of multiple items using a singl",
+          "src": "VBA",
+          "bridge": "MsgBox",
+          "tgt": "Array"
+        },
+        {
+          "question": "How are Linux Kernel and IPv4 linked in the context of cs?",
+          "ground_truth": "Netfilter",
+          "answer_snippet": "The Linux Kernel and IPv4 are closely linked in the context of computer science, particularly within the networking subsystem of the Linux operating system. Here are the key points that describe their",
+          "src": "Linux Kernel",
+          "bridge": "Netfilter",
+          "tgt": "IPv4"
+        }
+      ],
+      "lightrag": [
+        {
+          "question": "How are MsgBox and Access linked in the context of cs?",
+          "ground_truth": "Function Statement",
+          "answer_snippet": "In the context of programming with Visual Basic for Applications (VBA) within Microsoft Access, **MsgBox** serves several critical functions that enhance user interaction and experience. Here’s a conc",
+          "src": "MsgBox",
+          "bridge": "Function Statement",
+          "tgt": "Access"
+        },
+        {
+          "question": "How does ActiveDocument relate to Table?",
+          "ground_truth": "Row",
+          "answer_snippet": "The **ActiveDocument** in Microsoft Word is closely associated with **Table** objects as it contains the collection of tables present within the currently active document. Here are the key relationshi",
+          "src": "ActiveDocument",
+          "bridge": "Row",
+          "tgt": "Table"
+        },
+        {
+          "question": "How does RecordSet relate to DAO Recordset?",
+          "ground_truth": "Save Method",
+          "answer_snippet": "The **RecordSet** and **DAO Recordset** are closely related as they both serve the purpose of managing and interacting with a set of records retrieved from a database. Here are key points regarding th",
+          "src": "RecordSet",
+          "bridge": "Save Method",
+          "tgt": "DAO Recordset"
+        },
+        {
+          "question": "Through what mechanism does Variant connect to ActiveWorkbook?",
+          "ground_truth": "Locals Window",
+          "answer_snippet": "The connection between `Variant` and `ActiveWorkbook` in VBA is facilitated through the use of object variables. In VBA, the `ActiveWorkbook` object represents the currently active workbook in Excel, ",
+          "src": "Variant",
+          "bridge": "Locals Window",
+          "tgt": "ActiveWorkbook"
+        },
+        {
+          "question": "What connects SQL Server to SELECT Statement?",
+          "ground_truth": "AdventureWorks2008",
+          "answer_snippet": "SQL Server and the SELECT statement are intrinsically connected as the SELECT statement is a fundamental SQL command used within SQL Server to query and retrieve data from databases. Here are the spec",
+          "src": "SQL Server",
+          "bridge": "AdventureWorks2008",
+          "tgt": "SELECT Statement"
+        },
+        {
+          "question": "What is the connection between MsgBox and Word Document?",
+          "ground_truth": "Excel",
+          "answer_snippet": "The connection between **MsgBox** and a **Word Document** lies in the utilization of the MsgBox function within the context of Word macros and automation tasks in Visual Basic for Applications (VBA). ",
+          "src": "MsgBox",
+          "bridge": "Excel",
+          "tgt": "Word Document"
+        },
+        {
+          "question": "Through what mechanism does Indexes connect to Product?",
+          "ground_truth": "SQL Server",
+          "answer_snippet": "Indexes connect to the Product entity primarily through the ProductID within the database tables. Here's a detailed breakdown of these connections:\n\n### Mechanisms of Connection\n\n1. **Primary Key Rela",
+          "src": "Indexes",
+          "bridge": "SQL Server",
+          "tgt": "Product"
+        },
+        {
+          "question": "How does ActivePresentation relate to String?",
+          "ground_truth": "MsgBox",
+          "answer_snippet": "The relationship between **ActivePresentation** and **String** within the context of Microsoft PowerPoint and Visual Basic for Applications (VBA) pertains primarily to the variables that can hold data",
+          "src": "ActivePresentation",
+          "bridge": "MsgBox",
+          "tgt": "String"
+        },
+        {
+          "question": "What connects SQL Server to Table?",
+          "ground_truth": "Clustered Index",
+          "answer_snippet": "SQL Server is a relational database management system (RDBMS) that employs tables as fundamental database objects. Here's how they are connected:\n\n1. **Structure of Data**: In SQL Server, tables are s",
+          "src": "SQL Server",
+          "bridge": "Clustered Index",
+          "tgt": "Table"
+        },
+        {
+          "question": "How are Database and Probability Density Function linked in the context of cs?",
+          "ground_truth": "Normalization",
+          "answer_snippet": "In the context of computer science, the **Database** and **Probability Density Function (PDF)** are linked through their roles in managing and interpreting data.\n\n1. **Database**: A database is a stru",
+          "src": "Database",
+          "bridge": "Normalization",
+          "tgt": "Probability Density Function"
+        },
+        {
+          "question": "How are Mean and Population linked in the context of cs?",
+          "ground_truth": "Correlation Coefficient",
+          "answer_snippet": "In the context of statistics relevant to computer science, the **Mean** and **Population** are intricately linked concepts that are foundational to data analysis.\n\n### Mean\nThe **Mean** is a statistic",
+          "src": "Mean",
+          "bridge": "Correlation Coefficient",
+          "tgt": "Population"
+        },
+        {
+          "question": "What is the connection between Variable and String?",
+          "ground_truth": "Variant",
+          "answer_snippet": "The connection between **Variable** and **String** encompasses how variables are utilized to store and manipulate string data within programming environments. Here’s a detailed breakdown of this relat",
+          "src": "Variable",
+          "bridge": "Variant",
+          "tgt": "String"
+        },
+        {
+          "question": "How are VBA and Array linked in the context of cs?",
+          "ground_truth": "MsgBox",
+          "answer_snippet": "In the context of programming with Visual Basic for Applications (VBA), arrays are essential data structures that enable programmers to store and manage multiple values efficiently. Here’s how VBA rel",
+          "src": "VBA",
+          "bridge": "MsgBox",
+          "tgt": "Array"
+        },
+        {
+          "question": "How does PCF relate to For Loop?",
+          "ground_truth": "Test",
+          "answer_snippet": "PCF, or Programming Computable Functions, is a foundational programming language that focuses on the expression of computations and operates under the principles of functional programming. The relatio",
+          "src": "PCF",
+          "bridge": "Test",
+          "tgt": "For Loop"
+        },
+        {
+          "question": "How does Dialog Box relate to Input Box?",
+          "ground_truth": "Message Box",
+          "answer_snippet": "The relationship between **Dialog Box** and **Input Box** is that both serve as user interface elements designed to facilitate user interaction and input in applications, specifically within the conte",
+          "src": "Dialog Box",
+          "bridge": "Message Box",
+          "tgt": "Input Box"
+        },
+        {
+          "question": "How are Linux Kernel and IPv4 linked in the context of cs?",
+          "ground_truth": "Netfilter",
+          "answer_snippet": "The Linux Kernel and the IPv4 protocol are closely linked within the context of computer science, particularly in networking. Here are the key connections between them:\n\n### Integration in the Linux K",
+          "src": "Linux Kernel",
+          "bridge": "Netfilter",
+          "tgt": "IPv4"
+        }
+      ],
+      "pathrag": [
+        {
+          "question": "How are MsgBox and Access linked in the context of cs?",
+          "ground_truth": "Function Statement",
+          "answer_snippet": "The connection between **MsgBox** and **Access** revolves around their functionalities within the environment of Visual Basic for Applications (VBA). Below are several points that highlight how MsgBox",
+          "src": "MsgBox",
+          "bridge": "Function Statement",
+          "tgt": "Access"
+        },
+        {
+          "question": "Through what mechanism does Correlation Coefficient connect to Probability Density Function?",
+          "ground_truth": "Standard Normal Distribution",
+          "answer_snippet": "The relationship between the Correlation Coefficient and the Probability Density Function (PDF) is anchored in statistical analysis and the understanding of relationships between random variables. \n\n#",
+          "src": "Correlation Coefficient",
+          "bridge": "Standard Normal Distribution",
+          "tgt": "Probability Density Function"
+        },
+        {
+          "question": "How does RecordSet relate to DAO Recordset?",
+          "ground_truth": "Save Method",
+          "answer_snippet": "The relationship between **RecordSet** and **DAO Recordset** is essential for understanding how data is managed and manipulated within Microsoft Access and similar database environments. Both terms re",
+          "src": "RecordSet",
+          "bridge": "Save Method",
+          "tgt": "DAO Recordset"
+        },
+        {
+          "question": "Through what mechanism does Variant connect to ActiveWorkbook?",
+          "ground_truth": "Locals Window",
+          "answer_snippet": "The connection between `Variant` and `ActiveWorkbook` in the context of Microsoft Excel and Visual Basic for Applications (VBA) is primarily through the data manipulation and object handling capabilit",
+          "src": "Variant",
+          "bridge": "Locals Window",
+          "tgt": "ActiveWorkbook"
+        },
+        {
+          "question": "What connects SQL Server to SELECT Statement?",
+          "ground_truth": "AdventureWorks2008",
+          "answer_snippet": "## Connecting SQL Server to the SELECT Statement\n\n### Overview\n\nSQL Server is a powerful relational database management system (RDBMS) developed by Microsoft, which is essential for data management, s",
+          "src": "SQL Server",
+          "bridge": "AdventureWorks2008",
+          "tgt": "SELECT Statement"
+        },
+        {
+          "question": "What is the connection between MsgBox and Word Document?",
+          "ground_truth": "Excel",
+          "answer_snippet": "The connection between MsgBox and Word Document involves the integration of user interface elements within Microsoft Word's environment, specifically through Visual Basic for Applications (VBA). The M",
+          "src": "MsgBox",
+          "bridge": "Excel",
+          "tgt": "Word Document"
+        },
+        {
+          "question": "How does ActivePresentation relate to String?",
+          "ground_truth": "MsgBox",
+          "answer_snippet": "The ActivePresentation object in Microsoft PowerPoint serves as a central aspect of managing the currently open presentation in the application. It allows users to modify and interact with various com",
+          "src": "ActivePresentation",
+          "bridge": "MsgBox",
+          "tgt": "String"
+        },
+        {
+          "question": "What connects SQL Server to Table?",
+          "ground_truth": "Clustered Index",
+          "answer_snippet": "## Overview of SQL Server and Tables\n\nIn SQL Server, tables play a crucial role as fundamental database objects that store data in a structured format comprised of rows and columns. They are integral ",
+          "src": "SQL Server",
+          "bridge": "Clustered Index",
+          "tgt": "Table"
+        },
+        {
+          "question": "How are Database and Probability Density Function linked in the context of cs?",
+          "ground_truth": "Normalization",
+          "answer_snippet": "## Linking Database and Probability Density Function in Computer Science\n\nIn the realm of computer science, databases and probability density functions (PDFs) intersect through data management and sta",
+          "src": "Database",
+          "bridge": "Normalization",
+          "tgt": "Probability Density Function"
+        },
+        {
+          "question": "How are Mean and Population linked in the context of cs?",
+          "ground_truth": "Correlation Coefficient",
+          "answer_snippet": "### Understanding the Link Between Mean and Population in Statistics\n\nIn the realm of computer science, particularly in statistical analysis and data science, the concepts of Mean and Population are i",
+          "src": "Mean",
+          "bridge": "Correlation Coefficient",
+          "tgt": "Population"
+        },
+        {
+          "question": "What is the connection between Variable and String?",
+          "ground_truth": "Variant",
+          "answer_snippet": "The connection between the concepts of **Variable** and **String** is fundamental in programming, particularly within languages like Visual Basic for Applications (VBA) and Java. To understand their r",
+          "src": "Variable",
+          "bridge": "Variant",
+          "tgt": "String"
+        },
+        {
+          "question": "How are VBA and Array linked in the context of cs?",
+          "ground_truth": "MsgBox",
+          "answer_snippet": "### Understanding the Relationship Between VBA and Arrays\n\nVisual Basic for Applications (VBA) is a robust programming language primarily used for automating tasks within Microsoft Office applications",
+          "src": "VBA",
+          "bridge": "MsgBox",
+          "tgt": "Array"
+        },
+        {
+          "question": "How does PCF relate to For Loop?",
+          "ground_truth": "Test",
+          "answer_snippet": "## Introduction to PCF\n\nPCF, short for Programming Computable Functions, is a theoretical programming language that focuses on the expression of computations, utilizing constructs grounded in function",
+          "src": "PCF",
+          "bridge": "Test",
+          "tgt": "For Loop"
+        },
+        {
+          "question": "How does VBA relate to Table?",
+          "ground_truth": "Selection Object",
+          "answer_snippet": "### Understanding the Relationship Between VBA and Tables\n\nVisual Basic for Applications (VBA) is a powerful programming language that is primarily utilized for automating tasks within Microsoft Offic",
+          "src": "VBA",
+          "bridge": "Selection Object",
+          "tgt": "Table"
+        },
+        {
+          "question": "How are Linux Kernel and IPv4 linked in the context of cs?",
+          "ground_truth": "Netfilter",
+          "answer_snippet": "## The Relationship Between the Linux Kernel and IPv4\n\nThe Linux Kernel plays a central role in managing and facilitating networking functions within the Linux operating system. It serves as the core ",
+          "src": "Linux Kernel",
+          "bridge": "Netfilter",
+          "tgt": "IPv4"
+        }
+      ],
+      "grasp_rag": [
+        {
+          "question": "What is the connection between PointD and For Loop?",
+          "ground_truth": "Java",
+          "answer_snippet": "### Step-by-Step Reasoning Chain\n\n**Step 1 — Entity: PointD Class (class)**\n- The PointD class represents point objects that can be manipulated within a program. \n- It includes methods that allow for ",
+          "src": "PointD",
+          "bridge": "Java",
+          "tgt": "For Loop"
+        },
+        {
+          "question": "How are Database and Probability Density Function linked in the context of cs?",
+          "ground_truth": "Normalization",
+          "answer_snippet": "To analyze the connection between \"Database\" and \"Probability Density Function\" (PDF) in the context of computer science (CS), we'll trace through the reasoning chain based on the entities provided.\n\n",
+          "src": "Database",
+          "bridge": "Normalization",
+          "tgt": "Probability Density Function"
+        },
+        {
+          "question": "How are Mean and Population linked in the context of cs?",
+          "ground_truth": "Correlation Coefficient",
+          "answer_snippet": "Let's trace the connection between Mean (specifically, Population Mean) and Population step by step, using the structured reasoning provided in the context.\n\n### Step 1: Population Mean (Entity)\nThe P",
+          "src": "Mean",
+          "bridge": "Correlation Coefficient",
+          "tgt": "Population"
+        },
+        {
+          "question": "How does VBA relate to Table?",
+          "ground_truth": "Selection Object",
+          "answer_snippet": "To understand how VBA relates to Table 15.4, we can follow the structured reasoning chain step-by-step:\n\n**Step 1 — Entity: VBA (concept)**\nVBA, or Visual Basic for Applications, is a programming lang",
+          "src": "VBA",
+          "bridge": "Selection Object",
+          "tgt": "Table"
+        },
+        {
+          "question": "How are Linux Kernel and IPv4 linked in the context of cs?",
+          "ground_truth": "Netfilter",
+          "answer_snippet": "To understand how the Linux Kernel and IPv4 are linked in the context of computer science (cs), we need to follow the reasoning chain step by step from the Linux Kernel to the IPv4 Routing Subsystem.\n",
+          "src": "Linux Kernel",
+          "bridge": "Netfilter",
+          "tgt": "IPv4"
+        }
+      ]
+    },
+    "q_meta": {
+      "How does Document Object relate to DAO Recordset?": {
+        "src": "Document Object",
+        "bridge": "VBA",
+        "tgt": "DAO Recordset",
+        "ground_truth": "VBA"
+      },
+      "How does UserForm relate to Microsoft?": {
+        "src": "UserForm",
+        "bridge": "VBA",
+        "tgt": "Microsoft",
+        "ground_truth": "VBA"
+      },
+      "How are MsgBox and Access linked in the context of cs?": {
+        "src": "MsgBox",
+        "bridge": "Function Statement",
+        "tgt": "Access",
+        "ground_truth": "Function Statement"
+      },
+      "What is the connection between IPv4 and IPv4 Header?": {
+        "src": "IPv4",
+        "bridge": "IP Options",
+        "tgt": "IPv4 Header",
+        "ground_truth": "IP Options"
+      },
+      "What is the connection between RecordSet and Table?": {
+        "src": "RecordSet",
+        "bridge": "Database",
+        "tgt": "Table",
+        "ground_truth": "Database"
+      },
+      "What is the connection between Cursor and Indexes?": {
+        "src": "Cursor",
+        "bridge": "SQL Server",
+        "tgt": "Indexes",
+        "ground_truth": "SQL Server"
+      },
+      "How does Covariance Matrix relate to Binomial Distribution?": {
+        "src": "Covariance Matrix",
+        "bridge": "Mean",
+        "tgt": "Binomial Distribution",
+        "ground_truth": "Mean"
+      },
+      "Through what mechanism does Correlation Coefficient connect to Probability Density Function?": {
+        "src": "Correlation Coefficient",
+        "bridge": "Standard Normal Distribution",
+        "tgt": "Probability Density Function",
+        "ground_truth": "Standard Normal Distribution"
+      },
+      "How does User Form relate to Book Class?": {
+        "src": "User Form",
+        "bridge": "VBA",
+        "tgt": "Book Class",
+        "ground_truth": "VBA"
+      },
+      "Through what mechanism does Indexes connect to SQL Server Agent?": {
+        "src": "Indexes",
+        "bridge": "SQL Server",
+        "tgt": "SQL Server Agent",
+        "ground_truth": "SQL Server"
+      },
+      "What connects Ribbon to Application?": {
+        "src": "Ribbon",
+        "bridge": "Word",
+        "tgt": "Application",
+        "ground_truth": "Word"
+      },
+      "How does Confidence Interval relate to Probability Density Function?": {
+        "src": "Confidence Interval",
+        "bridge": "Normal Distribution",
+        "tgt": "Probability Density Function",
+        "ground_truth": "Normal Distribution"
+      },
+      "How does ActiveDocument relate to Table?": {
+        "src": "ActiveDocument",
+        "bridge": "Row",
+        "tgt": "Table",
+        "ground_truth": "Row"
+      },
+      "How does User Form relate to Message Box?": {
+        "src": "User Form",
+        "bridge": "VBA",
+        "tgt": "Message Box",
+        "ground_truth": "VBA"
+      },
+      "What is the connection between Java and Variant?": {
+        "src": "Java",
+        "bridge": "Variable",
+        "tgt": "Variant",
+        "ground_truth": "Variable"
+      },
+      "What is the connection between PointD and For Loop?": {
+        "src": "PointD",
+        "bridge": "Java",
+        "tgt": "For Loop",
+        "ground_truth": "Java"
+      },
+      "Through what mechanism does ActiveDocument connect to DAO Recordset?": {
+        "src": "ActiveDocument",
+        "bridge": "VBA",
+        "tgt": "DAO Recordset",
+        "ground_truth": "VBA"
+      },
+      "Through what mechanism does Visual Basic Editor connect to Selection Object?": {
+        "src": "Visual Basic Editor",
+        "bridge": "Word",
+        "tgt": "Selection Object",
+        "ground_truth": "Word"
+      },
+      "How does RecordSet relate to DAO Recordset?": {
+        "src": "RecordSet",
+        "bridge": "Save Method",
+        "tgt": "DAO Recordset",
+        "ground_truth": "Save Method"
+      },
+      "Through what mechanism does Variant connect to ActiveWorkbook?": {
+        "src": "Variant",
+        "bridge": "Locals Window",
+        "tgt": "ActiveWorkbook",
+        "ground_truth": "Locals Window"
+      },
+      "What is the connection between Triggers and SQL Server Management Studio?": {
+        "src": "Triggers",
+        "bridge": "SQL Server",
+        "tgt": "SQL Server Management Studio",
+        "ground_truth": "SQL Server"
+      },
+      "Through what mechanism does Visual Basic Editor connect to Office Applications?": {
+        "src": "Visual Basic Editor",
+        "bridge": "Excel",
+        "tgt": "Office Applications",
+        "ground_truth": "Excel"
+      },
+      "What connects SQL Server to SELECT Statement?": {
+        "src": "SQL Server",
+        "bridge": "AdventureWorks2008",
+        "tgt": "SELECT Statement",
+        "ground_truth": "AdventureWorks2008"
+      },
+      "What is the connection between MsgBox and Word Document?": {
+        "src": "MsgBox",
+        "bridge": "Excel",
+        "tgt": "Word Document",
+        "ground_truth": "Excel"
+      },
+      "What connects Spark to Cross-Validation?": {
+        "src": "Spark",
+        "bridge": "MLlib",
+        "tgt": "Cross-Validation",
+        "ground_truth": "MLlib"
+      },
+      "Through what mechanism does Indexes connect to Product?": {
+        "src": "Indexes",
+        "bridge": "SQL Server",
+        "tgt": "Product",
+        "ground_truth": "SQL Server"
+      },
+      "How are Excel and Message Box linked in the context of cs?": {
+        "src": "Excel",
+        "bridge": "VBA",
+        "tgt": "Message Box",
+        "ground_truth": "VBA"
+      },
+      "How does ActivePresentation relate to String?": {
+        "src": "ActivePresentation",
+        "bridge": "MsgBox",
+        "tgt": "String",
+        "ground_truth": "MsgBox"
+      },
+      "What is the connection between Probability and X?": {
+        "src": "Probability",
+        "bridge": "Expected Value",
+        "tgt": "X",
+        "ground_truth": "Expected Value"
+      },
+      "What connects SQL Server to Table?": {
+        "src": "SQL Server",
+        "bridge": "Clustered Index",
+        "tgt": "Table",
+        "ground_truth": "Clustered Index"
+      },
+      "How are Database and Probability Density Function linked in the context of cs?": {
+        "src": "Database",
+        "bridge": "Normalization",
+        "tgt": "Probability Density Function",
+        "ground_truth": "Normalization"
+      },
+      "How are Mean and Population linked in the context of cs?": {
+        "src": "Mean",
+        "bridge": "Correlation Coefficient",
+        "tgt": "Population",
+        "ground_truth": "Correlation Coefficient"
+      },
+      "What is the connection between Workbook and Macro?": {
+        "src": "Workbook",
+        "bridge": "VBA",
+        "tgt": "Macro",
+        "ground_truth": "VBA"
+      },
+      "What is the connection between Variable and String?": {
+        "src": "Variable",
+        "bridge": "Variant",
+        "tgt": "String",
+        "ground_truth": "Variant"
+      },
+      "How are VBA and Array linked in the context of cs?": {
+        "src": "VBA",
+        "bridge": "MsgBox",
+        "tgt": "Array",
+        "ground_truth": "MsgBox"
+      },
+      "How does PCF relate to For Loop?": {
+        "src": "PCF",
+        "bridge": "Test",
+        "tgt": "For Loop",
+        "ground_truth": "Test"
+      },
+      "How does VBA relate to Table?": {
+        "src": "VBA",
+        "bridge": "Selection Object",
+        "tgt": "Table",
+        "ground_truth": "Selection Object"
+      },
+      "What connects Workbook to Selection Object?": {
+        "src": "Workbook",
+        "bridge": "VBA",
+        "tgt": "Selection Object",
+        "ground_truth": "VBA"
+      },
+      "How does Dialog Box relate to Input Box?": {
+        "src": "Dialog Box",
+        "bridge": "Message Box",
+        "tgt": "Input Box",
+        "ground_truth": "Message Box"
+      },
+      "How are Linux Kernel and IPv4 linked in the context of cs?": {
+        "src": "Linux Kernel",
+        "bridge": "Netfilter",
+        "tgt": "IPv4",
+        "ground_truth": "Netfilter"
+      }
+    }
+  },
+  "legal": {
+    "results": {
+      "grasp_rag": {
+        "ber": 100.0,
+        "hit": 40,
+        "miss": 0,
+        "total": 40
+      },
+      "naive_rag": {
+        "ber": 57.49999999999999,
+        "hit": 23,
+        "miss": 17,
+        "total": 40
+      },
+      "lightrag": {
+        "ber": 72.5,
+        "hit": 29,
+        "miss": 11,
+        "total": 40
+      },
+      "pathrag": {
+        "ber": 57.49999999999999,
+        "hit": 23,
+        "miss": 17,
+        "total": 40
+      }
+    },
+    "misses": {
+      "naive_rag": [
+        {
+          "question": "How does LIBOR relate to Target Group?",
+          "ground_truth": "Interim Loan",
+          "answer_snippet": "I do not have enough information to answer that.",
+          "src": "LIBOR",
+          "bridge": "Interim Loan",
+          "tgt": "Target Group"
+        },
+        {
+          "question": "What is the connection between Dedicated Production and Parties?",
+          "ground_truth": "Shipper",
+          "answer_snippet": "Dedicated Production refers to all production that is attributable to any Dedicated Property, which includes products owned or controlled by the Producer derived from the Dedicated Properties. The rel",
+          "src": "Dedicated Production",
+          "bridge": "Shipper",
+          "tgt": "Parties"
+        },
+        {
+          "question": "What is the connection between Seller Parties and CMF?",
+          "ground_truth": "Confidential Information",
+          "answer_snippet": "The connection between the Seller Parties and the Consortium Management Firm (CMF) primarily revolves around the transactions and obligations outlined in the agreements they are engaged in, particular",
+          "src": "Seller Parties",
+          "bridge": "Confidential Information",
+          "tgt": "CMF"
+        },
+        {
+          "question": "Through what mechanism does Affiliates connect to Force Majeure?",
+          "ground_truth": "Gatherer",
+          "answer_snippet": "In the context of the agreement, the **Force Majeure** provisions specify that if a party is rendered unable to fulfill its obligations under the agreement due to circumstances beyond its control, it ",
+          "src": "Affiliates",
+          "bridge": "Gatherer",
+          "tgt": "Force Majeure"
+        },
+        {
+          "question": "How does Governmental Authority relate to Dedicated Production?",
+          "ground_truth": "Gatherer",
+          "answer_snippet": "Here's the relationship between Governmental Authority and Dedicated Production as defined in the provided context:\n\n1. **Dedicated Production Definition**: The term \"Dedicated Production\" refers to t",
+          "src": "Governmental Authority",
+          "bridge": "Gatherer",
+          "tgt": "Dedicated Production"
+        },
+        {
+          "question": "How does Securities Act relate to Funding Commencement Date?",
+          "ground_truth": "Company",
+          "answer_snippet": "I do not have enough information to answer.",
+          "src": "Securities Act",
+          "bridge": "Company",
+          "tgt": "Funding Commencement Date"
+        },
+        {
+          "question": "What is the connection between Producer and The Company?",
+          "ground_truth": "Governmental Authority",
+          "answer_snippet": "The provided context does not include specific details regarding the connection between \"Producer\" and \"The Company.\" Therefore, I do not have enough information to answer your question.",
+          "src": "Producer",
+          "bridge": "Governmental Authority",
+          "tgt": "The Company"
+        },
+        {
+          "question": "What is the connection between Seller and Transfer?",
+          "ground_truth": "Governmental Authority",
+          "answer_snippet": "The connection between the Seller and Transfer is defined in the context of the Sale and Servicing Agreement. Here are the key points regarding this relationship:\n\n1. **Sale and Assignment**: The Sell",
+          "src": "Seller",
+          "bridge": "Governmental Authority",
+          "tgt": "Transfer"
+        },
+        {
+          "question": "Through what mechanism does Company connect to PAH?",
+          "ground_truth": "Agreement",
+          "answer_snippet": "I do not have enough information to answer your question regarding the mechanism through which Company connects to PAH.",
+          "src": "Company",
+          "bridge": "Agreement",
+          "tgt": "PAH"
+        },
+        {
+          "question": "Through what mechanism does Deutsche Bank AG, London Branch connect to JPMorgan Chase Bank, N.A.?",
+          "ground_truth": "UK Interim Cash Confirmation Bridge Facility",
+          "answer_snippet": "I do not have enough information to answer your query regarding the mechanism through which Deutsche Bank AG, London Branch connects to JPMorgan Chase Bank, N.A.",
+          "src": "Deutsche Bank AG, London Branch",
+          "bridge": "UK Interim Cash Confirmation Bridge Facility",
+          "tgt": "JPMorgan Chase Bank, N.A."
+        },
+        {
+          "question": "What connects Parties to Measurement Facilities?",
+          "ground_truth": "Shipper",
+          "answer_snippet": "Parties to the agreement are connected to Measurement Facilities through various rights and duties regarding the construction, ownership, operation, and maintenance of Measurement Devices. Here are th",
+          "src": "Parties",
+          "bridge": "Shipper",
+          "tgt": "Measurement Facilities"
+        },
+        {
+          "question": "What connects Original Producer to Gas?",
+          "ground_truth": "Midstream Co",
+          "answer_snippet": "The connection between Original Producer and Gas is established through various agreements and operational frameworks as defined in the context of the petroleum industry, particularly in a gathering s",
+          "src": "Original Producer",
+          "bridge": "Midstream Co",
+          "tgt": "Gas"
+        },
+        {
+          "question": "How are Interim Security Agent and Interest Period linked in the context of legal?",
+          "ground_truth": "Interim Facility Agent",
+          "answer_snippet": "In the context of the legal documents provided, the **Interim Security Agent** is involved in the enforcement and management of security interests created under the Interim Security Documents. The rol",
+          "src": "Interim Security Agent",
+          "bridge": "Interim Facility Agent",
+          "tgt": "Interest Period"
+        },
+        {
+          "question": "How does Existing Interim Lender relate to Original Interim Lenders?",
+          "ground_truth": "Interim Facility Agent",
+          "answer_snippet": "The terms \"Existing Interim Lender\" and \"Original Interim Lender\" refer to different roles within the context of the Interim Finance Documents. Here’s how they relate:\n\n1. **Definition of Roles**:\n   ",
+          "src": "Existing Interim Lender",
+          "bridge": "Interim Facility Agent",
+          "tgt": "Original Interim Lenders"
+        },
+        {
+          "question": "What is the connection between Interest Rate and Dedicated Properties?",
+          "ground_truth": "Producer",
+          "answer_snippet": "The provided context contains definitions and explanations regarding various financial terms, but it does not specify any direct connection between \"Interest Rate\" and \"Dedicated Properties.\" \n\nIn gen",
+          "src": "Interest Rate",
+          "bridge": "Producer",
+          "tgt": "Dedicated Properties"
+        },
+        {
+          "question": "How does Servicer relate to DTC?",
+          "ground_truth": "Seller",
+          "answer_snippet": "The Servicer has specific roles and responsibilities related to the management of the Receivables and their associated accounts, while the Depository Trust Company (DTC) serves as the initial Clearing",
+          "src": "Servicer",
+          "bridge": "Seller",
+          "tgt": "DTC"
+        },
+        {
+          "question": "What connects Midstream Co to Claiming Party?",
+          "ground_truth": "Force Majeure",
+          "answer_snippet": "The connection between Midstream Co and the Claiming Party arises from the provisions related to indemnification and liability in the agreement. Specifically, each party, including Midstream Co and th",
+          "src": "Midstream Co",
+          "bridge": "Force Majeure",
+          "tgt": "Claiming Party"
+        }
+      ],
+      "lightrag": [
+        {
+          "question": "What is the connection between Seller Parties and CMF?",
+          "ground_truth": "Confidential Information",
+          "answer_snippet": "The connection between Seller Parties and CMF (Consortium Management Firm) is defined within the framework of their obligations and interactions related to the transactions outlined in their respectiv",
+          "src": "Seller Parties",
+          "bridge": "Confidential Information",
+          "tgt": "CMF"
+        },
+        {
+          "question": "Through what mechanism does Affiliates connect to Force Majeure?",
+          "ground_truth": "Gatherer",
+          "answer_snippet": "Affiliates connect to Force Majeure primarily through the obligations defined in agreements related to the parties involved, such as the Company and its Affiliates, in the context of contractual commi",
+          "src": "Affiliates",
+          "bridge": "Gatherer",
+          "tgt": "Force Majeure"
+        },
+        {
+          "question": "How does Governmental Authority relate to Dedicated Production?",
+          "ground_truth": "Gatherer",
+          "answer_snippet": "The Governmental Authority plays a crucial role in regulating activities related to Dedicated Production, particularly in the context of compliance and obtaining necessary permits and approvals. Here ",
+          "src": "Governmental Authority",
+          "bridge": "Gatherer",
+          "tgt": "Dedicated Production"
+        },
+        {
+          "question": "What is the connection between Producer and The Company?",
+          "ground_truth": "Governmental Authority",
+          "answer_snippet": "The connection between Producer and The Company encompasses several aspects of operational and contractual relationships. Here are the key points of their relationship:\n\n1. **Operational Responsibilit",
+          "src": "Producer",
+          "bridge": "Governmental Authority",
+          "tgt": "The Company"
+        },
+        {
+          "question": "What is the connection between Seller and Transfer?",
+          "ground_truth": "Governmental Authority",
+          "answer_snippet": "The connection between the **Seller** and **Transfer** is primarily related to the process of selling, assigning, or disposing of rights and interests. Specifically, the **Seller** is involved in the ",
+          "src": "Seller",
+          "bridge": "Governmental Authority",
+          "tgt": "Transfer"
+        },
+        {
+          "question": "Through what mechanism does Agreement connect to Project Agreement?",
+          "ground_truth": "MCDC",
+          "answer_snippet": "The **Agreement** connects to the **Project Agreement** through the role and responsibilities of the **Project Agreement Holder (PAH)**, which operates under the framework defined by the Agreement. Th",
+          "src": "Agreement",
+          "bridge": "MCDC",
+          "tgt": "Project Agreement"
+        },
+        {
+          "question": "What connects Parties to Measurement Facilities?",
+          "ground_truth": "Shipper",
+          "answer_snippet": "Parties are connected to Measurement Facilities through their contractual obligations and responsibilities as outlined in various sections of relevant agreements. Specifically, here are the key connec",
+          "src": "Parties",
+          "bridge": "Shipper",
+          "tgt": "Measurement Facilities"
+        },
+        {
+          "question": "How does Existing Interim Lender relate to Original Interim Lenders?",
+          "ground_truth": "Interim Facility Agent",
+          "answer_snippet": "The **Existing Interim Lender** and **Original Interim Lenders** are both entities involved in the financial arrangements outlined in the **Interim Finance Documents**. Their relationship can be under",
+          "src": "Existing Interim Lender",
+          "bridge": "Interim Facility Agent",
+          "tgt": "Original Interim Lenders"
+        },
+        {
+          "question": "How are UK Interim Asset Sale Bridge Facility and Interim Finance Parties linked in the context of legal?",
+          "ground_truth": "Deutsche Bank AG, London Branch",
+          "answer_snippet": "The **UK Interim Asset Sale Bridge Facility** and **Interim Finance Parties** are closely linked through the framework of legal agreements and financial obligations as outlined in the Interim Finance ",
+          "src": "UK Interim Asset Sale Bridge Facility",
+          "bridge": "Deutsche Bank AG, London Branch",
+          "tgt": "Interim Finance Parties"
+        },
+        {
+          "question": "How does Servicer relate to DTC?",
+          "ground_truth": "Seller",
+          "answer_snippet": "The Servicer has a relationship with the Depository Trust Company (DTC) primarily in the context of managing receivables and executing certain obligations associated with the financial agreements. Her",
+          "src": "Servicer",
+          "bridge": "Seller",
+          "tgt": "DTC"
+        },
+        {
+          "question": "What connects Midstream Co to Claiming Party?",
+          "ground_truth": "Force Majeure",
+          "answer_snippet": "I do not have enough information to answer.",
+          "src": "Midstream Co",
+          "bridge": "Force Majeure",
+          "tgt": "Claiming Party"
+        }
+      ],
+      "pathrag": [
+        {
+          "question": "What is the connection between Seller Parties and CMF?",
+          "ground_truth": "Confidential Information",
+          "answer_snippet": "The connection between Seller Parties and CMF can be analyzed through their roles within the context of agreements related to financial transactions and operational responsibilities.\n\n### Seller Parti",
+          "src": "Seller Parties",
+          "bridge": "Confidential Information",
+          "tgt": "CMF"
+        },
+        {
+          "question": "Through what mechanism does Affiliates connect to Force Majeure?",
+          "ground_truth": "Gatherer",
+          "answer_snippet": "### Affiliates and Force Majeure\n\nThe connection between Affiliates and Force Majeure is established through the implications of unforeseen events that disrupt the fulfillment of obligations by variou",
+          "src": "Affiliates",
+          "bridge": "Gatherer",
+          "tgt": "Force Majeure"
+        },
+        {
+          "question": "How does Governmental Authority relate to Dedicated Production?",
+          "ground_truth": "Gatherer",
+          "answer_snippet": "### Understanding the Relationship between Governmental Authority and Dedicated Production\n\nGovernmental Authority plays a critical role in regulating and overseeing various sectors, including the oil",
+          "src": "Governmental Authority",
+          "bridge": "Gatherer",
+          "tgt": "Dedicated Production"
+        },
+        {
+          "question": "What is the connection between Producer and The Company?",
+          "ground_truth": "Governmental Authority",
+          "answer_snippet": "The connection between the Producer and The Company is fundamentally rooted in the operational and contractual frameworks that govern their respective roles in the energy sector, specifically concerni",
+          "src": "Producer",
+          "bridge": "Governmental Authority",
+          "tgt": "The Company"
+        },
+        {
+          "question": "What is the connection between Seller and Transfer?",
+          "ground_truth": "Governmental Authority",
+          "answer_snippet": "The connection between the **Seller** and **Transfer** revolves around the act of transferring ownership rights or interests in certain assets or membership interests as defined by legal agreements. T",
+          "src": "Seller",
+          "bridge": "Governmental Authority",
+          "tgt": "Transfer"
+        },
+        {
+          "question": "Through what mechanism does Agreement connect to Project Agreement?",
+          "ground_truth": "MCDC",
+          "answer_snippet": "The mechanisms connecting the **Agreement** to the **Project Agreement** involve the defined relationships and regulatory frameworks that govern the interactions and responsibilities of the parties in",
+          "src": "Agreement",
+          "bridge": "MCDC",
+          "tgt": "Project Agreement"
+        },
+        {
+          "question": "Through what mechanism does Interim Facility Agent connect to LIBOR Advances?",
+          "ground_truth": "Interest Period",
+          "answer_snippet": "### Overview of the Interim Facility Agent's Role\n\nThe **Interim Facility Agent** plays a significant role in the management and oversight of interim financing arrangements, particularly concerning **",
+          "src": "Interim Facility Agent",
+          "bridge": "Interest Period",
+          "tgt": "LIBOR Advances"
+        },
+        {
+          "question": "How does Requesting Party relate to Business Day?",
+          "ground_truth": "Indenture Trustee",
+          "answer_snippet": "### Relationship between Requesting Party and Business Day\n\nThe relationship between the Requesting Party and Business Day is primarily concerned with the timing and scheduling of communications and a",
+          "src": "Requesting Party",
+          "bridge": "Indenture Trustee",
+          "tgt": "Business Day"
+        },
+        {
+          "question": "Through what mechanism does Deutsche Bank AG, London Branch connect to JPMorgan Chase Bank, N.A.?",
+          "ground_truth": "UK Interim Cash Confirmation Bridge Facility",
+          "answer_snippet": "Deutsche Bank AG, London Branch connects to JPMorgan Chase Bank, N.A. primarily through the role of arranger in financing agreements. Both institutions collaborate as Original Interim Lenders, providi",
+          "src": "Deutsche Bank AG, London Branch",
+          "bridge": "UK Interim Cash Confirmation Bridge Facility",
+          "tgt": "JPMorgan Chase Bank, N.A."
+        },
+        {
+          "question": "What connects Parties to Measurement Facilities?",
+          "ground_truth": "Shipper",
+          "answer_snippet": "In the context of the operational framework defined by various agreements, the connection between Parties and Measurement Facilities can be understood through several key aspects that highlight their ",
+          "src": "Parties",
+          "bridge": "Shipper",
+          "tgt": "Measurement Facilities"
+        },
+        {
+          "question": "Through what mechanism does Gathering System connect to Affiliates?",
+          "ground_truth": "Shipper",
+          "answer_snippet": "### Introduction to the Gathering System\n\nThe Gathering System is a comprehensive network essential for transporting gas and liquids produced from various wells to designated delivery points. This sys",
+          "src": "Gathering System",
+          "bridge": "Shipper",
+          "tgt": "Affiliates"
+        },
+        {
+          "question": "How are Interim Security Agent and Interest Period linked in the context of legal?",
+          "ground_truth": "Interim Facility Agent",
+          "answer_snippet": "In the realm of financial agreements and legal frameworks, the connection between the Interim Security Agent and the Interest Period is critical, especially concerning the management of financial tran",
+          "src": "Interim Security Agent",
+          "bridge": "Interim Facility Agent",
+          "tgt": "Interest Period"
+        },
+        {
+          "question": "How does Existing Interim Lender relate to Original Interim Lenders?",
+          "ground_truth": "Interim Facility Agent",
+          "answer_snippet": "## Relationship Between Existing Interim Lender and Original Interim Lenders\n\n### Definition of Key Entities\nThe **Existing Interim Lender** is defined as the current lender holding rights and obligat",
+          "src": "Existing Interim Lender",
+          "bridge": "Interim Facility Agent",
+          "tgt": "Original Interim Lenders"
+        },
+        {
+          "question": "What is the connection between Company and Ambler Metals LLC?",
+          "ground_truth": "South32",
+          "answer_snippet": "The connection between the Company and Ambler Metals LLC is rooted in both their operational structure and legal framework. Ambler Metals LLC is specifically described as a Delaware limited liability ",
+          "src": "Company",
+          "bridge": "South32",
+          "tgt": "Ambler Metals LLC"
+        },
+        {
+          "question": "How are UK Interim Asset Sale Bridge Facility and Interim Finance Parties linked in the context of legal?",
+          "ground_truth": "Deutsche Bank AG, London Branch",
+          "answer_snippet": "In the context of legal and financial agreements, the relationship between the UK Interim Asset Sale Bridge Facility and the Interim Finance Parties is essential for understanding the structure of tem",
+          "src": "UK Interim Asset Sale Bridge Facility",
+          "bridge": "Deutsche Bank AG, London Branch",
+          "tgt": "Interim Finance Parties"
+        },
+        {
+          "question": "How does Servicer relate to DTC?",
+          "ground_truth": "Seller",
+          "answer_snippet": "The relationship between the Servicer and the Depository Trust Company (DTC) is primarily established through the framework of securities transactions and custodial arrangements. While the specific na",
+          "src": "Servicer",
+          "bridge": "Seller",
+          "tgt": "DTC"
+        },
+        {
+          "question": "What connects Midstream Co to Claiming Party?",
+          "ground_truth": "Force Majeure",
+          "answer_snippet": "The relationship between Midstream Co and the Claiming Party is characterized by financial interactions and obligations outlined in the context of the agreements they are involved in. \n\n### Context of",
+          "src": "Midstream Co",
+          "bridge": "Force Majeure",
+          "tgt": "Claiming Party"
+        }
+      ]
+    },
+    "q_meta": {
+      "How does Agreement relate to Gathering System?": {
+        "src": "Agreement",
+        "bridge": "Shipper",
+        "tgt": "Gathering System",
+        "ground_truth": "Shipper"
+      },
+      "How does LIBOR relate to Target Group?": {
+        "src": "LIBOR",
+        "bridge": "Interim Loan",
+        "tgt": "Target Group",
+        "ground_truth": "Interim Loan"
+      },
+      "How are CMF and Advanced Technology International linked in the context of legal?": {
+        "src": "CMF",
+        "bridge": "MCDC",
+        "tgt": "Advanced Technology International",
+        "ground_truth": "MCDC"
+      },
+      "What is the connection between Dedicated Production and Parties?": {
+        "src": "Dedicated Production",
+        "bridge": "Shipper",
+        "tgt": "Parties",
+        "ground_truth": "Shipper"
+      },
+      "What is the connection between Owner Trustee and Banco Santander, S.A.?": {
+        "src": "Owner Trustee",
+        "bridge": "Seller",
+        "tgt": "Banco Santander, S.A.",
+        "ground_truth": "Seller"
+      },
+      "What is the connection between Seller Parties and CMF?": {
+        "src": "Seller Parties",
+        "bridge": "Confidential Information",
+        "tgt": "CMF",
+        "ground_truth": "Confidential Information"
+      },
+      "How does Midstream Co relate to Seller Parties?": {
+        "src": "Midstream Co",
+        "bridge": "Agreement",
+        "tgt": "Seller Parties",
+        "ground_truth": "Agreement"
+      },
+      "Through what mechanism does Affiliates connect to Force Majeure?": {
+        "src": "Affiliates",
+        "bridge": "Gatherer",
+        "tgt": "Force Majeure",
+        "ground_truth": "Gatherer"
+      },
+      "How does Governmental Authority relate to Dedicated Production?": {
+        "src": "Governmental Authority",
+        "bridge": "Gatherer",
+        "tgt": "Dedicated Production",
+        "ground_truth": "Gatherer"
+      },
+      "Through what mechanism does Cash Management Services connect to Loan Documents?": {
+        "src": "Cash Management Services",
+        "bridge": "Bank",
+        "tgt": "Loan Documents",
+        "ground_truth": "Bank"
+      },
+      "What connects Novavax to Novavax, Inc.?": {
+        "src": "Novavax",
+        "bridge": "NVX-CoV-2373",
+        "tgt": "Novavax, Inc.",
+        "ground_truth": "NVX-CoV-2373"
+      },
+      "How does Government relate to Contemplated Transactions?": {
+        "src": "Government",
+        "bridge": "Agreement",
+        "tgt": "Contemplated Transactions",
+        "ground_truth": "Agreement"
+      },
+      "How does Securities Act relate to Funding Commencement Date?": {
+        "src": "Securities Act",
+        "bridge": "Company",
+        "tgt": "Funding Commencement Date",
+        "ground_truth": "Company"
+      },
+      "How does Seller relate to Wells Fargo Bank, National Association?": {
+        "src": "Seller",
+        "bridge": "Issuer",
+        "tgt": "Wells Fargo Bank, National Association",
+        "ground_truth": "Issuer"
+      },
+      "What is the connection between Producer and The Company?": {
+        "src": "Producer",
+        "bridge": "Governmental Authority",
+        "tgt": "The Company",
+        "ground_truth": "Governmental Authority"
+      },
+      "What is the connection between Seller and Transfer?": {
+        "src": "Seller",
+        "bridge": "Governmental Authority",
+        "tgt": "Transfer",
+        "ground_truth": "Governmental Authority"
+      },
+      "Through what mechanism does Agreement connect to Project Agreement?": {
+        "src": "Agreement",
+        "bridge": "MCDC",
+        "tgt": "Project Agreement",
+        "ground_truth": "MCDC"
+      },
+      "Through what mechanism does Interim Facility Agent connect to LIBOR Advances?": {
+        "src": "Interim Facility Agent",
+        "bridge": "Interest Period",
+        "tgt": "LIBOR Advances",
+        "ground_truth": "Interest Period"
+      },
+      "How does Requesting Party relate to Business Day?": {
+        "src": "Requesting Party",
+        "bridge": "Indenture Trustee",
+        "tgt": "Business Day",
+        "ground_truth": "Indenture Trustee"
+      },
+      "Through what mechanism does Company connect to PAH?": {
+        "src": "Company",
+        "bridge": "Agreement",
+        "tgt": "PAH",
+        "ground_truth": "Agreement"
+      },
+      "What is the connection between Force Majeure and Delivery Points?": {
+        "src": "Force Majeure",
+        "bridge": "Gatherer",
+        "tgt": "Delivery Points",
+        "ground_truth": "Gatherer"
+      },
+      "Through what mechanism does Deutsche Bank AG, London Branch connect to JPMorgan Chase Bank, N.A.?": {
+        "src": "Deutsche Bank AG, London Branch",
+        "bridge": "UK Interim Cash Confirmation Bridge Facility",
+        "tgt": "JPMorgan Chase Bank, N.A.",
+        "ground_truth": "UK Interim Cash Confirmation Bridge Facility"
+      },
+      "What connects Parties to Measurement Facilities?": {
+        "src": "Parties",
+        "bridge": "Shipper",
+        "tgt": "Measurement Facilities",
+        "ground_truth": "Shipper"
+      },
+      "What is the connection between Interest Rate and Interest Period?": {
+        "src": "Interest Rate",
+        "bridge": "LIBOR",
+        "tgt": "Interest Period",
+        "ground_truth": "LIBOR"
+      },
+      "What connects Original Producer to Gas?": {
+        "src": "Original Producer",
+        "bridge": "Midstream Co",
+        "tgt": "Gas",
+        "ground_truth": "Midstream Co"
+      },
+      "Through what mechanism does Gathering System connect to Affiliates?": {
+        "src": "Gathering System",
+        "bridge": "Shipper",
+        "tgt": "Affiliates",
+        "ground_truth": "Shipper"
+      },
+      "How are Interim Security Agent and Interest Period linked in the context of legal?": {
+        "src": "Interim Security Agent",
+        "bridge": "Interim Facility Agent",
+        "tgt": "Interest Period",
+        "ground_truth": "Interim Facility Agent"
+      },
+      "How does Existing Interim Lender relate to Original Interim Lenders?": {
+        "src": "Existing Interim Lender",
+        "bridge": "Interim Facility Agent",
+        "tgt": "Original Interim Lenders",
+        "ground_truth": "Interim Facility Agent"
+      },
+      "What is the connection between Original Producer and Force Majeure?": {
+        "src": "Original Producer",
+        "bridge": "Producer",
+        "tgt": "Force Majeure",
+        "ground_truth": "Producer"
+      },
+      "What connects Interim Facility Agent to Target Group?": {
+        "src": "Interim Facility Agent",
+        "bridge": "Interim Loan",
+        "tgt": "Target Group",
+        "ground_truth": "Interim Loan"
+      },
+      "How are MCDC and Novavax, Inc. linked in the context of legal?": {
+        "src": "MCDC",
+        "bridge": "Project Agreement",
+        "tgt": "Novavax, Inc.",
+        "ground_truth": "Project Agreement"
+      },
+      "How are Santander Consumer and Financed Vehicle linked in the context of legal?": {
+        "src": "Santander Consumer",
+        "bridge": "Servicer",
+        "tgt": "Financed Vehicle",
+        "ground_truth": "Servicer"
+      },
+      "What is the connection between Interest Rate and Dedicated Properties?": {
+        "src": "Interest Rate",
+        "bridge": "Producer",
+        "tgt": "Dedicated Properties",
+        "ground_truth": "Producer"
+      },
+      "What is the connection between Company and Ambler Metals LLC?": {
+        "src": "Company",
+        "bridge": "South32",
+        "tgt": "Ambler Metals LLC",
+        "ground_truth": "South32"
+      },
+      "How are UK Interim Asset Sale Bridge Facility and Interim Finance Parties linked in the context of legal?": {
+        "src": "UK Interim Asset Sale Bridge Facility",
+        "bridge": "Deutsche Bank AG, London Branch",
+        "tgt": "Interim Finance Parties",
+        "ground_truth": "Deutsche Bank AG, London Branch"
+      },
+      "How does Agreement relate to ACC-NJ?": {
+        "src": "Agreement",
+        "bridge": "MCDC",
+        "tgt": "ACC-NJ",
+        "ground_truth": "MCDC"
+      },
+      "How does Servicer relate to DTC?": {
+        "src": "Servicer",
+        "bridge": "Seller",
+        "tgt": "DTC",
+        "ground_truth": "Seller"
+      },
+      "What connects Midstream Co to Claiming Party?": {
+        "src": "Midstream Co",
+        "bridge": "Force Majeure",
+        "tgt": "Claiming Party",
+        "ground_truth": "Force Majeure"
+      },
+      "How does OpCo relate to Parties?": {
+        "src": "OpCo",
+        "bridge": "Agreement",
+        "tgt": "Parties",
+        "ground_truth": "Agreement"
+      },
+      "How are Planned Well Pad and Delivery Point linked in the context of legal?": {
+        "src": "Planned Well Pad",
+        "bridge": "Shipper",
+        "tgt": "Delivery Point",
+        "ground_truth": "Shipper"
+      }
+    }
+  },
+  "mix": {
+    "results": {
+      "grasp_rag": {
+        "ber": 100.0,
+        "hit": 40,
+        "miss": 0,
+        "total": 40
+      },
+      "naive_rag": {
+        "ber": 85.0,
+        "hit": 34,
+        "miss": 6,
+        "total": 40
+      },
+      "lightrag": {
+        "ber": 97.5,
+        "hit": 39,
+        "miss": 1,
+        "total": 40
+      },
+      "pathrag": {
+        "ber": 92.5,
+        "hit": 37,
+        "miss": 3,
+        "total": 40
+      }
+    },
+    "misses": {
+      "naive_rag": [
+        {
+          "question": "What is the connection between Media and Opaque Medium?",
+          "ground_truth": "Reconstruction Problem",
+          "answer_snippet": "The connection between media and an opaque medium relates to how light behaves when interacting with materials that do not allow for clear transmission of electromagnetic waves. Opaque media obstruct ",
+          "src": "Media",
+          "bridge": "Reconstruction Problem",
+          "tgt": "Opaque Medium"
+        },
+        {
+          "question": "What is the connection between Opaque Medium and Disordered Optical Fiber?",
+          "ground_truth": "Reconstruction Problem",
+          "answer_snippet": "The connection between opaque media and disordered optical fibers is centered around the behavior of light propagation through these materials. Both situations involve light interacting with media tha",
+          "src": "Opaque Medium",
+          "bridge": "Reconstruction Problem",
+          "tgt": "Disordered Optical Fiber"
+        },
+        {
+          "question": "How does Fig. 1 relate to l2 Regularization?",
+          "ground_truth": "PLM",
+          "answer_snippet": "The given context does not provide specific information about Fig. 1 or its relation to \\( l_2 \\) Regularization. Consequently, I do not have enough information to answer your query regarding the rela",
+          "src": "Fig. 1",
+          "bridge": "PLM",
+          "tgt": "l2 Regularization"
+        },
+        {
+          "question": "Through what mechanism does XY Model connect to Monte-Carlo Simulations?",
+          "ground_truth": "PLM with Decimation",
+          "answer_snippet": "The connection between the XY model and Monte Carlo simulations is primarily established through statistical inference and the analysis of system dynamics. Here’s how they are linked:\n\n1. **Definition",
+          "src": "XY Model",
+          "bridge": "PLM with Decimation",
+          "tgt": "Monte-Carlo Simulations"
+        },
+        {
+          "question": "How are Generalized Pole-Residue Method and Proposed Method linked in the context of mix?",
+          "ground_truth": "Nonlinear Oscillator",
+          "answer_snippet": "The **Generalized Pole-Residue Method** relates closely to the **Proposed Method** in the context of analyzing nonlinear systems, particularly through the application of Volterra series. Below is a su",
+          "src": "Generalized Pole-Residue Method",
+          "bridge": "Nonlinear Oscillator",
+          "tgt": "Proposed Method"
+        },
+        {
+          "question": "What connects 100m Sprint Record to Inverse Ising Problem?",
+          "ground_truth": "PLM",
+          "answer_snippet": "I do not have enough information to answer.",
+          "src": "100m Sprint Record",
+          "bridge": "PLM",
+          "tgt": "Inverse Ising Problem"
+        }
+      ],
+      "pathrag": [
+        {
+          "question": "What is the connection between Media and Opaque Medium?",
+          "ground_truth": "Reconstruction Problem",
+          "answer_snippet": "The connection between Media and Opaque Medium revolves around the context of optical reconstruction and communication. In optical physics, \"Media\" refers to the various channels of communication, inc",
+          "src": "Media",
+          "bridge": "Reconstruction Problem",
+          "tgt": "Opaque Medium"
+        },
+        {
+          "question": "Through what mechanism does Inverse Ising Problem connect to Fig. 1?",
+          "ground_truth": "PLM",
+          "answer_snippet": "### The Inverse Ising Problem and Its Connection to Fig. 1\n\nThe **Inverse Ising Problem** is a significant challenge in statistical physics, where the goal is to infer interactions or coupling coeffic",
+          "src": "Inverse Ising Problem",
+          "bridge": "PLM",
+          "tgt": "Fig. 1"
+        },
+        {
+          "question": "How are Generalized Pole-Residue Method and Proposed Method linked in the context of mix?",
+          "ground_truth": "Nonlinear Oscillator",
+          "answer_snippet": "The **Generalized Pole-Residue Method** and the **Proposed Method** are interconnected through their applications in analyzing nonlinear systems, particularly within dynamic analysis. Both methods lev",
+          "src": "Generalized Pole-Residue Method",
+          "bridge": "Nonlinear Oscillator",
+          "tgt": "Proposed Method"
+        }
+      ],
+      "lightrag": [
+        {
+          "question": "Through what mechanism does XY Model connect to Monte-Carlo Simulations?",
+          "ground_truth": "PLM with Decimation",
+          "answer_snippet": "The XY Model connects to Monte Carlo Simulations through a method of generating thermalized data for analyzing its properties and interactions. Specifically, Monte Carlo Simulations are used to model ",
+          "src": "XY Model",
+          "bridge": "PLM with Decimation",
+          "tgt": "Monte-Carlo Simulations"
+        }
+      ]
+    },
+    "q_meta": {
+      "How does Big Tex relate to PBR?": {
+        "src": "Big Tex",
+        "bridge": "Bones",
+        "tgt": "PBR",
+        "ground_truth": "Bones"
+      },
+      "How does Josephson Junction Arrays relate to Starlings Flocks?": {
+        "src": "Josephson Junction Arrays",
+        "bridge": "XY Model",
+        "tgt": "Starlings Flocks",
+        "ground_truth": "XY Model"
+      },
+      "How are XY Model and Sparse Interactions linked in the context of mix?": {
+        "src": "XY Model",
+        "bridge": "PLM Method",
+        "tgt": "Sparse Interactions",
+        "ground_truth": "PLM Method"
+      },
+      "What is the connection between Outgoing Fields and Scattering Matrix?": {
+        "src": "Outgoing Fields",
+        "bridge": "Transmission Matrix",
+        "tgt": "Scattering Matrix",
+        "ground_truth": "Transmission Matrix"
+      },
+      "What is the connection between PLM with Decimation and Kuramoto Model?": {
+        "src": "PLM with Decimation",
+        "bridge": "XY Model",
+        "tgt": "Kuramoto Model",
+        "ground_truth": "XY Model"
+      },
+      "What is the connection between Media and Opaque Medium?": {
+        "src": "Media",
+        "bridge": "Reconstruction Problem",
+        "tgt": "Opaque Medium",
+        "ground_truth": "Reconstruction Problem"
+      },
+      "How does Coupling Matrices relate to Kuramoto Model?": {
+        "src": "Coupling Matrices",
+        "bridge": "XY Model",
+        "tgt": "Kuramoto Model",
+        "ground_truth": "XY Model"
+      },
+      "Through what mechanism does Reconstruction Error connect to Exchange Monte Carlo?": {
+        "src": "Reconstruction Error",
+        "bridge": "XY Model",
+        "tgt": "Exchange Monte Carlo",
+        "ground_truth": "XY Model"
+      },
+      "How does Kuramoto Model relate to Josephson Junction Arrays?": {
+        "src": "Kuramoto Model",
+        "bridge": "XY Model",
+        "tgt": "Josephson Junction Arrays",
+        "ground_truth": "XY Model"
+      },
+      "Through what mechanism does Inverse Ising Problem connect to Fig. 1?": {
+        "src": "Inverse Ising Problem",
+        "bridge": "PLM",
+        "tgt": "Fig. 1",
+        "ground_truth": "PLM"
+      },
+      "What connects Incoming Fields to Outgoing Fields?": {
+        "src": "Incoming Fields",
+        "bridge": "Transmission Matrix",
+        "tgt": "Outgoing Fields",
+        "ground_truth": "Transmission Matrix"
+      },
+      "How does PLM Method relate to Complex-Valued Couplings?": {
+        "src": "PLM Method",
+        "bridge": "XY Model",
+        "tgt": "Complex-Valued Couplings",
+        "ground_truth": "XY Model"
+      },
+      "How does Coupling Matrices relate to Couplings?": {
+        "src": "Coupling Matrices",
+        "bridge": "XY Model",
+        "tgt": "Couplings",
+        "ground_truth": "XY Model"
+      },
+      "How does Coupling Matrices relate to Intensities?": {
+        "src": "Coupling Matrices",
+        "bridge": "XY Model",
+        "tgt": "Intensities",
+        "ground_truth": "XY Model"
+      },
+      "What is the connection between Opaque Medium and Disordered Optical Fiber?": {
+        "src": "Opaque Medium",
+        "bridge": "Reconstruction Problem",
+        "tgt": "Disordered Optical Fiber",
+        "ground_truth": "Reconstruction Problem"
+      },
+      "What is the connection between Sparse Interactions and Mean-Field Technique?": {
+        "src": "Sparse Interactions",
+        "bridge": "PLM Method",
+        "tgt": "Mean-Field Technique",
+        "ground_truth": "PLM Method"
+      },
+      "Through what mechanism does Pseudolikelihood Maximization connect to Matrix U?": {
+        "src": "Pseudolikelihood Maximization",
+        "bridge": "Hamiltonian",
+        "tgt": "Matrix U",
+        "ground_truth": "Hamiltonian"
+      },
+      "Through what mechanism does Coupling Matrices connect to 2D Lattice?": {
+        "src": "Coupling Matrices",
+        "bridge": "XY Model",
+        "tgt": "2D Lattice",
+        "ground_truth": "XY Model"
+      },
+      "How does Fig. 1 relate to l2 Regularization?": {
+        "src": "Fig. 1",
+        "bridge": "PLM",
+        "tgt": "l2 Regularization",
+        "ground_truth": "PLM"
+      },
+      "Through what mechanism does Coupling Matrices connect to PLM-l2?": {
+        "src": "Coupling Matrices",
+        "bridge": "XY Model",
+        "tgt": "PLM-l2",
+        "ground_truth": "XY Model"
+      },
+      "What is the connection between Exchange Monte Carlo and Intensities?": {
+        "src": "Exchange Monte Carlo",
+        "bridge": "XY Model",
+        "tgt": "Intensities",
+        "ground_truth": "XY Model"
+      },
+      "Through what mechanism does XY Model connect to Monte-Carlo Simulations?": {
+        "src": "XY Model",
+        "bridge": "PLM with Decimation",
+        "tgt": "Monte-Carlo Simulations",
+        "ground_truth": "PLM with Decimation"
+      },
+      "What connects PLM with Decimation to Coupling Reconstruction?": {
+        "src": "PLM with Decimation",
+        "bridge": "XY Model",
+        "tgt": "Coupling Reconstruction",
+        "ground_truth": "XY Model"
+      },
+      "What is the connection between Hamiltonian and Reconstruction Error?": {
+        "src": "Hamiltonian",
+        "bridge": "XY Model",
+        "tgt": "Reconstruction Error",
+        "ground_truth": "XY Model"
+      },
+      "What connects PLM-l2 to 2D Lattice?": {
+        "src": "PLM-l2",
+        "bridge": "XY Model",
+        "tgt": "2D Lattice",
+        "ground_truth": "XY Model"
+      },
+      "Through what mechanism does Reconstruction Error connect to Berezinskii-Kosterlitz-Thouless Transition?": {
+        "src": "Reconstruction Error",
+        "bridge": "XY Model",
+        "tgt": "Berezinskii-Kosterlitz-Thouless Transition",
+        "ground_truth": "XY Model"
+      },
+      "How are Berezinskii-Kosterlitz-Thouless Transition and Complex-Valued Couplings linked in the context of mix?": {
+        "src": "Berezinskii-Kosterlitz-Thouless Transition",
+        "bridge": "XY Model",
+        "tgt": "Complex-Valued Couplings",
+        "ground_truth": "XY Model"
+      },
+      "How does Reconstruction Error relate to Starlings Flocks?": {
+        "src": "Reconstruction Error",
+        "bridge": "XY Model",
+        "tgt": "Starlings Flocks",
+        "ground_truth": "XY Model"
+      },
+      "What is the connection between Kuramoto Model and Starlings Flocks?": {
+        "src": "Kuramoto Model",
+        "bridge": "XY Model",
+        "tgt": "Starlings Flocks",
+        "ground_truth": "XY Model"
+      },
+      "What connects Hamiltonian to Complex-Valued Couplings?": {
+        "src": "Hamiltonian",
+        "bridge": "XY Model",
+        "tgt": "Complex-Valued Couplings",
+        "ground_truth": "XY Model"
+      },
+      "How are Generalized Pole-Residue Method and Proposed Method linked in the context of mix?": {
+        "src": "Generalized Pole-Residue Method",
+        "bridge": "Nonlinear Oscillator",
+        "tgt": "Proposed Method",
+        "ground_truth": "Nonlinear Oscillator"
+      },
+      "How are Ordered Couplings and Coupling Reconstruction linked in the context of mix?": {
+        "src": "Ordered Couplings",
+        "bridge": "XY Model",
+        "tgt": "Coupling Reconstruction",
+        "ground_truth": "XY Model"
+      },
+      "What is the connection between Coupling Matrices and Ordered Couplings?": {
+        "src": "Coupling Matrices",
+        "bridge": "XY Model",
+        "tgt": "Ordered Couplings",
+        "ground_truth": "XY Model"
+      },
+      "What is the connection between Nonlinear Oscillator and Volterra Kernel Functions?": {
+        "src": "Nonlinear Oscillator",
+        "bridge": "Volterra Series",
+        "tgt": "Volterra Kernel Functions",
+        "ground_truth": "Volterra Series"
+      },
+      "How are PLM with Decimation and Reconstruction Error linked in the context of mix?": {
+        "src": "PLM with Decimation",
+        "bridge": "XY Model",
+        "tgt": "Reconstruction Error",
+        "ground_truth": "XY Model"
+      },
+      "How does Hamiltonian relate to PLM-l2?": {
+        "src": "Hamiltonian",
+        "bridge": "XY Model",
+        "tgt": "PLM-l2",
+        "ground_truth": "XY Model"
+      },
+      "How does PLM Method relate to Berezinskii-Kosterlitz-Thouless Transition?": {
+        "src": "PLM Method",
+        "bridge": "XY Model",
+        "tgt": "Berezinskii-Kosterlitz-Thouless Transition",
+        "ground_truth": "XY Model"
+      },
+      "What connects 100m Sprint Record to Inverse Ising Problem?": {
+        "src": "100m Sprint Record",
+        "bridge": "PLM",
+        "tgt": "Inverse Ising Problem",
+        "ground_truth": "PLM"
+      },
+      "How does Pseudo-Likelihood Method relate to Optical Systems?": {
+        "src": "Pseudo-Likelihood Method",
+        "bridge": "Statistical Inference",
+        "tgt": "Optical Systems",
+        "ground_truth": "Statistical Inference"
+      },
+      "How are XY Model and PLM with l2 Regularization linked in the context of mix?": {
+        "src": "XY Model",
+        "bridge": "PLM Method",
+        "tgt": "PLM with l2 Regularization",
+        "ground_truth": "PLM Method"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+# Core
+openai>=1.0.0
+networkx>=3.0
+nano-vectordb
+numpy>=1.24.0
+tenacity
+tiktoken
+python-dotenv
+aiohttp
+
+# Multi-judge evaluation
+anthropic>=0.40.0
+google-genai>=1.0.0
+
+# LightRAG (install as editable from cloned repo)
+# cd references/LightRAG/LightRAG && pip install -e .
+
+# PathRAG's llm.py imports these at module load time (local-HF-model fallback
+# path we never use, but the imports/device-detection are unconditional)
+transformers
+torch
+
+# Dataset download
+datasets
+huggingface_hub

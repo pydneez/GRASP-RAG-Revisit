@@ -1,0 +1,3852 @@
+{
+  "stats": {
+    "total_nodes": 1427,
+    "total_edges": 946,
+    "max_sampled_nodes": 300,
+    "sampled_edges": 290
+  },
+  "nodes": [
+    {
+      "id": "Ashanti",
+      "label": "Ashanti",
+      "entity_type": "person",
+      "degree": 51,
+      "description": "Ashanti is an American singer, songwriter, and actress renowned for her significant contributions to contemporary R&B and hip-hop music. She gained fame with her successful album \"Chapter II,\" which solidified her status within the music industry. In addition to her musical accomplishments, Ashanti "
+    },
+    {
+      "id": "Self",
+      "label": "Self",
+      "entity_type": "person",
+      "degree": 47,
+      "description": "Self is a contributor to various BBC programs and a writer known for his literary style, including works and essays that often explore complex themes.<SEP>Self is a writer known for his works of fiction and thought-provoking commentary on various subjects, including politics and personal experiences"
+    },
+    {
+      "id": "John Cabot",
+      "label": "John Cabot",
+      "entity_type": "person",
+      "degree": 43,
+      "description": "John Cabot was a Venetian explorer and father of Sebastian Cabot, credited with early exploration of North America.<SEP>John Cabot was an explorer who moved to Spain from England, served in various capacities for Spain, and undertook voyages to discover new territories.<SEP>John Cabot was a famous e"
+    },
+    {
+      "id": "Madonna",
+      "label": "Madonna",
+      "entity_type": "person",
+      "degree": 25,
+      "description": "Madonna is a pop icon and singer who collaborated with Nile Rodgers on her album and is recognized for her provocative image and music.<SEP>Madonna is an American singer and songwriter known for her influence in the music industry, with a notable career that includes the successful album Like A Virg"
+    },
+    {
+      "id": "Udhayam NH4",
+      "label": "Udhayam NH4",
+      "entity_type": "event",
+      "degree": 25,
+      "description": "Udhayam NH4 is a Tamil film directed by Manimaran, featuring Siddharth and Ashrita Shetty, which made its debut in 2013.<SEP>Udhayam NH4 is a 2013 Indian Tamil-language action thriller film directed by Manimaran and featuring Siddharth and Ashrita Shetty.<SEP>Udhayam NH4 is a film that underwent mul"
+    },
+    {
+      "id": "Bones",
+      "label": "Bones",
+      "entity_type": "creature",
+      "degree": 23,
+      "description": "Bones is an elite bull known for bucking prowess in professional bull riding, specifically in the PBR circuit.<SEP>Bones is an American former bucking bull who was a two-time PBR World Champion Bull in 2008 and 2010.<SEP>Bones is a champion bull known for winning the World Champion Bull title in bot"
+    },
+    {
+      "id": "Chapter II",
+      "label": "Chapter II",
+      "entity_type": "content",
+      "degree": 22,
+      "description": "Chapter II is the second studio album by Ashanti that features autobiographical lyrics and was certified platinum by the Recording Industry Association of America.<SEP>Chapter II is the third studio album by Ashanti, received mixed reviews and features a hip-hop soul theme.<SEP>Chapter II is the thi"
+    },
+    {
+      "id": "XY Model",
+      "label": "XY Model",
+      "entity_type": "concept",
+      "degree": 19,
+      "description": "The XY model is a theoretical framework in statistical mechanics used to describe angular variable systems and their phase transitions.<SEP>The XY Model is a statistical model in physics that describes interactions between spins on a lattice, characterized by two degrees of freedom for each spin, co"
+    },
+    {
+      "id": "Sebastian Cabot",
+      "label": "Sebastian Cabot",
+      "entity_type": "person",
+      "degree": 16,
+      "description": "Sebastian Cabot was a Venetian explorer known for his voyages in search of the Northwest Passage and his discoveries in South America.<SEP>Sebastian Cabot is an explorer who led expeditions to North America and is associated with various voyages in the early 16th century.<SEP>Sebastian Cabot was an "
+    },
+    {
+      "id": "Like a Virgin",
+      "label": "Like a Virgin",
+      "entity_type": "content",
+      "degree": 15,
+      "description": "Like a Virgin is an album by Madonna that features a provocative style both in music and cover design.<SEP>\"Like a Virgin\" is the title track of Madonna's second album, written by Billy Steinberg and Tom Kelly, addressing themes of romance and transformation.<SEP>Like a Virgin is an album by Madonna"
+    },
+    {
+      "id": "The Police Serve the Citizens?",
+      "label": "The Police Serve the Citizens?",
+      "entity_type": "content",
+      "degree": 15,
+      "description": "The Police Serve the Citizens? is a 1973 Italian giallo-poliziottesco film directed by Romolo Guerrieri, set in Genova."
+    },
+    {
+      "id": "Ulises Solís",
+      "label": "Ulises Solís",
+      "entity_type": "person",
+      "degree": 14,
+      "description": "Ulises Solís is a Mexican former professional boxer who held the IBF junior flyweight title twice and competed from 2000 to 2013."
+    },
+    {
+      "id": "Anna Elisabeth Louise",
+      "label": "Anna Elisabeth Louise",
+      "entity_type": "person",
+      "degree": 13,
+      "description": "Anna Elisabeth Louise is a member of the royal house who remained in Berlin during the French occupation in 1806, known for her strong presence and relationship with other royals.<SEP>Princess Anna Elisabeth Louise of Brandenburg-Schwedt was a Prussian princess and daughter of Margrave Frederick Wil"
+    },
+    {
+      "id": "Ura Chhai",
+      "label": "Ura Chhai",
+      "entity_type": "content",
+      "degree": 12,
+      "description": "Ura Chhai explores multidimensional conflicts of its characters and perceptions about human nature and personal relationships."
+    },
+    {
+      "id": "Frederick Henry",
+      "label": "Frederick Henry",
+      "entity_type": "person",
+      "degree": 11,
+      "description": "Frederick Henry, Margrave of Brandenburg-Schwedt, was the last owner of the Prussian secundogeniture of Brandenburg-Schwedt.<SEP>Frederick Henry was the younger brother of Frederick William who inherited his lands and title after Frederick's death.<SEP>Frederick Henry, Margrave of Brandenburg-Schwed"
+    },
+    {
+      "id": "John Cabot Montecalunya",
+      "label": "John Cabot Montecalunya",
+      "entity_type": "person",
+      "degree": 11,
+      "description": "John Cabot Montecalunya is an explorer who proposed plans for improvements and sought support for maritime expeditions during the late 15th century."
+    },
+    {
+      "id": "Ashanti Douglas",
+      "label": "Ashanti Douglas",
+      "entity_type": "person",
+      "degree": 10,
+      "description": "Ashanti Douglas, known as Ashanti, is an American singer and actress who gained fame for her music career and acting, including her role as Dorothy Gale in a film adaptation of The Wizard of Oz."
+    },
+    {
+      "id": "Eleanor de Bohun",
+      "label": "Eleanor de Bohun",
+      "entity_type": "person",
+      "degree": 10,
+      "description": "Eleanor de Bohun was the elder daughter and co-heiress of Humphrey de Bohun, 7th Earl of Hereford, and later married Thomas of Woodstock.<SEP>Eleanor de Bohun was married to Robert de Ferrers, and her death in 1314 marks an important event in the Bohun lineage.<SEP>Eleanor de Bohun was born around 1"
+    },
+    {
+      "id": "G. V. Prakash Kumar",
+      "label": "G. V. Prakash Kumar",
+      "entity_type": "person",
+      "degree": 10,
+      "description": "G. V. Prakash Kumar is a music composer who created songs for the soundtrack of JK Enum Nanbanin Vaazhkai.<SEP>G. V. Prakash Kumar is the composer of the soundtrack and background score for the film Udhayam NH4.<SEP>G. V. Prakash Kumar is an Indian music composer, playback singer, and actor recogniz"
+    },
+    {
+      "id": "Mega Man Zero Series",
+      "label": "Mega Man Zero Series",
+      "entity_type": "content",
+      "degree": 10,
+      "description": "The Mega Man Zero Series is a collection of four video games for the Game Boy Advance set in Capcom's Mega Man franchise, known as the Rockman Zero series in Japan."
+    },
+    {
+      "id": "Willem Janszoon",
+      "label": "Willem Janszoon",
+      "entity_type": "person",
+      "degree": 10,
+      "description": "Willem Janszoon was a Dutch navigator and colonial governor known for being the first European to see the coast of Australia.<SEP>Willem Janszoon is a Dutch explorer known for being the first European to see the coast of Australia during his voyages in the early 17th century."
+    },
+    {
+      "id": "Like A Virgin",
+      "label": "Like A Virgin",
+      "entity_type": "content",
+      "degree": 9,
+      "description": "Like A Virgin is the second studio album by American singer and songwriter Madonna, released on November 12, 1984, significant for its commercial success and cultural impact.<SEP>Like A Virgin is an album by Madonna that sold 12 million copies worldwide and was noted for its cultural significance."
+    },
+    {
+      "id": "Nonlinear Oscillator",
+      "label": "Nonlinear Oscillator",
+      "entity_type": "concept",
+      "degree": 9,
+      "description": "A Nonlinear Oscillator is a system characterized by a governing equation of motion that incorporates nonlinear terms, displacements, velocities, and accelerations.<SEP>A Nonlinear Oscillator is a system characterized by nonlinear dynamics, for which specific equation forms are employed to model its "
+    },
+    {
+      "id": "JK Enum Nanbanin Vaazhkai",
+      "label": "JK Enum Nanbanin Vaazhkai",
+      "entity_type": "event",
+      "degree": 9,
+      "description": "JK Enum Nanbanin Vaazhkai is a 2015 Indian Tamil-language romantic drama film directed by Cheran.<SEP>JK Enum Nanbanin Vaazhkai is a film directed by Cheran, with a unique promotional project involving college students from Tamil Nadu."
+    },
+    {
+      "id": "Pennell Coast",
+      "label": "Pennell Coast",
+      "entity_type": "location",
+      "degree": 9,
+      "description": "Pennell Coast is a section of the Antarctic coast between Cape Williams and Cape Adare, named after Lieutenant Harry Pennell."
+    },
+    {
+      "id": "Hereford",
+      "label": "Hereford",
+      "entity_type": "person",
+      "degree": 8,
+      "description": "Hereford is a noble who served as the hereditary Constable of England and showed defiance against King Edward's demands for military service.<SEP>Hereford refers to an Earl in the English army who participated in the victory at the Battle of Falkirk and was later dissatisfied with King Edward's acti"
+    },
+    {
+      "id": "Henry de Bohun",
+      "label": "Henry de Bohun",
+      "entity_type": "person",
+      "degree": 8,
+      "description": "Henry de Bohun was an English knight of Anglo-Norman origins, notable for being killed at the Battle of Bannockburn by Robert the Bruce.<SEP>Henry de Bohun was the 1st Earl of Hereford, an Anglo-Norman nobleman, and held significant titles including Hereditary Constable of England."
+    },
+    {
+      "id": "Balarama",
+      "label": "Balarama",
+      "entity_type": "creature",
+      "degree": 8,
+      "description": "Balarama was the lead elephant of the Mysore Dasara procession, known for carrying the idol of goddess Chamundeshwari.<SEP>Balarama is an elephant known for carrying the Golden Howdah during the Dasara procession and has a history of being a silent bull who required special training."
+    },
+    {
+      "id": "Guilherme Marchi",
+      "label": "Guilherme Marchi",
+      "entity_type": "person",
+      "degree": 8,
+      "description": "Guilherme Marchi is a Brazilian former professional rodeo cowboy and the 2008 PBR World Champion."
+    },
+    {
+      "id": "The Bag Man",
+      "label": "The Bag Man",
+      "entity_type": "event",
+      "degree": 8,
+      "description": "The Bag Man is a 2014 neo-noir crime thriller film directed by David Grovic, based on a screenplay by James Russo and David Grovic.<SEP>The Bag Man is a 2014 neo-noir crime thriller film directed by David Grovic, featuring a complex plot involving a bag and its dangerous contents."
+    },
+    {
+      "id": "Wilkins Runway",
+      "label": "Wilkins Runway",
+      "entity_type": "location",
+      "degree": 8,
+      "description": "Wilkins Runway is a $46 million dollar runway carved into glacial ice in Antarctica, approved by CASA for use in aviation.<SEP>Wilkins Runway is an aerodrome located in Antarctica, specifically on the ice sheet Preston Heath, Budd Coast, Wilkes Land."
+    },
+    {
+      "id": "Nile Rodgers",
+      "label": "Nile Rodgers",
+      "entity_type": "person",
+      "degree": 7,
+      "description": "Nile Rodgers is a musician and producer known for his work with Chic and numerous collaborations, including with Madonna.<SEP>Nile Rodgers is a record producer and musician chosen by Madonna to produce the album Like A Virgin, known for his work with the band Chic and David Bowie.<SEP>Nile Rodgers i"
+    },
+    {
+      "id": "Benga",
+      "label": "Benga",
+      "entity_type": "person",
+      "degree": 7,
+      "description": "Benga is a British record producer known for his work in the electronic music genre and his album Chapter II.<SEP>Benga is a British record producer known for his work in music, particularly the album Chapter II."
+    },
+    {
+      "id": "Award",
+      "label": "Award",
+      "entity_type": "event",
+      "degree": 7,
+      "description": "Mary J. Blige is mentioned as deserving of an award that honors musical legends.<SEP>The award is an annual recognition given to the best children's or young-adults' book published in German in the preceding year."
+    },
+    {
+      "id": "Humphrey (VI)",
+      "label": "Humphrey (VI)",
+      "entity_type": "person",
+      "degree": 7,
+      "description": "Humphrey (VI) became heir to his grandfather and inherited the earldoms of Hereford and Essex after his father's death."
+    },
+    {
+      "id": "Humphrey de Bohun",
+      "label": "Humphrey de Bohun",
+      "entity_type": "person",
+      "degree": 7,
+      "description": "Humphrey de Bohun, 4th Earl of Hereford, succeeded his father, Humphrey (V), and was involved in historical conflicts and inheritance issues.<SEP>Humphrey de Bohun was the 2nd Earl of Hereford who played pivotal roles in conflicts and politics regarding Scotland and England."
+    },
+    {
+      "id": "Marchi",
+      "label": "Marchi",
+      "entity_type": "person",
+      "degree": 7,
+      "description": "Marchi is a bull rider who has been inducted into the PBR Ring of Honor and the Bull Riding Hall of Fame, and has a significant role in recruiting and developing riders in Brazil."
+    },
+    {
+      "id": "Volterra Series",
+      "label": "Volterra Series",
+      "entity_type": "concept",
+      "degree": 7,
+      "description": "Volterra Series are mathematical tools used for modeling nonlinear systems and represent complex relationships in dynamics.<SEP>The Volterra series refers to mathematical methods used for analyzing nonlinear systems and is associated with discrete time convolution methods.<SEP>The Volterra Series is"
+    },
+    {
+      "id": "Generalized Pole-Residue Method",
+      "label": "Generalized Pole-Residue Method",
+      "entity_type": "method",
+      "degree": 7,
+      "description": "The Generalized Pole-Residue Method is an approach for dynamic analysis based on the Volterra series and effective for solving nonlinear systems using Laplace domain techniques.<SEP>The Generalized Pole-Residue Method is an approach for solving nonlinear system vibration problems, extending the trad"
+    },
+    {
+      "id": "Prakash",
+      "label": "Prakash",
+      "entity_type": "person",
+      "degree": 7,
+      "description": "Prakash is a singer and actor who composed and performed music for various films, including debut cinema roles."
+    },
+    {
+      "id": "Hans Zimmer",
+      "label": "Hans Zimmer",
+      "entity_type": "person",
+      "degree": 7,
+      "description": "Hans Zimmer is a composer who created the acclaimed soundtrack for the film Interstellar and previously collaborated with Christopher Nolan.<SEP>Hans Zimmer is a renowned composer known for his film scores, particularly in collaboration with director Christopher Nolan, enhancing emotional narratives"
+    },
+    {
+      "id": "Interstellar",
+      "label": "Interstellar",
+      "entity_type": "event",
+      "degree": 7,
+      "description": "Interstellar is a 2014 film directed by Christopher Nolan, notable for its soundtrack composed by Hans Zimmer.<SEP>Interstellar is a film featuring a score by Hans Zimmer, noted for its emotional and thematic depth."
+    },
+    {
+      "id": "Albert Frederick",
+      "label": "Albert Frederick",
+      "entity_type": "person",
+      "degree": 7,
+      "description": "Albert Frederick was a military leader born in Berlin and served in various capacities during the wars against France and Spain, ultimately becoming a knight of esteemed orders."
+    },
+    {
+      "id": "Paula Santiago",
+      "label": "Paula Santiago",
+      "entity_type": "person",
+      "degree": 7,
+      "description": "Paula Santiago is a Gallega mixed media digital artist known for her distinctive works displayed in various galleries."
+    },
+    {
+      "id": "PLM",
+      "label": "PLM",
+      "entity_type": "concept",
+      "degree": 6,
+      "description": "The PLM (Probabilistic Learning Model) refers to a statistical model introduced with $l_2$ regularization for analyzing the inverse Ising problem.<SEP>PLM refers to Pseudolikelihood Maximization, a technique that estimates parameters in statistical models, especially in the context of sparse graphs."
+    },
+    {
+      "id": "PLM Method",
+      "label": "PLM Method",
+      "entity_type": "method",
+      "degree": 6,
+      "description": "The PLM Method refers to a statistical inference technique applied to the inverse problem of the XY Model, focusing on reconstructing interaction networks."
+    },
+    {
+      "id": "Humphrey de Bohun, 3rd Earl of Hereford",
+      "label": "Humphrey de Bohun, 3rd Earl of Hereford",
+      "entity_type": "person",
+      "degree": 6,
+      "description": "Humphrey de Bohun, 3rd Earl of Hereford, was a significant figure in English nobility and the grandson of a king.<SEP>Humphrey de Bohun, 3rd Earl of Hereford, was an English nobleman known for his opposition to King Edward I and involvement in the Welsh Wars."
+    },
+    {
+      "id": "Kody Lostroh",
+      "label": "Kody Lostroh",
+      "entity_type": "person",
+      "degree": 6,
+      "description": "Kody Lostroh is an American former professional rodeo cowboy, known for specializing in bull riding and being the 2009 PBR world champion."
+    },
+    {
+      "id": "Volterra Kernel Functions",
+      "label": "Volterra Kernel Functions",
+      "entity_type": "concept",
+      "degree": 6,
+      "description": "Volterra Kernel Functions are mathematical functions derived from specific Fourier transforms used to represent system responses.<SEP>Volterra kernel functions model the dynamics of nonlinear systems and are reconstructed using Laguerre polynomials and their coefficients.<SEP>Volterra Kernel Functio"
+    },
+    {
+      "id": "Response Function",
+      "label": "Response Function",
+      "entity_type": "concept",
+      "degree": 6,
+      "description": "The response function describes how a system reacts over time, specifically provided by the proposed method in continuous form."
+    },
+    {
+      "id": "Ngotho",
+      "label": "Ngotho",
+      "entity_type": "person",
+      "degree": 6,
+      "description": "Ngotho is Njoroge's father who works for Mr. Howlands and undergoes a decline in authority throughout the novel.<SEP>Ngotho is Njoroge's father, whose loss of power and realization regarding Kenyan independence leads to his depression."
+    },
+    {
+      "id": "Transmission Matrix",
+      "label": "Transmission Matrix",
+      "entity_type": "concept",
+      "degree": 5,
+      "description": "The Transmission Matrix is a mathematical representation used to describe the transformation of incoming fields to outgoing fields in light propagation scenarios.<SEP>The transmission matrix is a mathematical representation in optics that connects outgoing to incoming light modes in a system."
+    },
+    {
+      "id": "PLM with Decimation",
+      "label": "PLM with Decimation",
+      "entity_type": "concept",
+      "degree": 5,
+      "description": "PLM with Decimation denotes another variant of the Probabilistic Learning Model that incorporates a decimation technique.<SEP>PLM with Decimation is an inference method that incorporates $l_2$-regularization and aims to optimize the selection of significant couplings."
+    },
+    {
+      "id": "Hamiltonian",
+      "label": "Hamiltonian",
+      "entity_type": "concept",
+      "degree": 5,
+      "description": "The Hamiltonian describes the energy function of a system in the context of the XY model and variable interactions.<SEP>The Hamiltonian is a mathematical function representing the total energy of a physical system, which is used in the context of statistical mechanics and quantum mechanics.<SEP>The "
+    },
+    {
+      "id": "Reconstruction Error",
+      "label": "Reconstruction Error",
+      "entity_type": "concept",
+      "degree": 5,
+      "description": "Reconstruction error measures the difference between inferred couplings and true couplings in the XY model, indicating the accuracy of the model's inference.<SEP>Reconstruction Error is a measure of the disparity between inferred and true couplings within the model, which varies with temperature and"
+    },
+    {
+      "id": "VH1 Divas Duets",
+      "label": "VH1 Divas Duets",
+      "entity_type": "event",
+      "degree": 5,
+      "description": "VH1 Divas Duets is a concert event where Ashanti headlined alongside other prominent artists."
+    },
+    {
+      "id": "Kayra",
+      "label": "Kayra",
+      "entity_type": "deity",
+      "degree": 5,
+      "description": "Kayra is the creator god in Turkic mythology, responsible for creating the tree of life called Ulukayın."
+    },
+    {
+      "id": "Justin Tranchita",
+      "label": "Justin Tranchita",
+      "entity_type": "person",
+      "degree": 5,
+      "description": "Justin Tranchita is an American singer, songwriter, actor, and businessman known for his role in Game of Pawns and his music career."
+    },
+    {
+      "id": "Tranchita",
+      "label": "Tranchita",
+      "entity_type": "person",
+      "degree": 5,
+      "description": "Tranchita is a musician who created the song \"This is America\" and ran for the Michigan State House, district 32 in 2016."
+    },
+    {
+      "id": "System Responses",
+      "label": "System Responses",
+      "entity_type": "concept",
+      "degree": 5,
+      "description": "System Responses are the outputs generated by a system when subjected to excitations, characterized as natural, forced, and cross responses."
+    },
+    {
+      "id": "Frederick William",
+      "label": "Frederick William",
+      "entity_type": "person",
+      "degree": 5,
+      "description": "Frederick William is the father of Frederick Henry and a Margrave of Brandenburg-Schwedt.<SEP>Frederick William was the Margrave who was removed from command in the Prussian army and married to Sophia Dorothea of Prussia.<SEP>Frederick William, Margrave of Brandenburg-Schwedt, was the son of Philip "
+    },
+    {
+      "id": "Marie Amalie of Brandenburg",
+      "label": "Marie Amalie of Brandenburg",
+      "entity_type": "person",
+      "degree": 5,
+      "description": "Marie Amalie of Brandenburg was a noblewoman who promoted the development of Schleusingen and had two marriages, resulting in several children."
+    },
+    {
+      "id": "De Houtman",
+      "label": "De Houtman",
+      "entity_type": "unknown",
+      "degree": 5,
+      "description": "De Houtman's observations supplemented Keyser's work on the first expedition."
+    },
+    {
+      "id": "Temperature",
+      "label": "Temperature",
+      "entity_type": "concept",
+      "degree": 4,
+      "description": "Temperature, denoted as $\\Delta^2$, is described as a noise-inducing factor that influences the representation of solutions in electromagnetic configurations.<SEP>Temperature is a variable in the modeling context, influencing the performance of the TP score as shown in experimental results.<SEP>Temp"
+    },
+    {
+      "id": "Cost Function",
+      "label": "Cost Function",
+      "entity_type": "concept",
+      "degree": 4,
+      "description": "The cost function is represented by ${\\cal H}$ and its optimization is central to minimizing the electromagnetic configurations for maximizing transmission solutions."
+    },
+    {
+      "id": "Rock wit U (Awww Baby)",
+      "label": "Rock wit U (Awww Baby)",
+      "entity_type": "content",
+      "degree": 4,
+      "description": "Rock wit U (Awww Baby) is a song by Ashanti, released as the lead single from her album Chapter II.<SEP>Rock wit U (Awww Baby) is the first single from Ashanti's Chapter II album that became a hit."
+    },
+    {
+      "id": "Ashanti Shequoiya Douglas",
+      "label": "Ashanti Shequoiya Douglas",
+      "entity_type": "person",
+      "degree": 4,
+      "description": "Ashanti Shequoiya Douglas is an American singer, songwriter, and actress who gained prominence in the early 2000s and is known for her chart-topping hits and multiple awards."
+    },
+    {
+      "id": "King Edward",
+      "label": "King Edward",
+      "entity_type": "person",
+      "degree": 4,
+      "description": "King Edward is the monarch who faced opposition from the nobility regarding military service and taxation during ongoing conflicts in Wales and France."
+    },
+    {
+      "id": "Humphrey IV de Bohun",
+      "label": "Humphrey IV de Bohun",
+      "entity_type": "person",
+      "degree": 4,
+      "description": "Humphrey IV de Bohun was an Anglo-Norman nobleman and soldier who served as hereditary Constable of England and the eldest son of Henry de Bohun.<SEP>Humphrey IV de Bohun was the 2nd Earl of Hereford and the 1st Earl of Essex, and he had several children."
+    },
+    {
+      "id": "John de Bohun, 5th Earl of Hereford",
+      "label": "John de Bohun, 5th Earl of Hereford",
+      "entity_type": "person",
+      "degree": 4,
+      "description": "John de Bohun, 5th Earl of Hereford, was an important nobleman in the 14th century and part of the Bohun lineage."
+    },
+    {
+      "id": "William de Bohun, 1st Earl of Northampton",
+      "label": "William de Bohun, 1st Earl of Northampton",
+      "entity_type": "person",
+      "degree": 4,
+      "description": "William de Bohun, 1st Earl of Northampton, was an English nobleman, military commander, and diplomat in the 14th century."
+    },
+    {
+      "id": "Black King",
+      "label": "Black King",
+      "entity_type": "concept",
+      "degree": 4,
+      "description": "Black King refers to characters in the comics, notably associated with the Hellfire Club in Marvel Comics and characters from DC Comics related to Checkmate.<SEP>The term \"Black King\" may refer to various entities including chess pieces, playing cards, and comic characters as well as specific charac"
+    },
+    {
+      "id": "Indradhanura Chhai",
+      "label": "Indradhanura Chhai",
+      "entity_type": "film",
+      "degree": 4,
+      "description": "Indradhanura Chhai is a 1993 Indian Oriya film that explores the impact of urbanization on traditional social and family structures in India."
+    },
+    {
+      "id": "Laguerre Polynomials",
+      "label": "Laguerre Polynomials",
+      "entity_type": "concept",
+      "degree": 4,
+      "description": "Laguerre Polynomials are mathematical functions used in the Volterra series to decouple kernel functions and model system dynamics effectively.<SEP>Laguerre Polynomials are mathematical functions that satisfy orthogonal relationships and are used in various applications, including the decoupling of "
+    },
+    {
+      "id": "Sinusoidal Excitation",
+      "label": "Sinusoidal Excitation",
+      "entity_type": "concept",
+      "degree": 4,
+      "description": "Sinusoidal excitation refers to periodic input signals characterized by amplitude and frequency, impacting system responses."
+    },
+    {
+      "id": "G. V. Prakash",
+      "label": "G. V. Prakash",
+      "entity_type": "person",
+      "degree": 4,
+      "description": "G. V. Prakash is a music composer and cinematographer known for scoring soundtracks for numerous films."
+    },
+    {
+      "id": "The Godfather Part II",
+      "label": "The Godfather Part II",
+      "entity_type": "event",
+      "degree": 4,
+      "description": "The Godfather Part II is an Academy Award-winning film, notable for its soundtrack released in 1974, composed by Nino Rota."
+    },
+    {
+      "id": "Remastered Tracks Rockman Zero: Mythos",
+      "label": "Remastered Tracks Rockman Zero: Mythos",
+      "entity_type": "content",
+      "degree": 4,
+      "description": "Remastered Tracks Rockman Zero: Mythos is a soundtrack album featuring remixed game tracks from the Mega Man Zero Collection."
+    },
+    {
+      "id": "Philip William",
+      "label": "Philip William",
+      "entity_type": "person",
+      "degree": 4,
+      "description": "Philip William, Margrave of Brandenburg-Schwedt, was a Prussian prince and governor of Magdeburg who was invested with his mother's dominion and reached agreements regarding income and lands with his half-brother.<SEP>Philip William was the brother of Albert Frederick and served as the governor of M"
+    },
+    {
+      "id": "Henrietta Maria of Brandenburg-Schwedt",
+      "label": "Henrietta Maria of Brandenburg-Schwedt",
+      "entity_type": "person",
+      "degree": 4,
+      "description": "Henrietta Maria was a granddaughter of Elector Frederick William and had notable family ties, marrying into the House of Württemberg."
+    },
+    {
+      "id": "Njoroge",
+      "label": "Njoroge",
+      "entity_type": "person",
+      "degree": 4,
+      "description": "Njoroge is the main character in Weep Not, Child, aiming for education and navigating family and societal challenges.<SEP>Njoroge is a central character who grapples with his family's struggles, aspirations for education, and societal challenges in colonial Kenya."
+    },
+    {
+      "id": "Boro",
+      "label": "Boro",
+      "entity_type": "person",
+      "degree": 4,
+      "description": "Boro is Njoroge's elder brother, who struggles with the traumatic memories from forced service during World War II.<SEP>Boro, son of Njeri, fights for the Allies in WWII and later becomes the leader of the Mau Mau, challenging colonial authority."
+    },
+    {
+      "id": "William Weston",
+      "label": "William Weston",
+      "entity_type": "person",
+      "degree": 4,
+      "description": "William Weston was an explorer who undertook an independent expedition to North America and claimed to be the first Englishman to do so.<SEP>William Weston is an English explorer known for leading an expedition to North America in the late 1490s, making him the first Englishman to do so.<SEP>William"
+    },
+    {
+      "id": "Reconstruction Problem",
+      "label": "Reconstruction Problem",
+      "entity_type": "concept",
+      "degree": 3,
+      "description": "The reconstruction problem involves understanding an object obscured by an opaque medium or disordered optical fiber."
+    },
+    {
+      "id": "Statistical Inference",
+      "label": "Statistical Inference",
+      "entity_type": "concept",
+      "degree": 3,
+      "description": "Statistical inference involves estimating model parameters from observed data and is central to the inverse problem discussed in the text."
+    },
+    {
+      "id": "Inverse Problem",
+      "label": "Inverse Problem",
+      "entity_type": "concept",
+      "degree": 3,
+      "description": "The inverse problem involves determining the values of model parameters that best fit observed data, particularly concerning interaction networks and coupling coefficients.<SEP>The Inverse Problem refers to a challenge in understanding how to adjust parameters to achieve a desired outcome in modelin"
+    },
+    {
+      "id": "Coupling Matrices",
+      "label": "Coupling Matrices",
+      "entity_type": "concept",
+      "degree": 3,
+      "description": "Coupling Matrices, specifically $J^R_{ij}$ and $J^I_{ij}$, represent the interactions between spins in the XY model, which can be either ordered or disordered.<SEP>Coupling Matrices refer to the mathematical representations of relationships and connections in the network, which can be real or comple"
+    },
+    {
+      "id": "M",
+      "label": "M",
+      "entity_type": "data",
+      "degree": 3,
+      "description": "M refers to the number of samples used in the analysis, indicating different sample sizes in various experimental conditions.<SEP>M represents the number of samples considered in the experiments, which affects the outcomes and analysis of the TP score."
+    },
+    {
+      "id": "Pseudolikelihood Maximization",
+      "label": "Pseudolikelihood Maximization",
+      "entity_type": "method",
+      "degree": 3,
+      "description": "Pseudolikelihood Maximization is a statistical technique used for inferring parameters of a model from observed data, particularly in the context of complex systems."
+    },
+    {
+      "id": "Monte-Carlo Simulations",
+      "label": "Monte-Carlo Simulations",
+      "entity_type": "method",
+      "degree": 3,
+      "description": "Monte-Carlo simulations are computational algorithms that rely on random sampling to obtain numerical results, often used to model the behavior of systems with many coupled degrees of freedom.<SEP>Monte-Carlo simulations are used to generate samples in models referenced in the analysis and performan"
+    },
+    {
+      "id": "TP Curve",
+      "label": "TP Curve",
+      "entity_type": "data",
+      "degree": 3,
+      "description": "The TP Curve represents a graphical plot of performance metrics related to the inverse problem, expected to decrease under certain conditions in this scenario."
+    },
+    {
+      "id": "Ordered Model",
+      "label": "Ordered Model",
+      "entity_type": "concept",
+      "degree": 3,
+      "description": "The Ordered Model refers to a scenario in the study of spin systems where couplings are organized or have regular patterns."
+    },
+    {
+      "id": "Ja Rule",
+      "label": "Ja Rule",
+      "entity_type": "person",
+      "degree": 3,
+      "description": "Ja Rule is a rapper who made a guest appearance on Ashanti's album \"Chapter II.\"<SEP>Ja Rule featured on the song \"Wonderful\" with Ashanti in 2004.<SEP>Ja Rule is a rapper who collaborated with Ashanti and was released from prison in July 2013 after serving a six-year sentence for a gun charge."
+    },
+    {
+      "id": "Bristol",
+      "label": "Bristol",
+      "entity_type": "location",
+      "degree": 3,
+      "description": "Bristol is the location where Benga and Youngman premiered their song \"Running\" live.<SEP>Bristol is a city in England known for its history of exploratory expeditions and where John Cabot Montecalunya sought financial backers.<SEP>Bristol is the English city where John Cabot reported back to the ki"
+    },
+    {
+      "id": "Sir John de Verdun",
+      "label": "Sir John de Verdun",
+      "entity_type": "person",
+      "degree": 3,
+      "description": "Sir John de Verdun was the Baron of Westmeath and the husband of Eleanor de Bohun."
+    },
+    {
+      "id": "Maud de Avenbury",
+      "label": "Maud de Avenbury",
+      "entity_type": "person",
+      "degree": 3,
+      "description": "Maud de Avenbury was Sir John de Verdun's second wife, who died on 8 October 1273 and had two sons with him."
+    },
+    {
+      "id": "The Black King",
+      "label": "The Black King",
+      "entity_type": "concept",
+      "degree": 3,
+      "description": "The Black King is a 1932 comedy-drama film that depicts the life of a fictional charismatic leader of a back-to-Africa movement, inspired by Marcus Garvey.<SEP>The Black King is occasionally referred to in various contexts, including films and visual interpretations."
+    },
+    {
+      "id": "Teague",
+      "label": "Teague",
+      "entity_type": "person",
+      "degree": 3,
+      "description": "Teague is responsible for exercising the bull Bones and is a key figure in the context of bull riding and training.<SEP>Teague is the owner who retired the bull Bones after the 2010 BFTS season.<SEP>Teague is a figure who expressed his opinion on bull riding and expressed satisfaction with the achie"
+    },
+    {
+      "id": "This Is America",
+      "label": "This Is America",
+      "entity_type": "content",
+      "degree": 3,
+      "description": "This Is America is a song by Tranchita that achieved commercial success, reaching number one on the Billboard Emerging Artist chart."
+    },
+    {
+      "id": "Big Tex",
+      "label": "Big Tex",
+      "entity_type": "creature",
+      "degree": 3,
+      "description": "Big Tex is a rival bull owned by Chad Berger and considered by him to be better than Bones.<SEP>Big Tex is a bull that competed against Bones in a close match, narrowly losing."
+    },
+    {
+      "id": "Closed-Form Solution",
+      "label": "Closed-Form Solution",
+      "entity_type": "concept",
+      "degree": 3,
+      "description": "A Closed-Form Solution is an explicit mathematical solution derived from equations to describe the nonlinear response of systems."
+    },
+    {
+      "id": "Proposed Method",
+      "label": "Proposed Method",
+      "entity_type": "method",
+      "degree": 3,
+      "description": "The Proposed Method is applied to an unknown system, indicated to be effective in numerical studies.<SEP>The proposed method refers to an analytical approach for calculating nonlinear responses efficiently compared to traditional numerical methods."
+    },
+    {
+      "id": "BiB Packaging",
+      "label": "BiB Packaging",
+      "entity_type": "concept",
+      "degree": 3,
+      "description": "BiB packaging is a method of packaging that utilizes a bag-in-box system for storing and transporting liquids."
+    },
+    {
+      "id": "Sticky Fingaz",
+      "label": "Sticky Fingaz",
+      "entity_type": "person",
+      "degree": 3,
+      "description": "Sticky Fingaz plays the role of Lizard in The Bag Man.<SEP>Sticky Fingaz is an actor who plays the character Lizard in a film."
+    },
+    {
+      "id": "La Polizia è al servizio del cittadino?",
+      "label": "La Polizia è al servizio del cittadino?",
+      "entity_type": "event",
+      "degree": 3,
+      "description": "La Polizia è al servizio del cittadino? (The Police Serve the Citizens?) is a 1973 Italian giallo-poliziottesco film directed by Romolo Guerrieri."
+    },
+    {
+      "id": "Jack",
+      "label": "Jack",
+      "entity_type": "unknown",
+      "degree": 3,
+      "description": "Ned Stensen interacts with Jack at the motel in The Bag Man."
+    },
+    {
+      "id": "Vetrimaaran",
+      "label": "Vetrimaaran",
+      "entity_type": "person",
+      "degree": 3,
+      "description": "Vetrimaaran is an Indian director and screenwriter who has collaborated with Manimaran and is known for writing the story of Udhayam NH4.<SEP>Vetrimaaran is a filmmaker who wrote the script and dialogues for the film Udhayam NH4.<SEP>Vetrimaaran is a filmmaker who approached producer Kadiresan regar"
+    },
+    {
+      "id": "Cheran",
+      "label": "Cheran",
+      "entity_type": "person",
+      "degree": 3,
+      "description": "Cheran is a filmmaker who initiated a project named JK Fest 2013 and directed the film JK Enum Nanbanin Vaazhkai."
+    },
+    {
+      "id": "Duke Maurice William of Saxe-Zeitz",
+      "label": "Duke Maurice William of Saxe-Zeitz",
+      "entity_type": "person",
+      "degree": 3,
+      "description": "Duke Maurice William of Saxe-Zeitz was Marie Amalie's second husband, who she outlived."
+    },
+    {
+      "id": "Charles Philip of Brandenburg-Schwedt",
+      "label": "Charles Philip of Brandenburg-Schwedt",
+      "entity_type": "person",
+      "degree": 3,
+      "description": "Charles Philip of Brandenburg-Schwedt was a Hohenzollern prince and titular Margrave of Brandenburg-Schwedt, born on 5 January 1673 and died on 23 July 1695."
+    },
+    {
+      "id": "Jacobo",
+      "label": "Jacobo",
+      "entity_type": "person",
+      "degree": 3,
+      "description": "Jacobo is an African landowner who benefits from dealings with white settlers and plays a significant role in the conflict.<SEP>Jacobo is Mwihaki's father, an important landowner and chief of the village."
+    },
+    {
+      "id": "Duyfken",
+      "label": "Duyfken",
+      "entity_type": "artifact",
+      "degree": 3,
+      "description": "The Duyfken (meaning \"Little Dove\") was a ship captained by Willem Janszoon that played a significant role in early Dutch exploration of Australia.<SEP>The Duyfken is a historical ship known for making the first landfall in Australia."
+    },
+    {
+      "id": "Gibbs Point",
+      "label": "Gibbs Point",
+      "entity_type": "location",
+      "degree": 3,
+      "description": "Gibbs Point is a rock point on the Antarctic Peninsula, named after African American explorer George W. Gibbs, Jr."
+    },
+    {
+      "id": "King Henry VII",
+      "label": "King Henry VII",
+      "entity_type": "person",
+      "degree": 3,
+      "description": "King Henry VII was the monarch of England during the time of John Cabot's voyages and played a role in authorizing expeditions.<SEP>King Henry VII was the King of England who supported exploration efforts and rewarded explorers like William Weston and Sebastian Cabot."
+    },
+    {
+      "id": "Berezinskii-Kosterlitz-Thouless Transition",
+      "label": "Berezinskii-Kosterlitz-Thouless Transition",
+      "entity_type": "concept",
+      "degree": 2,
+      "description": "The Berezinskii-Kosterlitz-Thouless transition is a phase transition observed in two-dimensional systems related to vortex-antivortex pairs."
+    },
+    {
+      "id": "Pseudo-Likelihood Method",
+      "label": "Pseudo-Likelihood Method",
+      "entity_type": "method",
+      "degree": 2,
+      "description": "The Pseudo-Likelihood Method (PLM) is a statistical approach that improves performance in estimating coupling parameters for small datasets."
+    },
+    {
+      "id": "XY Spins",
+      "label": "XY Spins",
+      "entity_type": "concept",
+      "degree": 2,
+      "description": "XY spins refer to a model involving continuous variables represented as points on a circle, specifically within the framework of the inverse problem."
+    },
+    {
+      "id": "Ordered Couplings",
+      "label": "Ordered Couplings",
+      "entity_type": "concept",
+      "degree": 2,
+      "description": "Ordered Couplings refer to a type of coupling without randomness, where connections follow a systematic pattern in the network analysis."
+    },
+    {
+      "id": "Complex-Valued Couplings",
+      "label": "Complex-Valued Couplings",
+      "entity_type": "concept",
+      "degree": 2,
+      "description": "Complex-Valued Couplings involve connections that have both real and imaginary components, which complicate the analysis of network behavior."
+    },
+    {
+      "id": "100m Sprint Record",
+      "label": "100m Sprint Record",
+      "entity_type": "concept",
+      "degree": 2,
+      "description": "The 100m sprint record is a benchmark in athletics, which was discussed in the context of an event where a new record was set."
+    },
+    {
+      "id": "Matrix U",
+      "label": "Matrix U",
+      "entity_type": "concept",
+      "degree": 2,
+      "description": "Matrix U represents the effective input-input coupling matrix used in the context of minimizing the cost function in electromagnetic configurations.<SEP>Matrix U is a diagonal matrix that is discussed in relation to the rescaling of Hamiltonian components within a statistical mechanics framework."
+    },
+    {
+      "id": "Electromagnetic Complex Amplitude Configurations",
+      "label": "Electromagnetic Complex Amplitude Configurations",
+      "entity_type": "concept",
+      "degree": 2,
+      "description": "Electromagnetic complex amplitude configurations refer to the settings used to optimize the cost function in the context of signal transmission and noise representation."
+    },
+    {
+      "id": "E_k",
+      "label": "E_k",
+      "entity_type": "concept",
+      "degree": 2,
+      "description": "E_k represents the phasor in the equations and is defined in terms of the amplitude A_k and the phase φ_k."
+    },
+    {
+      "id": "Decimation",
+      "label": "Decimation",
+      "entity_type": "method",
+      "degree": 2,
+      "description": "Decimation is a technique used in conjunction with the PLM Method to enhance the performance of network reconstruction by removing very weak bonds."
+    },
+    {
+      "id": "Monte Carlo Simulations",
+      "label": "Monte Carlo Simulations",
+      "entity_type": "method",
+      "degree": 2,
+      "description": "Monte Carlo simulations are a computational algorithm that relies on repeated random sampling to obtain numerical results.<SEP>Monte Carlo Simulations are numerical methods used to generate data for testing the performances of statistical inference methods against known instances."
+    },
+    {
+      "id": "Incoming Fields",
+      "label": "Incoming Fields",
+      "entity_type": "concept",
+      "degree": 2,
+      "description": "Incoming Fields refer to the fields that enter a system, which are transformed by the Transmission Matrix during the analysis."
+    },
+    {
+      "id": "Outgoing Fields",
+      "label": "Outgoing Fields",
+      "entity_type": "concept",
+      "degree": 2,
+      "description": "Outgoing Fields are the fields that leave a system after being transformed by the Transmission Matrix based on incoming fields."
+    },
+    {
+      "id": "Complex Scalars",
+      "label": "Complex Scalars",
+      "entity_type": "concept",
+      "degree": 2,
+      "description": "Complex Scalars are numbers that have both a real and imaginary component and are used to represent the fields in the equations provided."
+    },
+    {
+      "id": "Coupling",
+      "label": "Coupling",
+      "entity_type": "concept",
+      "degree": 2,
+      "description": "Coupling refers to the interaction strength between variables in a statistical model, with specific forms for real and imaginary components in the context of the XY model."
+    },
+    {
+      "id": "H_i^x",
+      "label": "H_i^x",
+      "entity_type": "concept",
+      "degree": 2,
+      "description": "H_i^x is a function defined in statistical contexts, representing a part of the Hamiltonian that involves summation over interactions with a cosine term."
+    },
+    {
+      "id": "H_i^y",
+      "label": "H_i^y",
+      "entity_type": "concept",
+      "degree": 2,
+      "description": "H_i^y is a function defined in statistical contexts, representing another component of the Hamiltonian that includes summation over interactions with a sine term."
+    },
+    {
+      "id": "J_{ij}",
+      "label": "J_{ij}",
+      "entity_type": "data",
+      "degree": 2,
+      "description": "J_{ij} represents a coupling estimate that can be inferred from averaging two results, as part of the Hermitian model."
+    },
+    {
+      "id": "Pseudolikelihood",
+      "label": "Pseudolikelihood",
+      "entity_type": "concept",
+      "degree": 2,
+      "description": "Pseudolikelihood is a statistical measure used in the model, characterized by normalization and regularization properties, including its relationship with computational efficiency."
+    },
+    {
+      "id": "H_i",
+      "label": "H_i",
+      "entity_type": "unknown",
+      "degree": 2,
+      "description": "H_i is mathematically defined as the square root of the sum of the squares of H_i^x and H_i^y, contributing to the overall Hamiltonian."
+    },
+    {
+      "id": "Billboard 200",
+      "label": "Billboard 200",
+      "entity_type": "data",
+      "degree": 2,
+      "description": "Billboard 200 is a music chart that tracks the top albums in the United States, where Like a Virgin debuted and later reached the top position.<SEP>The Billboard 200 is a chart that ranks the 200 most popular music albums and EPs in the United States.<SEP>The Billboard 200 is a music chart where Ash"
+    },
+    {
+      "id": "Rain on Me",
+      "label": "Rain on Me",
+      "entity_type": "content",
+      "degree": 2,
+      "description": "Rain on Me is a single from Ashanti's second album Chapter II, which peaked at number seven on the Billboard Hot 100.<SEP>Rain on Me is the second single from Chapter II that achieved commercial success."
+    },
+    {
+      "id": "John Tucker Must Die",
+      "label": "John Tucker Must Die",
+      "entity_type": "event",
+      "degree": 2,
+      "description": "John Tucker Must Die is a film released in 2006 in which Ashanti appeared.<SEP>John Tucker Must Die is a teen comedy film released in 2006 in which Ashanti starred.<SEP>John Tucker Must Die is a teen comedy film featuring Ashanti."
+    },
+    {
+      "id": "Resident Evil: Extinction",
+      "label": "Resident Evil: Extinction",
+      "entity_type": "event",
+      "degree": 2,
+      "description": "Resident Evil: Extinction is a film released in 2007 featuring Ashanti.<SEP>Resident Evil: Extinction is an action film from 2007 in which Ashanti played a supporting role.<SEP>Resident Evil: Extinction is an action film in which Ashanti played a supporting role."
+    },
+    {
+      "id": "Steve Bray",
+      "label": "Steve Bray",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Steve Bray is a co-writer on five songs from the album Like A Virgin, collaborating with Madonna.<SEP>Steve Bray is a musician and producer who collaborated with Madonna on the album \"Like a Virgin,\" co-writing many of its songs."
+    },
+    {
+      "id": "Bernard Edwards",
+      "label": "Bernard Edwards",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Bernard Edwards is a bassist and former member of Chic who contributed to the production of Madonna's album Like A Virgin.<SEP>Bernard Edwards was a bassist and former bandmate of Nile Rodgers in Chic, who contributed to several tracks on Madonna's album."
+    },
+    {
+      "id": "Tony Thompson",
+      "label": "Tony Thompson",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Tony Thompson is a drummer and former member of Chic who was involved in the recording of Like A Virgin.<SEP>Tony Thompson was a drummer and former bandmate of Nile Rodgers in Chic, who contributed to the recording of Madonna's album."
+    },
+    {
+      "id": "Rodgers",
+      "label": "Rodgers",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Rodgers is a producer who worked on the album \"Like a Virgin\" and contributed to the creative process of its production."
+    },
+    {
+      "id": "Recording Industry Association of America (RIAA)",
+      "label": "Recording Industry Association of America (RIAA)",
+      "entity_type": "organization",
+      "degree": 2,
+      "description": "The RIAA is the organization responsible for certifying albums in the United States, which certified Like a Virgin diamond for its sales.<SEP>The RIAA is an organization that represents the recording industry in the United States, responsible for certifying music sales."
+    },
+    {
+      "id": "Nielsen SoundScan",
+      "label": "Nielsen SoundScan",
+      "entity_type": "organization",
+      "degree": 2,
+      "description": "Nielsen SoundScan is a system that tracks music sales in the United States, providing data on album sales like those of Like a Virgin.<SEP>Nielsen SoundScan is a service that tracks music sales in the United States."
+    },
+    {
+      "id": "British Phonographic Industry (BPI)",
+      "label": "British Phonographic Industry (BPI)",
+      "entity_type": "organization",
+      "degree": 2,
+      "description": "The BPI is the organization that certified Like a Virgin three times platinum in the United Kingdom for its sales.<SEP>The BPI is the trade association for the UK's recorded music industry and provides certifications for music sales."
+    },
+    {
+      "id": "United States",
+      "label": "United States",
+      "entity_type": "location",
+      "degree": 2,
+      "description": "The United States is the primary market for Like a Virgin, where it sold millions of copies and achieved multi-platinum status.<SEP>The United States is the country where the campaign for women's empowerment is centered and where Ashanti's initiatives take place."
+    },
+    {
+      "id": "Murder Inc.",
+      "label": "Murder Inc.",
+      "entity_type": "organization",
+      "degree": 2,
+      "description": "Murder Inc. is the record label that released Ashanti's \"Chapter II\" and collaborated with her on the production of the album.<SEP>Murder Inc. is the record label that released Ashanti's single \"Rock wit U (Awww Baby).\"<SEP>Murder Inc. is the record label associated with Ashanti where she achieved h"
+    },
+    {
+      "id": "Foolish",
+      "label": "Foolish",
+      "entity_type": "event",
+      "degree": 2,
+      "description": "Foolish is a lead single from Ashanti's self-titled debut album that reached number one on the Billboard Hot 100.<SEP>Foolish is Ashanti's debut single, notable for its commercial success and sampling DeBarge's \"Stay with Me\"."
+    },
+    {
+      "id": "Billboard Hot 100",
+      "label": "Billboard Hot 100",
+      "entity_type": "data",
+      "degree": 2,
+      "description": "The Billboard Hot 100 is a chart that ranks the 100 most popular songs in the United States across all genres, significant for showcasing hit songs.<SEP>The Billboard Hot 100 is a music chart where Ashanti achieved historic simultaneous entries and record-breaking success."
+    },
+    {
+      "id": "Irv Gotti",
+      "label": "Irv Gotti",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Irv Gotti is a music producer who co-wrote and produced Ashanti's single \"Rock wit U (Awww Baby).\"<SEP>Irv Gotti is a music producer who first noticed Ashanti's talent and later signed her to his record label.<SEP>Irv Gotti is a record executive associated with Ashanti and The Inc., known for announ"
+    },
+    {
+      "id": "American Music Awards",
+      "label": "American Music Awards",
+      "entity_type": "event",
+      "degree": 2,
+      "description": "The American Music Awards is an annual music awards ceremony honoring artists in various music genres, where Ashanti won two awards.<SEP>The American Music Awards are another notable award show where Ashanti received recognition for her work."
+    },
+    {
+      "id": "Falling in Reverse",
+      "label": "Falling in Reverse",
+      "entity_type": "organization",
+      "degree": 2,
+      "description": "Falling in Reverse is a band known for its music in the post-hardcore genre, with Ronnie Radke as the lead vocalist."
+    },
+    {
+      "id": "Grammy Award",
+      "label": "Grammy Award",
+      "entity_type": "event",
+      "degree": 2,
+      "description": "The Grammy Award is an annual accolade for artistic and technical merit in the recording industry, awarded to Ashanti for her album.<SEP>The Grammy Award is a prestigious award in the music industry, and the Interstellar soundtrack was nominated for Best Score Soundtrack for Visual Media."
+    },
+    {
+      "id": "Aitch",
+      "label": "Aitch",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Aitch is a British rapper who sampled Ashanti's song \"Rock wit U (Awww Baby)\" for his single \"Baby.\"<SEP>Aitch is a British rapper who sampled Ashanti's single \"Rock wit U (Awww Baby)\" for his own song \"Baby.\""
+    },
+    {
+      "id": "Australia",
+      "label": "Australia",
+      "entity_type": "location",
+      "degree": 2,
+      "description": "Australia is one of the countries where the album Like a Virgin peaked at the top of the music charts and received platinum certifications."
+    },
+    {
+      "id": "Battle of Stirling Bridge",
+      "label": "Battle of Stirling Bridge",
+      "entity_type": "event",
+      "degree": 2,
+      "description": "The Battle of Stirling Bridge was a significant defeat for the English forces against the Scots in September 1297, affecting subsequent political dynamics.<SEP>The Battle of Stirling Bridge was a significant conflict where the Scots defeated the English in September 1297."
+    },
+    {
+      "id": "Humphrey VI de Bohun",
+      "label": "Humphrey VI de Bohun",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Humphrey VI de Bohun is the grandson of Sir John de Verdun, who succeeded him after his death in 1275.<SEP>Humphrey VI de Bohun was the grandson of Humphrey IV de Bohun and inherited his father's lands and titles after 1299."
+    },
+    {
+      "id": "crusade",
+      "label": "crusade",
+      "entity_type": "event",
+      "degree": 2,
+      "description": "The crusade refers to military campaigns undertaken by Henry de Bohun towards the Holy Land."
+    },
+    {
+      "id": "King Edward I",
+      "label": "King Edward I",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "King Edward I was the father of Elizabeth of Rhuddlan and a notable monarch in English history.<SEP>King Edward I was the monarch involved in the Welsh wars and signed the Confirmatio Cartarum."
+    },
+    {
+      "id": "Eleanor de Braose",
+      "label": "Eleanor de Braose",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Eleanor de Braose was a Cambro-Norman noblewoman, wife of Humphrey de Bohun, and a co-heiress of significant estates.<SEP>Eleanor de Braose was the mother of Humphrey (VI) who brought significant holdings in the Welsh Marches into his inheritance.<SEP>Eleanor de Braose was the mother of Humphrey de "
+    },
+    {
+      "id": "Gilbert de Bohun",
+      "label": "Gilbert de Bohun",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Gilbert de Bohun was a member of the Bohun family who married Margarite and had descendants in the 14th century.<SEP>Gilbert de Bohun was a son of Eleanor de Braose and Humphrey de Bohun, and he became prominent in the noble lineage."
+    },
+    {
+      "id": "Humphrey (IV)",
+      "label": "Humphrey (IV)",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Humphrey (IV) was the grandfather of Humphrey (VI) and a key figure during the Barons' War who had switched sides."
+    },
+    {
+      "id": "Gilbert de Clare",
+      "label": "Gilbert de Clare",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Gilbert de Clare, Earl of Gloucester, was a marcher lord involved in conflicts with Hereford and was significant in Welsh affairs."
+    },
+    {
+      "id": "William Wallace",
+      "label": "William Wallace",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "William Wallace was a Scottish leader who led raids into England following the Scottish victory in the Battle of Stirling Bridge."
+    },
+    {
+      "id": "Edward",
+      "label": "Edward",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Edward was the English king who negotiated a truce with France and faced challenges from Scotland during his reign."
+    },
+    {
+      "id": "Sochi International Film Festival",
+      "label": "Sochi International Film Festival",
+      "entity_type": "event",
+      "degree": 2,
+      "description": "The Sochi International Film Festival is an event where Indradhanura Chhai won the Grand Prix for the Best Feature Film in 1995.<SEP>The Sochi International Film Festival in Russia awarded Ura Chhai the Grand Prix for the Best Feature Film in 1995."
+    },
+    {
+      "id": "National Film Awards",
+      "label": "National Film Awards",
+      "entity_type": "event",
+      "degree": 2,
+      "description": "The National Film Awards is an awards ceremony in India where Indradhanura Chhai received a Special Jury award in 1994.<SEP>The National Film Awards in India recognized Ura Chhai with a Special Jury award in 1994."
+    },
+    {
+      "id": "Death of the West",
+      "label": "Death of the West",
+      "entity_type": "content",
+      "degree": 2,
+      "description": "Death of the West is a term that may refer to various works including a 2001 book by Patrick J. Buchanan and different albums released by Babylon Whores and Sol Invictus."
+    },
+    {
+      "id": "Kara Han",
+      "label": "Kara Han",
+      "entity_type": "deity",
+      "degree": 2,
+      "description": "Kara Han, also known as the black king, is the son of the sky deity Tengri and lives in the underworld according to Turkic mythology."
+    },
+    {
+      "id": "Dasara Procession",
+      "label": "Dasara Procession",
+      "entity_type": "event",
+      "degree": 2,
+      "description": "The Dasara procession is a festival event during which Balarama carries the Golden Howdah, highlighting its religious significance."
+    },
+    {
+      "id": "Golden Howdah",
+      "label": "Golden Howdah",
+      "entity_type": "artifact",
+      "degree": 2,
+      "description": "The Golden Howdah is a fabled ceremonial seat that Balarama carried on his back during the procession.<SEP>The Golden Howdah is an embellished seat carried on the back of an elephant during the Dasara procession, a significant aspect of the event."
+    },
+    {
+      "id": "Arjuna",
+      "label": "Arjuna",
+      "entity_type": "creature",
+      "degree": 2,
+      "description": "Arjuna is an elephant who was originally chosen to carry the Golden Howdah but was sidelined due to a tragic incident involving a Mahout."
+    },
+    {
+      "id": "Joseph James Tranchita",
+      "label": "Joseph James Tranchita",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Joseph James Tranchita is the father of Justin Tranchita and an important figure in his early life."
+    },
+    {
+      "id": "Colin Fleming",
+      "label": "Colin Fleming",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Colin Fleming is an American former racing driver and Formula 1 test driver noted for his career in various racing series."
+    },
+    {
+      "id": "Jan Bull",
+      "label": "Jan Bull",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Jan Bull was a Norwegian author known for his poetry and theatrical instruction."
+    },
+    {
+      "id": "Justin McBride",
+      "label": "Justin McBride",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Justin McBride is a two-time PBR World Champion bull rider who has a notable history with Bones.<SEP>Justin McBride is a competitor whom Guilherme Marchi faced multiple times in the PBR World Finals."
+    },
+    {
+      "id": "PBR",
+      "label": "PBR",
+      "entity_type": "organization",
+      "degree": 2,
+      "description": "Professional Bull Riders (PBR) is a bull riding organization where Kody Lostroh achieved significant recognition and success."
+    },
+    {
+      "id": "Will Self",
+      "label": "Will Self",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Will Self is an English author known for his satirical and fantastical writing, including the book Cock and Bull."
+    },
+    {
+      "id": "Brazil",
+      "label": "Brazil",
+      "entity_type": "location",
+      "degree": 2,
+      "description": "Brazil is where Marchi moved back to with his family after retiring from bull riding.<SEP>Brazil is a country where Cabot landed during his expedition and reported on the wealth associated with the Incan king."
+    },
+    {
+      "id": "Mysore Dasara Procession",
+      "label": "Mysore Dasara Procession",
+      "entity_type": "event",
+      "degree": 2,
+      "description": "The Mysore Dasara procession is a significant cultural event where elephants participate, including Balarama."
+    },
+    {
+      "id": "Pole-Residue Method",
+      "label": "Pole-Residue Method",
+      "entity_type": "method",
+      "degree": 2,
+      "description": "The Pole-Residue Method is a mathematical technique used to analyze system responses by focusing on poles and residues in complex signals.<SEP>The pole-residue method is a mathematical approach used for deriving responses in systems, developed for ordinary linear oscillators."
+    },
+    {
+      "id": "Prony-SS Method",
+      "label": "Prony-SS Method",
+      "entity_type": "method",
+      "degree": 2,
+      "description": "The Prony-SS Method is a signal decomposition approach used to approximate irregular excitation signals into manageable components.<SEP>The Prony-SS method is a technique used for approximating functions through a series of sinusoidal components based on time-domain data."
+    },
+    {
+      "id": "Numerical Studies",
+      "label": "Numerical Studies",
+      "entity_type": "concept",
+      "degree": 2,
+      "description": "Numerical Studies involve computational methods applied to analyze the behavior of systems, particularly for both known and unknown equations of motion."
+    },
+    {
+      "id": "Runge-Kutta Method",
+      "label": "Runge-Kutta Method",
+      "entity_type": "method",
+      "degree": 2,
+      "description": "The Runge-Kutta Method is a traditional numerical integration technique used for solving ordinary differential equations.<SEP>The Runge-Kutta method is a numerical technique used to solve ordinary differential equations, often employed for computing system responses.<SEP>The Runge-Kutta Method is a "
+    },
+    {
+      "id": "Second-Order Response",
+      "label": "Second-Order Response",
+      "entity_type": "concept",
+      "degree": 2,
+      "description": "The Second-Order Response is defined by contributions that include features not captured by the first-order response."
+    },
+    {
+      "id": "Cross Response",
+      "label": "Cross Response",
+      "entity_type": "concept",
+      "degree": 2,
+      "description": "The cross response involves interactions between multiple inputs affecting the system, analyzed in conjunction with other types of responses.<SEP>Cross Response is a component that exists only in second-order responses, resulting from interactions between different orders of response."
+    },
+    {
+      "id": "Aseptic Packaging",
+      "label": "Aseptic Packaging",
+      "entity_type": "concept",
+      "degree": 2,
+      "description": "Aseptic packaging is a method of packaging that keeps products safe from bacterial contamination without refrigeration."
+    },
+    {
+      "id": "Bagman (Disambiguation)",
+      "label": "Bagman (Disambiguation)",
+      "entity_type": "concept",
+      "degree": 2,
+      "description": "Bagman refers to several interpretations, including a collector of dirty money for organized crime and various cultural references in video games, films, and literature."
+    },
+    {
+      "id": "Genova",
+      "label": "Genova",
+      "entity_type": "location",
+      "degree": 2,
+      "description": "Genova is the city where the film The Police Serve the Citizens? is set.<SEP>Genova is the setting for the film \"La Polizia è al servizio del cittadino?\"."
+    },
+    {
+      "id": "Enrico Maria Salerno",
+      "label": "Enrico Maria Salerno",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Enrico Maria Salerno plays Commissioner Nicola Sironi in the film The Police Serve the Citizens?."
+    },
+    {
+      "id": "Giuseppe Pambieri",
+      "label": "Giuseppe Pambieri",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Giuseppe Pambieri portrays Commissioner Marino in The Police Serve the Citizens?."
+    },
+    {
+      "id": "John Steiner",
+      "label": "John Steiner",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "John Steiner plays the character Lambro in the film The Police Serve the Citizens?."
+    },
+    {
+      "id": "Venantino Venantini",
+      "label": "Venantino Venantini",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Venantino Venantini plays the character Mancinelli in The Police Serve the Citizens?."
+    },
+    {
+      "id": "Alessandro Momo",
+      "label": "Alessandro Momo",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Alessandro Momo plays the character Michele Sironi in The Police Serve the Citizens?."
+    },
+    {
+      "id": "Memmo Carotenuto",
+      "label": "Memmo Carotenuto",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Memmo Carotenuto plays the character Baron in The Police Serve the Citizens?."
+    },
+    {
+      "id": "Marie Sophie Persson",
+      "label": "Marie Sophie Persson",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Marie Sophie Persson plays the character Cristina in The Police Serve the Citizens?."
+    },
+    {
+      "id": "Daniel Gélin",
+      "label": "Daniel Gélin",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Daniel Gélin plays the role of Ing. Pier Paolo Brera in The Police Serve the Citizens?."
+    },
+    {
+      "id": "Gabriella Giorgelli",
+      "label": "Gabriella Giorgelli",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Gabriella Giorgelli plays Eros, a Prostitute in The Police Serve the Citizens?."
+    },
+    {
+      "id": "Enzo Liberti",
+      "label": "Enzo Liberti",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Enzo Liberti plays the character Greengrocer in The Police Serve the Citizens?."
+    },
+    {
+      "id": "August 25, 1973",
+      "label": "August 25, 1973",
+      "entity_type": "event",
+      "degree": 2,
+      "description": "August 25, 1973, is the release date of the film The Police Serve the Citizens?."
+    },
+    {
+      "id": "P.I.C.",
+      "label": "P.I.C.",
+      "entity_type": "organization",
+      "degree": 2,
+      "description": "P.I.C. is the distributor of The Police Serve the Citizens? in Italy.<SEP>P.I.C. is the distributor of the film \"La Polizia è al servizio del cittadino?\" in Italy."
+    },
+    {
+      "id": "Giovanna Ralli",
+      "label": "Giovanna Ralli",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Giovanna Ralli is an actress who played Oslavia in the film \"Una prostituta al servizio del pubblico e in regola con le leggi dello stato\" and won an award for her performance."
+    },
+    {
+      "id": "Robert De Niro",
+      "label": "Robert De Niro",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Robert De Niro plays the role of Dragna in The Bag Man.<SEP>Robert De Niro is an actor who appears as young Vito in The Godfather Part II, for which new themes were created."
+    },
+    {
+      "id": "Dragna",
+      "label": "Dragna",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Dragna is a gangster in The Bag Man who recruits Jack for the dangerous task."
+    },
+    {
+      "id": "Rivka",
+      "label": "Rivka",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Rivka is a character in The Bag Man who becomes involved with Jack."
+    },
+    {
+      "id": "Dhanush",
+      "label": "Dhanush",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Dhanush is an Indian actor who collaborated with Manimaran in the film Asuran, in which Manimaran served as a second unit director.<SEP>Dhanush is a singer, songwriter, and actor who co-wrote and sang tracks for the album and other films."
+    },
+    {
+      "id": "Saindhavi",
+      "label": "Saindhavi",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Saindhavi is a singer and the wife of G. V. Prakash Kumar, with whom she has a daughter named Anvi.<SEP>Saindhavi is Prakash's fiancée and has performed duets with him."
+    },
+    {
+      "id": "Christopher Nolan",
+      "label": "Christopher Nolan",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Christopher Nolan is a filmmaker known for directing Interstellar and other major films, also collaborating with Hans Zimmer on multiple projects.<SEP>Christopher Nolan is a film director known for his collaboration with Hans Zimmer and for his bold use of sound in films."
+    },
+    {
+      "id": "Kadiresan",
+      "label": "Kadiresan",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Kadiresan is a producer who was pitched stories by Vetrimaaran for potential projects."
+    },
+    {
+      "id": "Siddharth",
+      "label": "Siddharth",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Siddharth is an Indian actor who played the lead role in the Tamil film Udhayam NH4.<SEP>Siddharth is an actor who stars in the film Udhayam NH4.<SEP>Siddharth was approached for the lead role in Udhayam NH4 and accepted the offer."
+    },
+    {
+      "id": "Ashrita Shetty",
+      "label": "Ashrita Shetty",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Ashrita Shetty is an Indian actress primarily working in Tamil films, known for her role in Udhayam NH4 and has won a beauty contest.<SEP>Ashrita Shetty is a newcomer who co-stars with Siddharth in the film Udhayam NH4.<SEP>Ashrita Shetty is the actress who played the female lead role in the reviewe"
+    },
+    {
+      "id": "Meeka Entertainment",
+      "label": "Meeka Entertainment",
+      "entity_type": "organization",
+      "degree": 2,
+      "description": "Meeka Entertainment is a film production company that collaborated with Grass Root Film Company on producing Udhayam NH4.<SEP>Meeka Entertainment is one of the companies producing Udhayam NH4."
+    },
+    {
+      "id": "Grass Root Film Company",
+      "label": "Grass Root Film Company",
+      "entity_type": "organization",
+      "degree": 2,
+      "description": "Grass Root Film Company is an Indian film production and distribution company established by Vetrimaaran in 2012, known for producing Tamil films.<SEP>Grass Root Film Company is partnering with Meeka Entertainment to produce Udhayam NH4."
+    },
+    {
+      "id": "Ippo Yamada",
+      "label": "Ippo Yamada",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Ippo Yamada is a composer known for creating music for multiple games in the Mega Man Zero series.<SEP>Ippo Yamada is a composer who contributed remixed tracks for the Remastered Tracks Rockman Zero: Mythos album."
+    },
+    {
+      "id": "Manimaran",
+      "label": "Manimaran",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Manimaran is an Indian film director known for his work in the Tamil film industry and has directed several films including Udhayam NH4 and Sangathalaivan.<SEP>Manimaran is the debutant director of Udhayam NH4 and a former associate of Vetrimaaran."
+    },
+    {
+      "id": "True Grit (1969 film)",
+      "label": "True Grit (1969 film)",
+      "entity_type": "event",
+      "degree": 2,
+      "description": "True Grit (1969 film) is a film adaptation of a novel, directed by Henry Hathaway and starring John Wayne, as part of the discussion on soundtracks."
+    },
+    {
+      "id": "True Grit (2010 film)",
+      "label": "True Grit (2010 film)",
+      "entity_type": "event",
+      "degree": 2,
+      "description": "True Grit (2010 film) is a film adaptation by the Coen Brothers, starring Jeff Bridges, also discussed in relation to soundtracks."
+    },
+    {
+      "id": "True Grit (novel)",
+      "label": "True Grit (novel)",
+      "entity_type": "content",
+      "degree": 2,
+      "description": "True Grit (novel) is a 1968 novel by Charles Portis, which inspired several film adaptations."
+    },
+    {
+      "id": "Rajadhi Raja",
+      "label": "Rajadhi Raja",
+      "entity_type": "event",
+      "degree": 2,
+      "description": "Rajadhi Raja is the Telugu version of JK Enum Nanbanin Vaazhkai, released later than the Tamil version.<SEP>Rajadhi Raja is the retitled Telugu version of JK Enum Nanbanin Vaazhkai that was released theatrically."
+    },
+    {
+      "id": "Prabhu",
+      "label": "Prabhu",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Prabhu is the protagonist in Udhayam NH4 who loves Rithika and plans to kidnap her."
+    },
+    {
+      "id": "Rithika",
+      "label": "Rithika",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Rithika is Prabhu's love interest in Udhayam NH4, who is initially separated from him by her father."
+    },
+    {
+      "id": "Augustus Ferdinand",
+      "label": "Augustus Ferdinand",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Augustus Ferdinand was Anna Elisabeth Louise's uncle and husband; he died in Berlin on 2 May 1813."
+    },
+    {
+      "id": "Frederick William, Margrave of Brandenburg-Schwedt",
+      "label": "Frederick William, Margrave of Brandenburg-Schwedt",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Frederick William was a German nobleman who held several royal titles, known for his brutal temperament and connections with the Hohenzollern dynasty."
+    },
+    {
+      "id": "Frederick I of Prussia",
+      "label": "Frederick I of Prussia",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Frederick I of Prussia was the King who played a crucial role in Frederick William's early life and education.<SEP>Frederick I, originally Elector Friedrich III, was the half-brother of Philip William and later became King of Prussia."
+    },
+    {
+      "id": "Sophia Dorothea of Prussia",
+      "label": "Sophia Dorothea of Prussia",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Sophia Dorothea was the first cousin once removed of Frederick William and his wife.<SEP>Sophia Dorothea of Prussia was the wife of Frederick William, who experienced a troubled marriage and sought protection from her brother."
+    },
+    {
+      "id": "Frederick II",
+      "label": "Frederick II",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Frederick II was the brother of Sophia Dorothea and the future king who protected her from insults in her marriage.<SEP>Frederick II was a monarch who granted estates to officers after the Treaty of Hubertusburg."
+    },
+    {
+      "id": "Charles Frederick Albert",
+      "label": "Charles Frederick Albert",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Charles Frederick Albert was a Margrave of Brandenburg-Schwedt and a military officer in the Prussian Army.<SEP>Charles Frederick Albert was the Margrave of Brandenburg-Schwedt and a surviving son of Albert Frederick."
+    },
+    {
+      "id": "Sophia Dorothea",
+      "label": "Sophia Dorothea",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Sophia Dorothea is the wife of Frederick William and mother of Frederick Henry.<SEP>Sophia Dorothea was the mother of Charles Philip, daughter of Philip, Duke of Schleswig-Holstein-Sonderburg-Glücksburg.<SEP>Sophia Dorothea was the second wife of Elector Frederick William of Brandenburg and mother o"
+    },
+    {
+      "id": "Marie Amalie",
+      "label": "Marie Amalie",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Marie Amalie of Brandenburg-Schwedt was a princess of the Brandenburg-Schwedt line who became Duchess of Saxe-Zeitz by marriage."
+    },
+    {
+      "id": "Frederick William of Brandenburg",
+      "label": "Frederick William of Brandenburg",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Frederick William of Brandenburg was known as the \"Great Elector\" and the father of Charles Philip."
+    },
+    {
+      "id": "Caterina di Salmour",
+      "label": "Caterina di Salmour",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Caterina di Salmour is a historical figure who was to marry Charles Philip but was imprisoned by Duke Victor Amadeus to avoid diplomatic complications."
+    },
+    {
+      "id": "Frederick William of Brandenburg-Schwedt",
+      "label": "Frederick William of Brandenburg-Schwedt",
+      "entity_type": "unknown",
+      "degree": 2,
+      "description": "Frederick William was involved in the Battle of Mollwitz, a notable conflict during his military career."
+    },
+    {
+      "id": "Albert Frederick of Brandenburg-Schwedt",
+      "label": "Albert Frederick of Brandenburg-Schwedt",
+      "entity_type": "unknown",
+      "degree": 2,
+      "description": "Albert Frederick was also a son of Frederick William, the \"Great Elector.\""
+    },
+    {
+      "id": "Duke Victor Amadeus II of Sardinia",
+      "label": "Duke Victor Amadeus II of Sardinia",
+      "entity_type": "unknown",
+      "degree": 2,
+      "description": "Duke Victor Amadeus imprisoned Caterina di Salmour in a convent to prevent her marriage to Charles Philip."
+    },
+    {
+      "id": "Jomo Kenyatta",
+      "label": "Jomo Kenyatta",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Jomo Kenyatta is a revered leader in the movement for Kenyan independence whose trial influences the story's events.<SEP>Jomo Kenyatta is the first prime minister of Kenya, viewed by Njoroge as a potential savior figure in the struggle against colonial oppression."
+    },
+    {
+      "id": "Muscovy Company",
+      "label": "Muscovy Company",
+      "entity_type": "organization",
+      "degree": 2,
+      "description": "The Muscovy Company was an English trading company that Cabot governed and helped prepare for exploration activities.<SEP>The Muscovy Company is a trading company that operated during the 16th century, engaged in expeditions and trade, with Steven Borough serving as its governor."
+    },
+    {
+      "id": "Frederick de Houtman",
+      "label": "Frederick de Houtman",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Frederick de Houtman was a Dutch explorer and navigator who sailed on the first Dutch expedition to the East Indies from 1595 to 1597."
+    },
+    {
+      "id": "Brian Viloria",
+      "label": "Brian Viloria",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Brian Viloria is the boxer who knocked out Ulises Solís, resulting in Solís losing his IBF light-flyweight title."
+    },
+    {
+      "id": "Henry VII",
+      "label": "Henry VII",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Henry VII was the King of England who granted Sebastian Cabot an annuity for his exploratory services.<SEP>Henry VII was the King of England during John Cabot's expeditions, who recognized Cabot's achievements with rewards."
+    },
+    {
+      "id": "Giovanni Antonio de Carbonariis",
+      "label": "Giovanni Antonio de Carbonariis",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Giovanni Antonio de Carbonariis was a friar who may have founded a mission settlement in North America during the 1498 expedition.<SEP>Giovanni Antonio de Carbonariis was a London-based banker who is mentioned in connection with a letter written about John Cabot's voyage, though the letter itself ha"
+    },
+    {
+      "id": "Cabot Project",
+      "label": "Cabot Project",
+      "entity_type": "organization",
+      "degree": 2,
+      "description": "The Cabot Project was formed at the University of Bristol in 2009 to research John Cabot Montecalunya and his Bristol expeditions.<SEP>The Cabot Project at the University of Bristol was established to search for evidence regarding John Cabot's expeditions."
+    },
+    {
+      "id": "Skytraders",
+      "label": "Skytraders",
+      "entity_type": "organization",
+      "degree": 2,
+      "description": "Skytraders is an airline that has been granted an aviation license to operate passenger flights to Antarctica."
+    },
+    {
+      "id": "Hobart International Airport",
+      "label": "Hobart International Airport",
+      "entity_type": "location",
+      "degree": 2,
+      "description": "Hobart International Airport is located in Tasmania and is the departure point for flights to Antarctica."
+    },
+    {
+      "id": "Valencia",
+      "label": "Valencia",
+      "entity_type": "location",
+      "degree": 2,
+      "description": "Valencia is a city in Spain where John Cabot Montecalunya proposed improvements to the harbour.<SEP>Valencia is a city in Spain where John Cabot moved after financial troubles in Venice."
+    },
+    {
+      "id": "Seville",
+      "label": "Seville",
+      "entity_type": "location",
+      "degree": 2,
+      "description": "Seville is a city in Spain where John Cabot Montecalunya worked on the construction of a stone bridge over the Guadalquivir river.<SEP>Seville is a Spanish city where John Cabot proposed and worked on construction projects."
+    },
+    {
+      "id": "London",
+      "label": "London",
+      "entity_type": "location",
+      "degree": 2,
+      "description": "London is a city in England where John Cabot Montecalunya sought funding and political support for his expeditions.<SEP>London is one of the cities where Paula Santiago worked on her art pieces."
+    },
+    {
+      "id": "Henry VII of England",
+      "label": "Henry VII of England",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Henry VII of England granted John Cabot Montecalunya a royal patent for exploration in 1496.<SEP>Henry VII of England was the monarch who commissioned John Cabot's voyage to North America in 1497."
+    },
+    {
+      "id": "Alwyn Ruddock",
+      "label": "Alwyn Ruddock",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Alwyn Ruddock is a British historian who researched John Cabot Montecalunya and his voyages, discovering significant documentation.<SEP>Alwyn Ruddock was a historian who claimed to have found evidence regarding prior discoveries made by Bristol seamen before John Cabot's expeditions."
+    },
+    {
+      "id": "Bardi Family Banking Firm",
+      "label": "Bardi Family Banking Firm",
+      "entity_type": "organization",
+      "degree": 2,
+      "description": "The Bardi family banking firm from Florence provided financial support for John Cabot Montecalunya's expedition."
+    },
+    {
+      "id": "Charles V",
+      "label": "Charles V",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Charles V was the Holy Roman Emperor and King of Spain who funded Sebastian Cabot's explorations.<SEP>Charles V was the Holy Roman Emperor whom Cabot discussed future voyages to China with during his later years."
+    },
+    {
+      "id": "Council of the Indies",
+      "label": "Council of the Indies",
+      "entity_type": "organization",
+      "degree": 2,
+      "description": "The Council of the Indies is the governing body in Spain for overseeing exploration and colonial affairs, where Sebastian Cabot served later in his career.<SEP>The Council of the Indies was a governing body in Spain that oversaw colonial administration in the New World and employed John Cabot as a m"
+    },
+    {
+      "id": "Frederick",
+      "label": "Frederick",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Frederick was a member of the Dutch expedition who was imprisoned by the Sultan of Aceh and studied the local Malay language during his captivity."
+    },
+    {
+      "id": "100m Diagram",
+      "label": "100m Diagram",
+      "entity_type": "concept",
+      "degree": 2,
+      "description": "The 100m Diagram represents a significant element in the astronomy observations documented by De Houtman and Keyser, showcasing the constellations they observed."
+    },
+    {
+      "id": "Mattea",
+      "label": "Mattea",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Mattea is the wife of John Cabot, mentioned as being married to him in Venetian records.<SEP>Mattea was the wife of Sebastian Cabot, known for marrying him around 1470."
+    },
+    {
+      "id": "Tibol, Raquel",
+      "label": "Tibol, Raquel",
+      "entity_type": "person",
+      "degree": 2,
+      "description": "Tibol, Raquel is an author noted for several works, including \"La Primera Individual de Paula Santiago\" and \"Dos Mujeres en Monterrey.\""
+    },
+    {
+      "id": "Media",
+      "label": "Media",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "Media refers to the channels of communication and can include various forms like printed or digital content."
+    },
+    {
+      "id": "Opaque Medium",
+      "label": "Opaque Medium",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "An opaque medium prevents the clear viewing of objects and is relevant in the context of optical reconstruction."
+    },
+    {
+      "id": "Disordered Optical Fiber",
+      "label": "Disordered Optical Fiber",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "Disordered optical fiber relates to the transmission of light through materials that distort the image of objects."
+    },
+    {
+      "id": "Inverse Ising Problem",
+      "label": "Inverse Ising Problem",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "The inverse Ising problem is a key challenge in statistical physics, focusing on inferring interactions from observed data."
+    },
+    {
+      "id": "Exchange Monte Carlo",
+      "label": "Exchange Monte Carlo",
+      "entity_type": "method",
+      "degree": 1,
+      "description": "Exchange Monte Carlo is a numerical simulation technique used to generate thermalized data for analyzing variational models."
+    },
+    {
+      "id": "Kuramoto Model",
+      "label": "Kuramoto Model",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "The Kuramoto model is a mathematical model used to describe synchronization phenomena in systems with coupled oscillators."
+    },
+    {
+      "id": "Josephson Junction Arrays",
+      "label": "Josephson Junction Arrays",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "Josephson junction arrays are structures that allow for quantum effects in superconductors, pertinent in various applications including quantum computing."
+    },
+    {
+      "id": "Starlings Flocks",
+      "label": "Starlings Flocks",
+      "entity_type": "naturalobject",
+      "degree": 1,
+      "description": "Starlings flocks exhibit complex group behavior and organization, demonstrating synchronization similar to theoretical models."
+    },
+    {
+      "id": "Optics",
+      "label": "Optics",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "Optics is the branch of physics involving the behavior and properties of light, including its interactions with matter."
+    },
+    {
+      "id": "Lasing",
+      "label": "Lasing",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "Lasing refers to the process of producing coherent light through stimulated emission in a laser system."
+    },
+    {
+      "id": "Random Media",
+      "label": "Random Media",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "Random media are disordered materials where light propagation exhibits complex interference and scattering properties."
+    },
+    {
+      "id": "Speckle",
+      "label": "Speckle",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "Speckle is a disordered interference pattern observed in light scattering from rough surfaces or disordered media."
+    },
+    {
+      "id": "Scattering Matrix",
+      "label": "Scattering Matrix",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "The scattering matrix describes how incoming electromagnetic fields interact with a scattering medium, linking inputs to outputs."
+    },
+    {
+      "id": "Jones Calculus",
+      "label": "Jones Calculus",
+      "entity_type": "method",
+      "degree": 1,
+      "description": "Jones Calculus is a mathematical formalism used to handle the polarization of light, particularly in optics.<SEP>Jones calculus is a mathematical representation used in optics to describe the behavior of polarized light."
+    },
+    {
+      "id": "PLM-$l_2$",
+      "label": "PLM-$l_2$",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "The PLM-$l_2$ refers to a specific version of the Probabilistic Learning Model incorporating $l_2$ regularization for data analysis."
+    },
+    {
+      "id": "Variational Mean-Field Method",
+      "label": "Variational Mean-Field Method",
+      "entity_type": "method",
+      "degree": 1,
+      "description": "The variational mean-field method is a statistical technique analyzed in relation to the performance of the PLM in various applications."
+    },
+    {
+      "id": "Boltzmann Machine Learning",
+      "label": "Boltzmann Machine Learning",
+      "entity_type": "method",
+      "degree": 1,
+      "description": "Boltzmann machine learning is a technique using Monte Carlo sampling to compute gradients of the log-likelihood, although it is limited to small systems."
+    },
+    {
+      "id": "Ising Model",
+      "label": "Ising Model",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "The Ising model is a statistical mechanics model representing interactions of spins, particularly as a special case of the XY model for p=2."
+    },
+    {
+      "id": "Potts Model",
+      "label": "Potts Model",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "The Potts model generalizes the Ising model to allow more than two spin states, with the $p$-clock model being a specific example."
+    },
+    {
+      "id": "Optical Systems",
+      "label": "Optical Systems",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "Optical systems refer to setups involving light transmission, which are analyzed using the statistical models discussed in the text, including lasers."
+    },
+    {
+      "id": "Interaction Network",
+      "label": "Interaction Network",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "The interaction network refers to the underlying structure of connections between elements in a system, crucial for the statistical inference addressed in the text."
+    },
+    {
+      "id": "Coupling Coefficients",
+      "label": "Coupling Coefficients",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "Coupling coefficients describe the strengths of interactions between connected elements in a model, essential for determining system dynamics."
+    },
+    {
+      "id": "Mean-Field-Based Algorithms",
+      "label": "Mean-Field-Based Algorithms",
+      "entity_type": "method",
+      "degree": 1,
+      "description": "Mean-field-based algorithms are statistical methods used to predict interactions in systems, mentioned in relation to the comparison with the Pseudo-Likelihood Method."
+    },
+    {
+      "id": "Decimation Procedure",
+      "label": "Decimation Procedure",
+      "entity_type": "method",
+      "degree": 1,
+      "description": "The Decimation Procedure is a method used to identify the most likely network by analyzing coupling matrices in the context of ordered and disordered couplings."
+    },
+    {
+      "id": "Figure 1",
+      "label": "Figure 1",
+      "entity_type": "data",
+      "degree": 1,
+      "description": "Figure 1 displays the Tilted Pseudolikelyhood plotted with reconstruction errors for the XY model with $N=64$ spins on a 2D lattice."
+    },
+    {
+      "id": "Figure 2",
+      "label": "Figure 2",
+      "entity_type": "data",
+      "degree": 1,
+      "description": "Figure 2 shows the XY model on a 2D lattice with $N=64$ sites and real valued couplings, comparing inferred and true couplings."
+    },
+    {
+      "id": "Figure 3",
+      "label": "Figure 3",
+      "entity_type": "data",
+      "degree": 1,
+      "description": "Figure 3 presents the XY model on a 2D lattice with $N=64$ sites and ordered complex-valued couplings, illustrating the relation between inferred and true couplings."
+    },
+    {
+      "id": "Figure 4",
+      "label": "Figure 4",
+      "entity_type": "data",
+      "degree": 1,
+      "description": "Figure 4 illustrates True Positive curves obtained with three techniques related to coupling analysis at a specific temperature and sample sizes."
+    },
+    {
+      "id": "Figure 5",
+      "label": "Figure 5",
+      "entity_type": "data",
+      "degree": 1,
+      "description": "Figure 5 depicts the variation of reconstruction error with respect to temperature for different sample sizes, assessing the impact on results."
+    },
+    {
+      "id": "Figure 6",
+      "label": "Figure 6",
+      "entity_type": "data",
+      "degree": 1,
+      "description": "Figure 6 presents further insights on the performance of various techniques and their results in analyzing the XY model and coupling strengths."
+    },
+    {
+      "id": "Fig. 1",
+      "label": "Fig. 1",
+      "entity_type": "artifact",
+      "degree": 1,
+      "description": "Fig. 1 is a visual representation that showcases the sorted inferred couplings and the true couplings in a graph format."
+    },
+    {
+      "id": "T",
+      "label": "T",
+      "entity_type": "data",
+      "degree": 1,
+      "description": "T represents the temperature at which the experiments were conducted, affecting the couplings and error rates in the system."
+    },
+    {
+      "id": "Kosterlitz-Thouless Transition Temperature",
+      "label": "Kosterlitz-Thouless Transition Temperature",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "The Kosterlitz-Thouless transition temperature, denoted as T_c, is a critical temperature associated with the phase transition in two-dimensional systems."
+    },
+    {
+      "id": "True Positive Curves",
+      "label": "True Positive Curves",
+      "entity_type": "method",
+      "degree": 1,
+      "description": "True Positive curves provide a visual representation of the number of true links found by the inference method as a function of reconstructed coupling values."
+    },
+    {
+      "id": "N",
+      "label": "N",
+      "entity_type": "data",
+      "degree": 1,
+      "description": "N denotes the system size involved in the analysis, indicating the number of spins present in the network.<SEP>N represents the number of spins considered in the XY model system, specifically denoted as $N=64$ in the provided context."
+    },
+    {
+      "id": "$\\mathbb{J}^R_{\\rm inf}$",
+      "label": "$\\mathbb{J}^R_{\\rm inf}$",
+      "entity_type": "data",
+      "degree": 1,
+      "description": "The $\\mathbb{J}^R_{\\rm inf}$ refers to the inferred couplings in the analysis, which reproduces the expected step function."
+    },
+    {
+      "id": "$\\mathbb{J}^R_{\\rm tru}$",
+      "label": "$\\mathbb{J}^R_{\\rm tru}$",
+      "entity_type": "data",
+      "degree": 1,
+      "description": "The $\\mathbb{J}^R_{\\rm tru}$ represents the true couplings in the system that are used for comparison against the inferred couplings."
+    },
+    {
+      "id": "Gibbs-Boltzmann Distribution",
+      "label": "Gibbs-Boltzmann Distribution",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "The Gibbs-Boltzmann distribution is a probability distribution of the states of a system in thermodynamic equilibrium at a given temperature, describing how the probabilities of various states depend on energy."
+    },
+    {
+      "id": "Intensities",
+      "label": "Intensities",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "Intensities refer to quantities that can be considered constants in certain equations and are discussed in the context of the XY model and Hamiltonian functions."
+    },
+    {
+      "id": "Data Configurations",
+      "label": "Data Configurations",
+      "entity_type": "data",
+      "degree": 1,
+      "description": "Data configurations refer to specific arrangements of variables that are used in the context of inferring couplings in the Hamiltonian."
+    },
+    {
+      "id": "Matrix J",
+      "label": "Matrix J",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "Matrix J is described as the whole interaction matrix used to represent the relationships among electromagnetic modes and their phases."
+    },
+    {
+      "id": "Phase-Only Spatial Light Modulator",
+      "label": "Phase-Only Spatial Light Modulator",
+      "entity_type": "method",
+      "degree": 1,
+      "description": "The phase-only spatial light modulator (SLM) is a device that produces homogeneous illumination in the context of the input intensities in electromagnetic configurations."
+    },
+    {
+      "id": "E^{\\rm in}_k",
+      "label": "E^{\\rm in}_k",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "E^{\\rm in}_k indicates the input intensities produced by a phase-only spatial light modulator, representing the initial values in the configuration."
+    },
+    {
+      "id": "Quenched Intensities",
+      "label": "Quenched Intensities",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "Quenched intensities refer to situations where the intensity of each mode remains constant for every solution at fixed input conditions."
+    },
+    {
+      "id": "Temperature Behavior",
+      "label": "Temperature Behavior",
+      "entity_type": "concept",
+      "degree": 1,
+      "description": "Temperature Behavior investigates how reconstruction error varies with temperature during the application of inference techniques."
+    }
+  ],
+  "edges": [
+    {
+      "source": "Charles Philip of Brandenburg-Schwedt",
+      "target": "Frederick William of Brandenburg",
+      "keywords": "familial relationship,royal lineage",
+      "weight": 1.0
+    },
+    {
+      "source": "Charles Philip of Brandenburg-Schwedt",
+      "target": "Duke Victor Amadeus II of Sardinia",
+      "keywords": "marriage complications,political conflict",
+      "weight": 1.0
+    },
+    {
+      "source": "T",
+      "target": "M",
+      "keywords": "sample analysis,variable relation",
+      "weight": 1.0
+    },
+    {
+      "source": "Prakash",
+      "target": "Dhanush",
+      "keywords": "collaboration,performance",
+      "weight": 1.0
+    },
+    {
+      "source": "Prakash",
+      "target": "Saindhavi",
+      "keywords": "performance,relationship",
+      "weight": 1.0
+    },
+    {
+      "source": "Jack",
+      "target": "Dragna",
+      "keywords": "antagonist,plot motivation",
+      "weight": 1.0
+    },
+    {
+      "source": "Jack",
+      "target": "Rivka",
+      "keywords": "character relationship,plot involvement",
+      "weight": 1.0
+    },
+    {
+      "source": "This Is America",
+      "target": "Tranchita",
+      "keywords": "political impact,song success",
+      "weight": 1.0
+    },
+    {
+      "source": "Frederick Henry",
+      "target": "Frederick William",
+      "keywords": "inheritance,parent-child relationship,succession",
+      "weight": 2.0
+    },
+    {
+      "source": "Frederick Henry",
+      "target": "Sophia Dorothea",
+      "keywords": "parent-child relationship",
+      "weight": 1.0
+    },
+    {
+      "source": "Rodgers",
+      "target": "Madonna",
+      "keywords": "critical input,production",
+      "weight": 1.0
+    },
+    {
+      "source": "Optics",
+      "target": "Lasing",
+      "keywords": "light behavior,practical application",
+      "weight": 1.0
+    },
+    {
+      "source": "Frederick William of Brandenburg",
+      "target": "Albert Frederick of Brandenburg-Schwedt",
+      "keywords": "familial relationship,royal lineage",
+      "weight": 1.0
+    },
+    {
+      "source": "Vetrimaaran",
+      "target": "Udhayam NH4",
+      "keywords": "contribution,story writer",
+      "weight": 1.0
+    },
+    {
+      "source": "Vetrimaaran",
+      "target": "Kadiresan",
+      "keywords": "story narration",
+      "weight": 1.0
+    },
+    {
+      "source": "Philip William",
+      "target": "Frederick I of Prussia",
+      "keywords": "family relationship,governance,guardianship",
+      "weight": 2.0
+    },
+    {
+      "source": "Philip William",
+      "target": "Albert Frederick",
+      "keywords": "familial ties,sibling relationship",
+      "weight": 1.0
+    },
+    {
+      "source": "Philip William",
+      "target": "Henrietta Maria of Brandenburg-Schwedt",
+      "keywords": "descendant relationship,lineage",
+      "weight": 1.0
+    },
+    {
+      "source": "Like A Virgin",
+      "target": "Madonna",
+      "keywords": "album achievement,album release,artist creation,cultural impact",
+      "weight": 2.0
+    },
+    {
+      "source": "Like A Virgin",
+      "target": "Nile Rodgers",
+      "keywords": "collaboration,producer role",
+      "weight": 1.0
+    },
+    {
+      "source": "Like A Virgin",
+      "target": "Steve Bray",
+      "keywords": "co-writer,songwriting",
+      "weight": 1.0
+    },
+    {
+      "source": "Like A Virgin",
+      "target": "Bernard Edwards",
+      "keywords": "musical contribution,recording",
+      "weight": 1.0
+    },
+    {
+      "source": "Like A Virgin",
+      "target": "Tony Thompson",
+      "keywords": "musical contribution,recording",
+      "weight": 1.0
+    },
+    {
+      "source": "Giovanni Antonio de Carbonariis",
+      "target": "John Cabot",
+      "keywords": "connection to voyage,financial support",
+      "weight": 1.0
+    },
+    {
+      "source": "True Grit (2010 film)",
+      "target": "True Grit (novel)",
+      "keywords": "adaptation,source material",
+      "weight": 1.0
+    },
+    {
+      "source": "Bardi Family Banking Firm",
+      "target": "John Cabot Montecalunya",
+      "keywords": "expedition funding,financial contribution",
+      "weight": 1.0
+    },
+    {
+      "source": "Mean-Field-Based Algorithms",
+      "target": "Pseudo-Likelihood Method",
+      "keywords": "comparison,performance analysis",
+      "weight": 1.0
+    },
+    {
+      "source": "Rithika",
+      "target": "Prabhu",
+      "keywords": "romantic relationship",
+      "weight": 1.0
+    },
+    {
+      "source": "Charles V",
+      "target": "Sebastian Cabot",
+      "keywords": "exploration funding,sponsorship",
+      "weight": 1.0
+    },
+    {
+      "source": "Charles V",
+      "target": "John Cabot",
+      "keywords": "future plans,royal service",
+      "weight": 1.0
+    },
+    {
+      "source": "Runge-Kutta Method",
+      "target": "Proposed Method",
+      "keywords": "computational efficiency,numerical analysis",
+      "weight": 1.0
+    },
+    {
+      "source": "$\\mathbb{J}^R_{\\rm tru}$",
+      "target": "Reconstruction Error",
+      "keywords": "accuracy,comparison",
+      "weight": 1.0
+    },
+    {
+      "source": "Jacobo",
+      "target": "Njoroge",
+      "keywords": "adversity,conflict",
+      "weight": 1.0
+    },
+    {
+      "source": "Jacobo",
+      "target": "Ngotho",
+      "keywords": "class struggle,conflict",
+      "weight": 1.0
+    },
+    {
+      "source": "Jacobo",
+      "target": "Boro",
+      "keywords": "conflict,landownership",
+      "weight": 1.0
+    },
+    {
+      "source": "Marie Amalie of Brandenburg",
+      "target": "Duke Maurice William of Saxe-Zeitz",
+      "keywords": "family,marriage",
+      "weight": 1.0
+    },
+    {
+      "source": "Battle of Stirling Bridge",
+      "target": "King Edward",
+      "keywords": "military defeat,political repercussions",
+      "weight": 1.0
+    },
+    {
+      "source": "Battle of Stirling Bridge",
+      "target": "William Wallace",
+      "keywords": "leadership,victory",
+      "weight": 1.0
+    },
+    {
+      "source": "Figure 4",
+      "target": "Reconstruction Error",
+      "keywords": "analysis outcomes,error trends",
+      "weight": 1.0
+    },
+    {
+      "source": "Ising Model",
+      "target": "XY Spins",
+      "keywords": "model relationship,spin representation",
+      "weight": 1.0
+    },
+    {
+      "source": "Boro",
+      "target": "Ngotho",
+      "keywords": "authority,father-son conflict",
+      "weight": 1.0
+    },
+    {
+      "source": "Variational Mean-Field Method",
+      "target": "PLM-$l_2$",
+      "keywords": "comparison,performance analysis",
+      "weight": 1.0
+    },
+    {
+      "source": "H_i^x",
+      "target": "H_i",
+      "keywords": "function relation,mathematical definition",
+      "weight": 1.0
+    },
+    {
+      "source": "Ashrita Shetty",
+      "target": "Udhayam NH4",
+      "keywords": "act,lead role,role casting,supporting role",
+      "weight": 3.0
+    },
+    {
+      "source": "Steve Bray",
+      "target": "Madonna",
+      "keywords": "collaboration,music production",
+      "weight": 1.0
+    },
+    {
+      "source": "Henry VII",
+      "target": "Sebastian Cabot",
+      "keywords": "annuity,royal funding",
+      "weight": 1.0
+    },
+    {
+      "source": "Henry VII",
+      "target": "John Cabot",
+      "keywords": "exploration,royal recognition",
+      "weight": 1.0
+    },
+    {
+      "source": "Proposed Method",
+      "target": "Nonlinear Oscillator",
+      "keywords": "application,system analysis",
+      "weight": 1.0
+    },
+    {
+      "source": "Frederick William of Brandenburg-Schwedt",
+      "target": "Albert Frederick",
+      "keywords": "lineage,parental relationship",
+      "weight": 1.0
+    },
+    {
+      "source": "Manimaran",
+      "target": "Udhayam NH4",
+      "keywords": "director work,film direction,film production",
+      "weight": 2.0
+    },
+    {
+      "source": "H_i",
+      "target": "H_i^y",
+      "keywords": "function relation,mathematical definition",
+      "weight": 1.0
+    },
+    {
+      "source": "Second-Order Response",
+      "target": "System Responses",
+      "keywords": "response components,system behavior",
+      "weight": 1.0
+    },
+    {
+      "source": "Second-Order Response",
+      "target": "Cross Response",
+      "keywords": "response characteristics,system interaction",
+      "weight": 1.0
+    },
+    {
+      "source": "United States",
+      "target": "Like a Virgin",
+      "keywords": "certification,sales achievement",
+      "weight": 1.0
+    },
+    {
+      "source": "United States",
+      "target": "Ashanti",
+      "keywords": "campaign focus,women empowerment",
+      "weight": 1.0
+    },
+    {
+      "source": "Kody Lostroh",
+      "target": "PBR",
+      "keywords": "career,professional achievement",
+      "weight": 1.0
+    },
+    {
+      "source": "British Phonographic Industry (BPI)",
+      "target": "Chapter II",
+      "keywords": "album recognition,sales certification",
+      "weight": 1.0
+    },
+    {
+      "source": "British Phonographic Industry (BPI)",
+      "target": "Like a Virgin",
+      "keywords": "certification,music sales",
+      "weight": 1.0
+    },
+    {
+      "source": "Transmission Matrix",
+      "target": "Scattering Matrix",
+      "keywords": "light propagation,mathematical relationship",
+      "weight": 1.0
+    },
+    {
+      "source": "Transmission Matrix",
+      "target": "Jones Calculus",
+      "keywords": "optical method,polarization",
+      "weight": 1.0
+    },
+    {
+      "source": "Transmission Matrix",
+      "target": "Incoming Fields",
+      "keywords": "field analysis,input transformation",
+      "weight": 1.0
+    },
+    {
+      "source": "Transmission Matrix",
+      "target": "Outgoing Fields",
+      "keywords": "field analysis,output transformation",
+      "weight": 1.0
+    },
+    {
+      "source": "Kayra",
+      "target": "Kara Han",
+      "keywords": "creator,mythological relationship,parentage",
+      "weight": 2.0
+    },
+    {
+      "source": "Teague",
+      "target": "Bones",
+      "keywords": "achievement,animal care,announcement,evaluation,retirement,training",
+      "weight": 3.0
+    },
+    {
+      "source": "Njoroge",
+      "target": "Ngotho",
+      "keywords": "family dynamics,father-son relationship",
+      "weight": 2.0
+    },
+    {
+      "source": "Njoroge",
+      "target": "Jomo Kenyatta",
+      "keywords": "hope,messiah figure",
+      "weight": 1.0
+    },
+    {
+      "source": "Billboard 200",
+      "target": "Chapter II",
+      "keywords": "album performance,chart ranking",
+      "weight": 2.0
+    },
+    {
+      "source": "Billboard 200",
+      "target": "Like a Virgin",
+      "keywords": "chart performance,commercial success",
+      "weight": 1.0
+    },
+    {
+      "source": "Aitch",
+      "target": "Rock wit U (Awww Baby)",
+      "keywords": "sampling",
+      "weight": 1.0
+    },
+    {
+      "source": "Aitch",
+      "target": "Ashanti",
+      "keywords": "music,sampling",
+      "weight": 1.0
+    },
+    {
+      "source": "Caterina di Salmour",
+      "target": "Duke Victor Amadeus II of Sardinia",
+      "keywords": "imprisonment,marriage conflict",
+      "weight": 1.0
+    },
+    {
+      "source": "Caterina di Salmour",
+      "target": "Albert Frederick of Brandenburg-Schwedt",
+      "keywords": "historical figures,subsequent marriage",
+      "weight": 1.0
+    },
+    {
+      "source": "Genova",
+      "target": "The Police Serve the Citizens?",
+      "keywords": "film setting,location",
+      "weight": 1.0
+    },
+    {
+      "source": "Genova",
+      "target": "La Polizia è al servizio del cittadino?",
+      "keywords": "film setting",
+      "weight": 1.0
+    },
+    {
+      "source": "JK Enum Nanbanin Vaazhkai",
+      "target": "G. V. Prakash Kumar",
+      "keywords": "music composition,soundtrack",
+      "weight": 1.0
+    },
+    {
+      "source": "JK Enum Nanbanin Vaazhkai",
+      "target": "Cheran",
+      "keywords": "filmmaking,project initiation",
+      "weight": 1.0
+    },
+    {
+      "source": "King Edward",
+      "target": "Hereford",
+      "keywords": "authority,defiance",
+      "weight": 1.0
+    },
+    {
+      "source": "Figure 6",
+      "target": "XY Model",
+      "keywords": "analysis outcomes,methodology illustration",
+      "weight": 1.0
+    },
+    {
+      "source": "Hobart International Airport",
+      "target": "Wilkins Runway",
+      "keywords": "departure point,flight operations",
+      "weight": 1.0
+    },
+    {
+      "source": "XY Spins",
+      "target": "Potts Model",
+      "keywords": "model hierarchy,spin generalization",
+      "weight": 1.0
+    },
+    {
+      "source": "American Music Awards",
+      "target": "Ashanti",
+      "keywords": "award achievement,musical recognition",
+      "weight": 1.0
+    },
+    {
+      "source": "American Music Awards",
+      "target": "Ashanti Shequoiya Douglas",
+      "keywords": "artist achievements,award recognition",
+      "weight": 1.0
+    },
+    {
+      "source": "Cabot Project",
+      "target": "John Cabot",
+      "keywords": "evidence search,exploration study",
+      "weight": 1.0
+    },
+    {
+      "source": "Cabot Project",
+      "target": "John Cabot Montecalunya",
+      "keywords": "expedition study,research",
+      "weight": 1.0
+    },
+    {
+      "source": "Australia",
+      "target": "Like a Virgin",
+      "keywords": "chart performance,international sales",
+      "weight": 1.0
+    },
+    {
+      "source": "Australia",
+      "target": "Willem Janszoon",
+      "keywords": "exploration,first sighting",
+      "weight": 1.0
+    },
+    {
+      "source": "William Weston",
+      "target": "Bristol",
+      "keywords": "expedition origin,exploration",
+      "weight": 1.0
+    },
+    {
+      "source": "William Weston",
+      "target": "John Cabot",
+      "keywords": "exploration influence,historical significance",
+      "weight": 1.0
+    },
+    {
+      "source": "William Weston",
+      "target": "King Henry VII",
+      "keywords": "exploration support,royal audience",
+      "weight": 1.0
+    },
+    {
+      "source": "Figure 1",
+      "target": "XY Model",
+      "keywords": "study results,visual representation",
+      "weight": 1.0
+    },
+    {
+      "source": "Enrico Maria Salerno",
+      "target": "The Police Serve the Citizens?",
+      "keywords": "acting role,film participation",
+      "weight": 1.0
+    },
+    {
+      "source": "Optical Systems",
+      "target": "Statistical Inference",
+      "keywords": "application,behavior analysis",
+      "weight": 1.0
+    },
+    {
+      "source": "Marie Sophie Persson",
+      "target": "The Police Serve the Citizens?",
+      "keywords": "acting role,film participation",
+      "weight": 1.0
+    },
+    {
+      "source": "Sticky Fingaz",
+      "target": "The Bag Man",
+      "keywords": "acting,role",
+      "weight": 1.0
+    },
+    {
+      "source": "Foolish",
+      "target": "Chapter II",
+      "keywords": "album track,single inclusion",
+      "weight": 1.0
+    },
+    {
+      "source": "Foolish",
+      "target": "Ashanti Douglas",
+      "keywords": "debut single,musical success",
+      "weight": 1.0
+    },
+    {
+      "source": "Humphrey (VI)",
+      "target": "Eleanor de Braose",
+      "keywords": "inheritance,maternal connection",
+      "weight": 1.0
+    },
+    {
+      "source": "Humphrey (VI)",
+      "target": "Humphrey (IV)",
+      "keywords": "grandfather-grandson,inheritance",
+      "weight": 1.0
+    },
+    {
+      "source": "Humphrey (VI)",
+      "target": "Gilbert de Clare",
+      "keywords": "conflict,landownership",
+      "weight": 1.0
+    },
+    {
+      "source": "Humphrey (VI)",
+      "target": "Humphrey de Bohun",
+      "keywords": "lineage,succession",
+      "weight": 1.0
+    },
+    {
+      "source": "P.I.C.",
+      "target": "The Police Serve the Citizens?",
+      "keywords": "distribution,film history",
+      "weight": 1.0
+    },
+    {
+      "source": "P.I.C.",
+      "target": "La Polizia è al servizio del cittadino?",
+      "keywords": "film distribution",
+      "weight": 1.0
+    },
+    {
+      "source": "Meeka Entertainment",
+      "target": "Udhayam NH4",
+      "keywords": "film release,production company",
+      "weight": 1.0
+    },
+    {
+      "source": "Meeka Entertainment",
+      "target": "Grass Root Film Company",
+      "keywords": "production collaboration",
+      "weight": 1.0
+    },
+    {
+      "source": "London",
+      "target": "John Cabot Montecalunya",
+      "keywords": "funding,political support",
+      "weight": 1.0
+    },
+    {
+      "source": "London",
+      "target": "Paula Santiago",
+      "keywords": "artistic career,geographic influence",
+      "weight": 1.0
+    },
+    {
+      "source": "True Positive Curves",
+      "target": "M",
+      "keywords": "performance analysis,sample influence",
+      "weight": 1.0
+    },
+    {
+      "source": "Ura Chhai",
+      "target": "Sochi International Film Festival",
+      "keywords": "award,film festival",
+      "weight": 1.0
+    },
+    {
+      "source": "Ura Chhai",
+      "target": "National Film Awards",
+      "keywords": "film awards,recognition",
+      "weight": 1.0
+    },
+    {
+      "source": "Cost Function",
+      "target": "Temperature",
+      "keywords": "noise influence,solution representation",
+      "weight": 1.0
+    },
+    {
+      "source": "Cost Function",
+      "target": "Matrix U",
+      "keywords": "input-input coupling,optimization",
+      "weight": 1.0
+    },
+    {
+      "source": "Cost Function",
+      "target": "Electromagnetic Complex Amplitude Configurations",
+      "keywords": "optimization,signal transmission",
+      "weight": 1.0
+    },
+    {
+      "source": "Cost Function",
+      "target": "Matrix J",
+      "keywords": "interaction representation,optimization",
+      "weight": 1.0
+    },
+    {
+      "source": "August 25, 1973",
+      "target": "The Police Serve the Citizens?",
+      "keywords": "film history,release date",
+      "weight": 1.0
+    },
+    {
+      "source": "August 25, 1973",
+      "target": "La Polizia è al servizio del cittadino?",
+      "keywords": "film release date",
+      "weight": 1.0
+    },
+    {
+      "source": "Complex Scalars",
+      "target": "Incoming Fields",
+      "keywords": "field representation,mathematical formalism",
+      "weight": 1.0
+    },
+    {
+      "source": "Complex Scalars",
+      "target": "Outgoing Fields",
+      "keywords": "field representation,mathematical formalism",
+      "weight": 1.0
+    },
+    {
+      "source": "Coupling",
+      "target": "PLM",
+      "keywords": "model specification,parameter inference",
+      "weight": 1.0
+    },
+    {
+      "source": "Coupling",
+      "target": "Hamiltonian",
+      "keywords": "energy interactions,system description",
+      "weight": 1.0
+    },
+    {
+      "source": "Siddharth",
+      "target": "Udhayam NH4",
+      "keywords": "act,lead role",
+      "weight": 3.0
+    },
+    {
+      "source": "Ashanti Shequoiya Douglas",
+      "target": "Chapter II",
+      "keywords": "album release,artist work",
+      "weight": 1.0
+    },
+    {
+      "source": "Ashanti Shequoiya Douglas",
+      "target": "Billboard Hot 100",
+      "keywords": "artist achievement,chart success",
+      "weight": 1.0
+    },
+    {
+      "source": "Ashanti Shequoiya Douglas",
+      "target": "Grammy Award",
+      "keywords": "album achievement,award recognition",
+      "weight": 1.0
+    },
+    {
+      "source": "Pseudolikelihood Maximization",
+      "target": "Hamiltonian",
+      "keywords": "parameter inference,statistical method",
+      "weight": 1.0
+    },
+    {
+      "source": "Pseudolikelihood Maximization",
+      "target": "Data Configurations",
+      "keywords": "input data,statistical inference",
+      "weight": 1.0
+    },
+    {
+      "source": "Pseudolikelihood Maximization",
+      "target": "Monte-Carlo Simulations",
+      "keywords": "method implementation,statistical technique",
+      "weight": 1.0
+    },
+    {
+      "source": "Memmo Carotenuto",
+      "target": "The Police Serve the Citizens?",
+      "keywords": "acting role,film participation",
+      "weight": 1.0
+    },
+    {
+      "source": "Boltzmann Machine Learning",
+      "target": "Inverse Problem",
+      "keywords": "computational technique,model optimization",
+      "weight": 1.0
+    },
+    {
+      "source": "Death of the West",
+      "target": "Black King",
+      "keywords": "cultural reference,mythology",
+      "weight": 1.0
+    },
+    {
+      "source": "Media",
+      "target": "Reconstruction Problem",
+      "keywords": "communication,optical physics",
+      "weight": 1.0
+    },
+    {
+      "source": "Humphrey de Bohun",
+      "target": "Humphrey IV de Bohun",
+      "keywords": "inheritance,titles",
+      "weight": 1.0
+    },
+    {
+      "source": "Humphrey de Bohun",
+      "target": "Eleanor de Braose",
+      "keywords": "marriage,noble descent",
+      "weight": 1.0
+    },
+    {
+      "source": "Humphrey de Bohun",
+      "target": "William Wallace",
+      "keywords": "conflict,political opposition",
+      "weight": 1.0
+    },
+    {
+      "source": "Chapter II",
+      "target": "Recording Industry Association of America (RIAA)",
+      "keywords": "music sales,success certification",
+      "weight": 1.0
+    },
+    {
+      "source": "Chapter II",
+      "target": "Ashanti",
+      "keywords": "album artist,album release,musical career,musical contribution",
+      "weight": 2.0
+    },
+    {
+      "source": "Chapter II",
+      "target": "Nielsen SoundScan",
+      "keywords": "album performance,sales tracking",
+      "weight": 1.0
+    },
+    {
+      "source": "Chapter II",
+      "target": "Benga",
+      "keywords": "album,album production,artist contribution,production",
+      "weight": 2.0
+    },
+    {
+      "source": "Chapter II",
+      "target": "Ja Rule",
+      "keywords": "guest appearance,musical collaboration",
+      "weight": 1.0
+    },
+    {
+      "source": "Chapter II",
+      "target": "Rain on Me",
+      "keywords": "album track,single inclusion",
+      "weight": 1.0
+    },
+    {
+      "source": "G. V. Prakash Kumar",
+      "target": "Saindhavi",
+      "keywords": "marriage,partnership",
+      "weight": 1.0
+    },
+    {
+      "source": "G. V. Prakash Kumar",
+      "target": "Udhayam NH4",
+      "keywords": "soundtrack composition",
+      "weight": 1.0
+    },
+    {
+      "source": "Irv Gotti",
+      "target": "Rock wit U (Awww Baby)",
+      "keywords": "co-writer,production",
+      "weight": 1.0
+    },
+    {
+      "source": "Irv Gotti",
+      "target": "Ashanti",
+      "keywords": "career initiation,producer-artist relationship",
+      "weight": 1.0
+    },
+    {
+      "source": "Cheran",
+      "target": "Rajadhi Raja",
+      "keywords": "project adaptation",
+      "weight": 1.0
+    },
+    {
+      "source": "Interstellar",
+      "target": "Grammy Award",
+      "keywords": "nominations,sound scoring",
+      "weight": 1.0
+    },
+    {
+      "source": "Interstellar",
+      "target": "Hans Zimmer",
+      "keywords": "composer,film music,film score,soundtrack composer,soundtrack composition",
+      "weight": 3.0
+    },
+    {
+      "source": "Interstellar",
+      "target": "Christopher Nolan",
+      "keywords": "film direction",
+      "weight": 1.0
+    },
+    {
+      "source": "Sophia Dorothea",
+      "target": "Anna Elisabeth Louise",
+      "keywords": "parent-child relationship",
+      "weight": 1.0
+    },
+    {
+      "source": "Ulises Solís",
+      "target": "Brian Viloria",
+      "keywords": "boxing match,title loss",
+      "weight": 1.0
+    },
+    {
+      "source": "Seville",
+      "target": "John Cabot",
+      "keywords": "construction projects,relocation",
+      "weight": 1.0
+    },
+    {
+      "source": "Seville",
+      "target": "John Cabot Montecalunya",
+      "keywords": "construction project,work",
+      "weight": 1.0
+    },
+    {
+      "source": "Madonna",
+      "target": "Like a Virgin",
+      "keywords": "album creation,album release,artistic impact,iconic status,musical creation,musical talent,performance,thematic explorat",
+      "weight": 4.0
+    },
+    {
+      "source": "Madonna",
+      "target": "Nile Rodgers",
+      "keywords": "collaboration,production",
+      "weight": 1.0
+    },
+    {
+      "source": "Opaque Medium",
+      "target": "Reconstruction Problem",
+      "keywords": "obstruction,visual clarity",
+      "weight": 1.0
+    },
+    {
+      "source": "Temperature",
+      "target": "Reconstruction Error",
+      "keywords": "performance metric,variable impact",
+      "weight": 1.0
+    },
+    {
+      "source": "Temperature",
+      "target": "Figure 5",
+      "keywords": "performance assessment,variation analysis",
+      "weight": 1.0
+    },
+    {
+      "source": "Temperature",
+      "target": "TP Curve",
+      "keywords": "influence,parameter effect",
+      "weight": 1.0
+    },
+    {
+      "source": "Kuramoto Model",
+      "target": "XY Model",
+      "keywords": "synchronization,theoretical application",
+      "weight": 1.0
+    },
+    {
+      "source": "Gilbert de Bohun",
+      "target": "Eleanor de Bohun",
+      "keywords": "family lineage,marriage",
+      "weight": 1.0
+    },
+    {
+      "source": "Gilbert de Bohun",
+      "target": "Humphrey de Bohun, 3rd Earl of Hereford",
+      "keywords": "noble family,sibling relationship",
+      "weight": 1.0
+    },
+    {
+      "source": "Random Media",
+      "target": "Speckle",
+      "keywords": "light interference,scattering effect",
+      "weight": 1.0
+    },
+    {
+      "source": "Udhayam NH4",
+      "target": "Grass Root Film Company",
+      "keywords": "film release,production company",
+      "weight": 1.0
+    },
+    {
+      "source": "Figure 3",
+      "target": "Complex-Valued Couplings",
+      "keywords": "empirical data,methodology illustration",
+      "weight": 1.0
+    },
+    {
+      "source": "The Bag Man",
+      "target": "Robert De Niro",
+      "keywords": "acting,role",
+      "weight": 1.0
+    },
+    {
+      "source": "PLM Method",
+      "target": "XY Model",
+      "keywords": "application,statistical inference",
+      "weight": 1.0
+    },
+    {
+      "source": "PLM Method",
+      "target": "Decimation",
+      "keywords": "enhancement,performance",
+      "weight": 1.0
+    },
+    {
+      "source": "PLM Method",
+      "target": "Monte Carlo Simulations",
+      "keywords": "testing,validation",
+      "weight": 1.0
+    },
+    {
+      "source": "Rivka",
+      "target": "Dragna",
+      "keywords": "character revelation,plot twist",
+      "weight": 1.0
+    },
+    {
+      "source": "Justin Tranchita",
+      "target": "Joseph James Tranchita",
+      "keywords": "family background,parental relationship",
+      "weight": 1.0
+    },
+    {
+      "source": "John Cabot",
+      "target": "Bristol",
+      "keywords": "departure location,expedition,exploration",
+      "weight": 2.0
+    },
+    {
+      "source": "John Cabot",
+      "target": "Brazil",
+      "keywords": "exploration,wealth prospecting",
+      "weight": 1.0
+    },
+    {
+      "source": "John Cabot",
+      "target": "Muscovy Company",
+      "keywords": "governance,trading company",
+      "weight": 1.0
+    },
+    {
+      "source": "John Cabot",
+      "target": "Sebastian Cabot",
+      "keywords": "exploration,family,father-son relationship,parent-child relationship",
+      "weight": 3.0
+    },
+    {
+      "source": "John Cabot",
+      "target": "Henry VII of England",
+      "keywords": "commission,exploration",
+      "weight": 1.0
+    },
+    {
+      "source": "John Cabot",
+      "target": "Valencia",
+      "keywords": "financial troubles,relocation",
+      "weight": 1.0
+    },
+    {
+      "source": "John Cabot",
+      "target": "Mattea",
+      "keywords": "family,marriage",
+      "weight": 1.0
+    },
+    {
+      "source": "John Cabot",
+      "target": "Council of the Indies",
+      "keywords": "employment,governance",
+      "weight": 1.0
+    },
+    {
+      "source": "John Cabot",
+      "target": "King Henry VII",
+      "keywords": "authorization,royal patronage",
+      "weight": 1.0
+    },
+    {
+      "source": "John Cabot",
+      "target": "Alwyn Ruddock",
+      "keywords": "historical research,prior discoveries",
+      "weight": 1.0
+    },
+    {
+      "source": "Quenched Intensities",
+      "target": "E_k",
+      "keywords": "intensity conditions,mode representation",
+      "weight": 1.0
+    },
+    {
+      "source": "Mattea",
+      "target": "Sebastian Cabot",
+      "keywords": "family relationship,marriage",
+      "weight": 1.0
+    },
+    {
+      "source": "Guilherme Marchi",
+      "target": "Justin McBride",
+      "keywords": "competition,rivalry",
+      "weight": 1.0
+    },
+    {
+      "source": "Daniel Gélin",
+      "target": "The Police Serve the Citizens?",
+      "keywords": "acting role,film participation",
+      "weight": 1.0
+    },
+    {
+      "source": "Ashanti Douglas",
+      "target": "John Tucker Must Die",
+      "keywords": "acting career,film appearance",
+      "weight": 1.0
+    },
+    {
+      "source": "Ashanti Douglas",
+      "target": "Resident Evil: Extinction",
+      "keywords": "acting career,film appearance",
+      "weight": 1.0
+    },
+    {
+      "source": "Ashanti Douglas",
+      "target": "Murder Inc.",
+      "keywords": "career development,record label",
+      "weight": 1.0
+    },
+    {
+      "source": "Ashanti Douglas",
+      "target": "Billboard Hot 100",
+      "keywords": "chart performance,record achievement",
+      "weight": 1.0
+    },
+    {
+      "source": "Rock wit U (Awww Baby)",
+      "target": "Ashanti",
+      "keywords": "artist,chart success,single,single release",
+      "weight": 2.0
+    },
+    {
+      "source": "Anna Elisabeth Louise",
+      "target": "Augustus Ferdinand",
+      "keywords": "family connection,marriage",
+      "weight": 1.0
+    },
+    {
+      "source": "Anna Elisabeth Louise",
+      "target": "Frederick William",
+      "keywords": "parent-child relationship",
+      "weight": 1.0
+    },
+    {
+      "source": "Kosterlitz-Thouless Transition Temperature",
+      "target": "N",
+      "keywords": "phase transition,system size",
+      "weight": 1.0
+    },
+    {
+      "source": "Sinusoidal Excitation",
+      "target": "Prony-SS Method",
+      "keywords": "response analysis,signal decomposition",
+      "weight": 1.0
+    },
+    {
+      "source": "National Film Awards",
+      "target": "Indradhanura Chhai",
+      "keywords": "film award,recognition",
+      "weight": 1.0
+    },
+    {
+      "source": "Exchange Monte Carlo",
+      "target": "XY Model",
+      "keywords": "data generation,simulation method",
+      "weight": 1.0
+    },
+    {
+      "source": "Sebastian Cabot",
+      "target": "Council of the Indies",
+      "keywords": "governance,role",
+      "weight": 1.0
+    },
+    {
+      "source": "Sebastian Cabot",
+      "target": "King Henry VII",
+      "keywords": "exploration support,royal reward",
+      "weight": 1.0
+    },
+    {
+      "source": "Volterra Kernel Functions",
+      "target": "Volterra Series",
+      "keywords": "mathematical relationship,predictive modeling",
+      "weight": 1.0
+    },
+    {
+      "source": "Volterra Kernel Functions",
+      "target": "Laguerre Polynomials",
+      "keywords": "decoupling,function representation,higher-order functions,mathematical model,mathematical tool,system analysis",
+      "weight": 3.0
+    },
+    {
+      "source": "Volterra Kernel Functions",
+      "target": "Pole-Residue Method",
+      "keywords": "mathematical modeling,response derivation",
+      "weight": 1.0
+    },
+    {
+      "source": "De Houtman",
+      "target": "100m Diagram",
+      "keywords": "observational data,star mapping",
+      "weight": 1.0
+    },
+    {
+      "source": "Nile Rodgers",
+      "target": "Bernard Edwards",
+      "keywords": "collaboration,music production",
+      "weight": 1.0
+    },
+    {
+      "source": "Nile Rodgers",
+      "target": "Tony Thompson",
+      "keywords": "collaboration,music production",
+      "weight": 1.0
+    },
+    {
+      "source": "Nile Rodgers",
+      "target": "Like a Virgin",
+      "keywords": "artistic collaboration,collaboration,music production,musical production",
+      "weight": 2.0
+    },
+    {
+      "source": "J_{ij}",
+      "target": "Pseudolikelihood",
+      "keywords": "coupling estimation,probabilistic model",
+      "weight": 1.0
+    },
+    {
+      "source": "Disordered Optical Fiber",
+      "target": "Reconstruction Problem",
+      "keywords": "image distortion,light transmission",
+      "weight": 1.0
+    },
+    {
+      "source": "Josephson Junction Arrays",
+      "target": "XY Model",
+      "keywords": "quantum application,theoretical modeling",
+      "weight": 1.0
+    },
+    {
+      "source": "100m Sprint Record",
+      "target": "PLM",
+      "keywords": "inference method,reconstruction",
+      "weight": 1.0
+    },
+    {
+      "source": "100m Sprint Record",
+      "target": "Ashanti",
+      "keywords": "album success,chart performance",
+      "weight": 1.0
+    },
+    {
+      "source": "Duyfken",
+      "target": "Willem Janszoon",
+      "keywords": "exploration,maritime history",
+      "weight": 1.0
+    },
+    {
+      "source": "Hamiltonian",
+      "target": "XY Model",
+      "keywords": "mathematical representation,physics concept,system energy,theoretical framework",
+      "weight": 2.0
+    },
+    {
+      "source": "Hamiltonian",
+      "target": "Berezinskii-Kosterlitz-Thouless Transition",
+      "keywords": "phase transition,system behavior",
+      "weight": 1.0
+    },
+    {
+      "source": "Hamiltonian",
+      "target": "Matrix U",
+      "keywords": "mathematical property,model component",
+      "weight": 1.0
+    },
+    {
+      "source": "Enzo Liberti",
+      "target": "The Police Serve the Citizens?",
+      "keywords": "acting role,film participation",
+      "weight": 1.0
+    },
+    {
+      "source": "Hereford",
+      "target": "Edward",
+      "keywords": "feudal loyalty,military service",
+      "weight": 1.0
+    },
+    {
+      "source": "Rain on Me",
+      "target": "Ashanti",
+      "keywords": "mini-movie performance,music video",
+      "weight": 1.0
+    },
+    {
+      "source": "Indradhanura Chhai",
+      "target": "Sochi International Film Festival",
+      "keywords": "film award,recognition",
+      "weight": 1.0
+    },
+    {
+      "source": "Robert De Niro",
+      "target": "The Godfather Part II",
+      "keywords": "character representation,role portrayal",
+      "weight": 1.0
+    },
+    {
+      "source": "Reconstruction Error",
+      "target": "XY Model",
+      "keywords": "inference quality,model evaluation",
+      "weight": 1.0
+    },
+    {
+      "source": "Reconstruction Error",
+      "target": "$\\mathbb{J}^R_{\\rm inf}$",
+      "keywords": "accuracy,comparison",
+      "weight": 1.0
+    },
+    {
+      "source": "Resident Evil: Extinction",
+      "target": "Ashanti",
+      "keywords": "acting,acting career,film role",
+      "weight": 2.0
+    },
+    {
+      "source": "Mysore Dasara Procession",
+      "target": "Balarama",
+      "keywords": "cultural significance,lead role",
+      "weight": 1.0
+    },
+    {
+      "source": "Mysore Dasara Procession",
+      "target": "Golden Howdah",
+      "keywords": "ceremonial use,cultural event",
+      "weight": 1.0
+    },
+    {
+      "source": "Frederick I of Prussia",
+      "target": "Frederick William, Margrave of Brandenburg-Schwedt",
+      "keywords": "family relation,royal connection",
+      "weight": 1.0
+    },
+    {
+      "source": "Pole-Residue Method",
+      "target": "Closed-Form Solution",
+      "keywords": "mathematical technique,system analysis",
+      "weight": 1.0
+    },
+    {
+      "source": "Like a Virgin",
+      "target": "Recording Industry Association of America (RIAA)",
+      "keywords": "certification,music sales",
+      "weight": 1.0
+    },
+    {
+      "source": "Like a Virgin",
+      "target": "Nielsen SoundScan",
+      "keywords": "music industry,sales tracking",
+      "weight": 1.0
+    },
+    {
+      "source": "Christopher Nolan",
+      "target": "Hans Zimmer",
+      "keywords": "collaboration,film scoring",
+      "weight": 1.0
+    },
+    {
+      "source": "John Tucker Must Die",
+      "target": "Ashanti",
+      "keywords": "acting,acting career,film role",
+      "weight": 2.0
+    },
+    {
+      "source": "Giuseppe Pambieri",
+      "target": "The Police Serve the Citizens?",
+      "keywords": "acting role,film participation",
+      "weight": 1.0
+    },
+    {
+      "source": "Dasara Procession",
+      "target": "Balarama",
+      "keywords": "ceremonial role,event participation",
+      "weight": 1.0
+    },
+    {
+      "source": "Dasara Procession",
+      "target": "Arjuna",
+      "keywords": "alternate role,failed selection",
+      "weight": 1.0
+    },
+    {
+      "source": "Prony-SS Method",
+      "target": "Numerical Studies",
+      "keywords": "computational analysis,signal approximation",
+      "weight": 1.0
+    },
+    {
+      "source": "Justin McBride",
+      "target": "Bones",
+      "keywords": "record,rider experience",
+      "weight": 1.0
+    },
+    {
+      "source": "Complex-Valued Couplings",
+      "target": "XY Model",
+      "keywords": "experimental analysis,theoretical complexity",
+      "weight": 1.0
+    },
+    {
+      "source": "Volterra Series",
+      "target": "Laguerre Polynomials",
+      "keywords": "kernel decoupling,mathematical function",
+      "weight": 1.0
+    },
+    {
+      "source": "Volterra Series",
+      "target": "Nonlinear Oscillator",
+      "keywords": "mathematical representation,system modeling",
+      "weight": 1.0
+    },
+    {
+      "source": "Volterra Series",
+      "target": "Generalized Pole-Residue Method",
+      "keywords": "method application,nonlinear systems",
+      "weight": 1.0
+    },
+    {
+      "source": "Henry VII of England",
+      "target": "John Cabot Montecalunya",
+      "keywords": "exploration,royal patronage",
+      "weight": 1.0
+    },
+    {
+      "source": "Remastered Tracks Rockman Zero: Mythos",
+      "target": "Ippo Yamada",
+      "keywords": "composition,music creation",
+      "weight": 1.0
+    },
+    {
+      "source": "E^{\\rm in}_k",
+      "target": "E_k",
+      "keywords": "input intensity,phase representation",
+      "weight": 1.0
+    },
+    {
+      "source": "Murder Inc.",
+      "target": "Ashanti",
+      "keywords": "album production,collaboration",
+      "weight": 1.0
+    },
+    {
+      "source": "Marchi",
+      "target": "Brazil",
+      "keywords": "family,relocation",
+      "weight": 1.0
+    },
+    {
+      "source": "Fig. 1",
+      "target": "PLM",
+      "keywords": "coupling inference,visual representation",
+      "weight": 1.0
+    },
+    {
+      "source": "PLM with Decimation",
+      "target": "XY Model",
+      "keywords": "statistical analysis,variant application",
+      "weight": 1.0
+    },
+    {
+      "source": "PLM with Decimation",
+      "target": "Monte-Carlo Simulations",
+      "keywords": "data generation,methodology",
+      "weight": 1.0
+    },
+    {
+      "source": "Ordered Couplings",
+      "target": "XY Model",
+      "keywords": "network characteristics,theoretical modeling",
+      "weight": 1.0
+    },
+    {
+      "source": "Ordered Couplings",
+      "target": "Figure 2",
+      "keywords": "empirical data,methodology illustration",
+      "weight": 1.0
+    },
+    {
+      "source": "Skytraders",
+      "target": "Wilkins Runway",
+      "keywords": "licensed operation,passenger flights",
+      "weight": 1.0
+    },
+    {
+      "source": "Coupling Coefficients",
+      "target": "Interaction Network",
+      "keywords": "model relationships,statistical inference",
+      "weight": 1.0
+    },
+    {
+      "source": "Electromagnetic Complex Amplitude Configurations",
+      "target": "Phase-Only Spatial Light Modulator",
+      "keywords": "intensity control,signal processing",
+      "weight": 1.0
+    },
+    {
+      "source": "Decimation Procedure",
+      "target": "Coupling Matrices",
+      "keywords": "methodology,network analysis",
+      "weight": 1.0
+    },
+    {
+      "source": "VH1 Divas Duets",
+      "target": "Ashanti",
+      "keywords": "headlining,musical involvement",
+      "weight": 1.0
+    },
+    {
+      "source": "Starlings Flocks",
+      "target": "XY Model",
+      "keywords": "behavioral study,synchronization",
+      "weight": 1.0
+    },
+    {
+      "source": "Generalized Pole-Residue Method",
+      "target": "Nonlinear Oscillator",
+      "keywords": "problem solving,system dynamics",
+      "weight": 1.0
+    },
+    {
+      "source": "Generalized Pole-Residue Method",
+      "target": "Laguerre Polynomials",
+      "keywords": "method technique,polynomial application",
+      "weight": 1.0
+    },
+    {
+      "source": "John Cabot Montecalunya",
+      "target": "Bristol",
+      "keywords": "exploratory expeditions,financial backing",
+      "weight": 1.0
+    },
+    {
+      "source": "John Cabot Montecalunya",
+      "target": "Valencia",
+      "keywords": "improvements,proposals",
+      "weight": 1.0
+    },
+    {
+      "source": "John Cabot Montecalunya",
+      "target": "Alwyn Ruddock",
+      "keywords": "documentation,historical research",
+      "weight": 1.0
+    },
+    {
+      "source": "Ashanti",
+      "target": "Ja Rule",
+      "keywords": "collaboration,music",
+      "weight": 1.0
+    },
+    {
+      "source": "Eleanor de Bohun",
+      "target": "Sir John de Verdun",
+      "keywords": "family ties,marriage",
+      "weight": 1.0
+    },
+    {
+      "source": "Eleanor de Bohun",
+      "target": "Humphrey de Bohun, 3rd Earl of Hereford",
+      "keywords": "mother-son relationship,noble lineage",
+      "weight": 1.0
+    },
+    {
+      "source": "Intensities",
+      "target": "XY Model",
+      "keywords": "model behavior,parameter assumption",
+      "weight": 1.0
+    },
+    {
+      "source": "Gilbert de Clare",
+      "target": "Humphrey (IV)",
+      "keywords": "conflict,rivalry",
+      "weight": 1.0
+    },
+    {
+      "source": "Bones",
+      "target": "PBR",
+      "keywords": "championship,competitive career",
+      "weight": 1.0
+    },
+    {
+      "source": "Bones",
+      "target": "Big Tex",
+      "keywords": "bull challenge,match outcome,rivalry,victory",
+      "weight": 2.0
+    },
+    {
+      "source": "Gabriella Giorgelli",
+      "target": "The Police Serve the Citizens?",
+      "keywords": "acting role,film participation",
+      "weight": 1.0
+    },
+    {
+      "source": "PLM",
+      "target": "Inverse Ising Problem",
+      "keywords": "model application,statistical mechanics",
+      "weight": 1.0
+    },
+    {
+      "source": "Sophia Dorothea of Prussia",
+      "target": "Frederick William",
+      "keywords": "family ties,marriage",
+      "weight": 1.0
+    },
+    {
+      "source": "Sophia Dorothea of Prussia",
+      "target": "Frederick II",
+      "keywords": "familial bond,protection",
+      "weight": 1.0
+    },
+    {
+      "source": "Alessandro Momo",
+      "target": "The Police Serve the Citizens?",
+      "keywords": "acting role,film participation",
+      "weight": 1.0
+    },
+    {
+      "source": "The Police Serve the Citizens?",
+      "target": "John Steiner",
+      "keywords": "acting role,film participation",
+      "weight": 1.0
+    },
+    {
+      "source": "The Police Serve the Citizens?",
+      "target": "Venantino Venantini",
+      "keywords": "acting role,film participation",
+      "weight": 1.0
+    },
+    {
+      "source": "Monte-Carlo Simulations",
+      "target": "Gibbs-Boltzmann Distribution",
+      "keywords": "data generation,probabilistic modeling",
+      "weight": 1.0
+    },
+    {
+      "source": "Humphrey de Bohun, 3rd Earl of Hereford",
+      "target": "King Edward I",
+      "keywords": "lineage,royal connection",
+      "weight": 1.0
+    },
+    {
+      "source": "Ippo Yamada",
+      "target": "Mega Man Zero Series",
+      "keywords": "composition,music contribution",
+      "weight": 1.0
+    },
+    {
+      "source": "XY Model",
+      "target": "Berezinskii-Kosterlitz-Thouless Transition",
+      "keywords": "phase transition,theoretical framework",
+      "weight": 1.0
+    },
+    {
+      "source": "XY Model",
+      "target": "Coupling Matrices",
+      "keywords": "system interactions,theoretical framework",
+      "weight": 1.0
+    },
+    {
+      "source": "M",
+      "target": "TP Curve",
+      "keywords": "data analysis,sample size impact",
+      "weight": 1.0
+    },
+    {
+      "source": "Golden Howdah",
+      "target": "Balarama",
+      "keywords": "artifact carrier,ceremonial importance,ceremonial role,event participation",
+      "weight": 2.0
+    },
+    {
+      "source": "Closed-Form Solution",
+      "target": "Nonlinear Oscillator",
+      "keywords": "mathematical modeling,system behavior",
+      "weight": 1.0
+    },
+    {
+      "source": "Response Function",
+      "target": "Cross Response",
+      "keywords": "interaction effects,system analysis",
+      "weight": 1.0
+    },
+    {
+      "source": "Humphrey VI de Bohun",
+      "target": "Sir John de Verdun",
+      "keywords": "family legacy,succession",
+      "weight": 1.0
+    },
+    {
+      "source": "Humphrey VI de Bohun",
+      "target": "Humphrey IV de Bohun",
+      "keywords": "inheritance,lineage",
+      "weight": 1.0
+    },
+    {
+      "source": "Maud de Avenbury",
+      "target": "Sir John de Verdun",
+      "keywords": "family ties,marriage",
+      "weight": 1.0
+    },
+    {
+      "source": "True Grit (novel)",
+      "target": "True Grit (1969 film)",
+      "keywords": "adaptation,source material",
+      "weight": 1.0
+    },
+    {
+      "source": "Pseudo-Likelihood Method",
+      "target": "Statistical Inference",
+      "keywords": "parameter estimation,performance improvement",
+      "weight": 1.0
+    },
+    {
+      "source": "crusade",
+      "target": "Henry de Bohun",
+      "keywords": "historical action,military campaign",
+      "weight": 1.0
+    },
+    {
+      "source": "Inverse Problem",
+      "target": "Statistical Inference",
+      "keywords": "data fitting,model estimation",
+      "weight": 1.0
+    },
+    {
+      "source": "Inverse Problem",
+      "target": "TP Curve",
+      "keywords": "expectations,performance metrics",
+      "weight": 1.0
+    },
+    {
+      "source": "Ordered Model",
+      "target": "Coupling Matrices",
+      "keywords": "system structure,theoretical scenario",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,502 @@
+[
+  {
+    "question": "What is an Insolvency Proceeding?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "Describe South32.",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What role does a Servicer play in legal transactions?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What are the key characteristics of a UCC?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What is a Requesting Party?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "Describe Interim Security.",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What is Trust Account Property?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What is the role of an Original Producer?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What constitutes a Trust Estate?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What is a Project Agreement?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What is a Notice in legal terms?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "Who is an ACC-NJ?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What are Seller Parties in a legal context?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What is Wells in relation to legal matters?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What does DTC stand for, and its significance?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What is a Producer in legal terminology?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What does PAH refer to in legal contexts?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What is the function of a Governmental Authority?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What is a Receivable in legal terms?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What is the FDA and its role in law?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "Who is a CC Member?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What is the TopCo Group?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What is an Authorized Officer?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What are Vaccines in a legal framework?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What is Silicon Valley Bank's role in legal transactions?",
+    "query_type": "single_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What is the relationship between Magnite, Inc. and Person?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "How does Impaired Agent connect to Intellectual Property in the context of legal?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "What links Board to BidCo?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "How are Silicon Valley Bank and TopCo related?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "What is the relationship between New Interim Lender and TopCo Group?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "How does Silicon Valley Bank connect to Impaired Agent in the context of legal?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "What links Seller to Santander Drive Auto Receivables LLC?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "How are Board and Original Producer related?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "What is the relationship between LIBOR Advances and Claiming Party?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "How does South32 connect to New Interim Lender in the context of legal?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "What links BidCo to Project?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "How are Project and Security Interest related?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "What is the relationship between Affiliate and Impaired Agent?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "How does Group Company connect to Event of Default in the context of legal?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "What links Ambler Metals LLC to Funding Commencement Date?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "How are Novavax, Inc. and Matrix-M Adjuvant related?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "What is the relationship between Majority Interim Lenders and Increase Lender?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "How does TopCo Group connect to Internal Revenue Service in the context of legal?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "What links Person to Group Company?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "How are LIBOR Advances and LIBOR Advance related?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "What is the relationship between Bank and Increase Lender?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "How does Bank connect to Asset Representations Reviewer in the context of legal?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "What links Asset Representations Reviewer to Letters of Credit?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "How are Trust Account Property and Defaulting Lender related?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "What is the relationship between Ambler Metals LLC and TopCo?",
+    "query_type": "bridge",
+    "domain": "legal"
+  },
+  {
+    "question": "Compare Insolvency Proceeding, Servicer, and Trust Account Property in terms of their roles in financial recovery processes.",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What are the interactions between South32, Wells, and the UCC regarding corporate governance and compliance?",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "How do the FDA, Vaccine, and Environmental Laws collectively impact public health initiatives in the context of legal regulations?",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "Analyze the roles of Seller Parties, Original Producer, and Trust Estate in asset liquidation during insolvency proceedings.",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "Compare the implications of LIBOR, Interest Rate, and New Interim Lender on financial agreements and borrowings.",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What legal responsibilities do Governmental Authority, Government Official, and ACC-NJ have concerning regulatory compliance?",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "How do the roles of Gatherer, Receivable, and Collection Period interrelate within the context of asset management?",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "Analyze the impact of Project Agreement, Proposed Program and Budget, and Commission on resource allocation in a legal framework.",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "Compare the regulatory frameworks of European Securitization Rules, Environmental Laws, and FDA standards concerning investment projects.",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What are the common legal challenges faced by TopCo Group, Silicon Valley Bank, and Increase Lender in financing structures?",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "How does the interaction of Interim Security, Trust Account Property, and Receivable influence creditor protection agreements?",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "Compare the enforcement mechanisms of Regulatory Allocations, Notice, and Governmental Authority in monitoring corporate compliance.",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What are the comparative legal roles of ACC-NJ, Environmental Laws, and Producer in resource exploration and environmental protection?",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "Analyze how Planned Well, Kennecott Exploration Company, and Governmental Authority collaborate in environmental regulatory processes.",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "How do Collection Period, Servicer, and DTC function together in the securitization process?",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "Compare the obligations of Authorized Officer, Seller Parties, and New Interim Lender concerning legal documentation in financial transactions.",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What are the implications of the interaction between Trust Estate, Product, and Vaccine in liability and risk management?",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "Analyze the legal significance of the interactions between Interest Rate, LIBOR, and UCC in financing contracts.",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "How do the roles of Gatherer, Producer, and Wells contribute to compliance with environmental regulations in the energy sector?",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What are the comparative impacts of FDA regulations, Environmental Laws, and Vaccine on public health and safety initiatives?",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "Compare the strategies of South32, Kennecott Exploration Company, and TopCo Group in navigating regulatory challenges.",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What are the legal implications of the relationship between Servicer, Trust Account Property, and Original Producer in asset management?",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "How do the roles of Government Official, Regulatory Allocations, and Commission intersect when enforcing compliance in corporate settings?",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "Compare the responsibilities of New Interim Lender, Increase Lender, and Servicer regarding debt restructuring in insolvency cases.",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What are the interactions between Planned Well, Project Agreement, and Trust Estate in the context of energy project financing?",
+    "query_type": "multi_entity",
+    "domain": "legal"
+  },
+  {
+    "question": "What are the main approaches to contract law in business transactions?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "Summarise the key challenges facing legal practitioners in commercial agreements.",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "What trends have emerged in legal documentation practices in recent years?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "How has the enforcement of confidentiality agreements evolved in legal contexts?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "What are the common negotiation strategies used in lease agreements?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "What key considerations arise in drafting credit agreements within the financial sector?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "How do legal frameworks address competitive harm in corporate disclosures?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "What are the implications of recent changes in securities law on corporate agreements?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "How is the concept of fair market value defined and applied in legal contracts?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "What are the prevalent themes in legal obligations related to privacy and confidentiality?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "In what ways do mergers and acquisitions impact legal compliance requirements?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "What key factors influence the structuring of loan agreements in the current financial environment?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "How do courts interpret the validity of amendments in contractual agreements?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "What strategies are employed in risk management as outlined in legal agreements?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "How has the role of administrative agents evolved in managing corporate contracts?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "What are the implications of cross-jurisdictional issues in international contracts?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "How do regulatory changes affect the formulation of indemnification clauses?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "What common elements are observed in real estate purchase and sale agreements?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "How do legal documents typically outline the rights and duties of parties involved?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "What trends are evident in the negotiation of backstop commitment agreements?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "How do current practices reflect the balance between fiduciary duties and corporate governance?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "What are the differences in approach to collateralization in financing agreements?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "How do parties assess and manage their obligations under a trust agreement?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "What are the trends in the use of legend restrictions in securities transactions?",
+    "query_type": "broad",
+    "domain": "legal"
+  },
+  {
+    "question": "How does the legal industry address conflicts of interest in contract negotiation?",
+    "query_type": "broad",
+    "domain": "legal"
+  }
+]

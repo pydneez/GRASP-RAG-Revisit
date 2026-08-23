@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GRASP-RAG Research Dashboard</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <!-- D3.js v7 -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     NAV BAR
+════════════════════════════════════════════════════════════════════════════ -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-slate-200 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 flex items-center h-12 gap-1">
+    <span class="font-bold text-blue-700 text-sm mr-4 whitespace-nowrap">GRASP-RAG</span>
+    <a href="#overview" class="nav-link">Overview</a>
+    <a href="#ber"      class="nav-link">BER Results</a>
+    <a href="#judge"    class="nav-link">LLM-Judge Failure</a>
+    <a href="#graphs"   class="nav-link">Knowledge Graphs</a>
+    <a href="#pgr"      class="nav-link">PGR vs Flat</a>
+    <a href="#pgr-how"  class="nav-link">How PGR Works</a>
+    <a href="#pipeline" class="nav-link">Interactive Demo</a>
+  </div>
+</nav>
+
+<div class="pt-14 max-w-7xl mx-auto px-4 pb-20 space-y-16">
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     SECTION A — OVERVIEW
+════════════════════════════════════════════════════════════════════════════ -->
+<section id="overview" class="pt-8">
+  <div class="mb-6 flex flex-wrap items-end gap-3">
+    <div>
+      <h1 class="text-3xl font-bold text-blue-700">GRASP-RAG Research Dashboard</h1>
+    </div>
+    <div class="ml-auto">
+      <button class="src-btn" data-files='[
+        {"label":"ber_results.json (compiled)","url":"/data/ber_results.json"},
+        {"label":"agriculture_bridge_gt_eval.json","url":"/raw/results/agriculture_bridge_gt_eval.json"},
+        {"label":"cs_bridge_gt_eval.json","url":"/raw/results/cs_bridge_gt_eval.json"},
+        {"label":"legal_bridge_gt_eval.json","url":"/raw/results/legal_bridge_gt_eval.json"},
+        {"label":"mix_bridge_gt_eval.json","url":"/raw/results/mix_bridge_gt_eval.json"}
+      ]'>Source files</button>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <!-- Left: system description -->
+    <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+      <h2 class="text-lg font-semibold mb-3">What is GRASP-RAG?</h2>
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">
+        <strong>Graph-Retrieval Adaptive Structured Path RAG</strong> is a knowledge-graph-based
+        retrieval-augmented generation system. A lightweight LLM classifier assigns each query
+        to one of four structural <em>motifs</em>, then retrieves the appropriate graph subgraph
+        for context.
+      </p>
+      <div class="grid grid-cols-2 gap-3 text-sm">
+        <div class="bg-blue-50 rounded-lg p-3 border border-blue-100">
+          <div class="font-semibold text-blue-700">(a) Ego-Network</div>
+          <div class="text-slate-500 text-xs mt-1">Single-entity queries — neighbours of one anchor node</div>
+        </div>
+        <div class="bg-orange-50 rounded-lg p-3 border border-orange-100">
+          <div class="font-semibold text-orange-600">(b) Bridge Path</div>
+          <div class="text-slate-500 text-xs mt-1">Two-anchor queries — find intermediate bridge entity</div>
+        </div>
+        <div class="bg-green-50 rounded-lg p-3 border border-green-100">
+          <div class="font-semibold text-green-600">(c) Steiner Tree</div>
+          <div class="text-slate-500 text-xs mt-1">Multi-entity queries — min-cost spanning subgraph</div>
+        </div>
+        <div class="bg-purple-50 rounded-lg p-3 border border-purple-100">
+          <div class="font-semibold text-purple-600">(d) PPR Diffusion</div>
+          <div class="text-slate-500 text-xs mt-1">Broad queries — Personalized PageRank diffusion</div>
+        </div>
+      </div>
+      <div class="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-lg text-xs text-slate-600">
+        <strong>Key finding:</strong> GRASP achieves <span class="text-green-700 font-bold">87.5–100% BER</span>
+        (Bridging Entity Recall) across four domains — yet <span class="text-red-600 font-bold">loses 78%</span>
+        of LLM-as-judge comparisons. This exposes a length bias in LLM judges that favours
+        verbose over structurally precise answers.
+      </div>
+    </div>
+
+    <!-- Right: four-motif figure -->
+    <div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm">
+      <h2 class="text-sm font-semibold text-slate-500 mb-2">Four Retrieval Motifs (from paper)</h2>
+      <object data="/paper-assets/fig_motifs.pdf" type="application/pdf"
+              class="w-full rounded" style="height:340px">
+        <div class="flex items-center justify-center h-full bg-slate-100 rounded text-slate-400 text-sm">
+          PDF unavailable — open <code>paper/assets/fig_motifs.pdf</code> directly
+        </div>
+      </object>
+    </div>
+  </div>
+
+  <!-- Quick stats row -->
+  <div id="overview-stats" class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+    <!-- filled by app.js -->
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     SECTION B — BER RESULTS
+════════════════════════════════════════════════════════════════════════════ -->
+<section id="ber">
+  <div class="mb-4 flex flex-wrap items-start gap-3">
+    <div class="flex-1">
+      <h2 class="text-2xl font-bold">BER Results — Structural Performance</h2>
+      <p class="text-sm text-slate-500 mt-1">
+        Bridging Entity Recall: % of bridge questions where the answer explicitly names
+        the correct intermediate entity. Judge-free, length-unbiased metric.
+      </p>
+    </div>
+    <button class="src-btn mt-1" id="ber-src-btn" data-files='[
+      {"label":"ber_results.json (compiled)","url":"/data/ber_results.json"},
+      {"label":"agriculture_bridge_gt_eval.json","url":"/raw/results/agriculture_bridge_gt_eval.json"},
+      {"label":"agriculture_bridge_gt.json (questions)","url":"/raw/questions/agriculture_bridge_gt.json"},
+      {"label":"evaluate_bridge_gt.py (eval script)","url":"/raw/source/placeholder"}
+    ]'>Source files</button>
+  </div>
+
+  <!-- Domain tabs -->
+  <div class="flex gap-2 mb-4" id="ber-tabs">
+    <button class="tab-btn active" data-domain="agriculture">Agriculture</button>
+    <button class="tab-btn" data-domain="cs">CS</button>
+    <button class="tab-btn" data-domain="legal">Legal</button>
+    <button class="tab-btn" data-domain="mix">Mix</button>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+    <!-- Bar chart -->
+    <div class="lg:col-span-3 bg-white rounded-xl border border-slate-200 p-5 shadow-sm">
+      <canvas id="ber-chart" height="220"></canvas>
+    </div>
+
+    <!-- Stats table + miss info -->
+    <div class="lg:col-span-2 space-y-4">
+      <div class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm">
+        <h3 class="text-sm font-semibold text-slate-600 mb-3">Scores</h3>
+        <table class="w-full text-sm" id="ber-table">
+          <thead>
+            <tr class="text-xs text-slate-400 border-b border-slate-100">
+              <th class="text-left pb-2">Method</th>
+              <th class="text-right pb-2">BER%</th>
+              <th class="text-right pb-2">Hits</th>
+              <th class="text-right pb-2">Total</th>
+            </tr>
+          </thead>
+          <tbody id="ber-table-body"></tbody>
+        </table>
+      </div>
+
+      <!-- GRASP miss explorer -->
+      <div class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm">
+        <h3 class="text-sm font-semibold text-slate-600 mb-2">GRASP-RAG Misses</h3>
+        <div id="ber-miss-container">
+          <p class="text-xs text-slate-400 italic">No misses in this domain.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     SECTION C — LLM-AS-JUDGE FAILURE
+════════════════════════════════════════════════════════════════════════════ -->
+<section id="judge">
+  <div class="mb-4 flex flex-wrap items-start gap-3">
+    <div class="flex-1">
+      <h2 class="text-2xl font-bold">LLM-as-Judge Failure</h2>
+      <p class="text-sm text-slate-500 mt-1">
+        GRASP-RAG vs NaiveRAG on agriculture domain — 20 typed questions, judged bidirectionally.
+      </p>
+    </div>
+    <button class="src-btn mt-1" data-files='[
+      {"label":"judge_results.json (compiled)","url":"/data/judge_results.json"},
+      {"label":"agriculture_typed_eval.json (raw judge outcomes)","url":"/raw/results/agriculture_typed_eval.json"},
+      {"label":"agriculture_typed.jsonl (raw answers)","url":"/raw/answers/agriculture_typed.jsonl"},
+      {"label":"answers_agriculture.json (compiled)","url":"/data/answers_agriculture.json"}
+    ]'>Source files</button>
+  </div>
+
+  <!-- Big callout -->
+  <div class="bg-red-50 border border-red-200 rounded-xl p-5 mb-6">
+    <div class="flex items-start gap-4">
+      <div class="text-sm font-bold text-red-600 border border-red-300 rounded px-2 py-1 bg-red-100 flex-shrink-0">!</div>
+      <div>
+        <div class="font-bold text-red-700 text-lg">The Paradox</div>
+        <div class="text-slate-700 text-sm mt-1">
+          GRASP-RAG achieves <strong>100% BER on Agriculture</strong> (finds every bridge entity) —
+          yet <strong>loses 78% of LLM judge comparisons</strong> against NaiveRAG.
+          Bridge queries are the worst: <strong>2W / 47L / 1T</strong> despite perfect structural retrieval.
+        </div>
+        <div class="text-slate-500 text-xs mt-2">
+          Root cause: LLM judges reward <em>length and comprehensiveness</em>.
+          GRASP's step-by-step PGR answers are precise but shorter than NaiveRAG's
+          verbose, encyclopaedic responses.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Charts row -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+    <div class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm">
+      <h3 class="text-sm font-semibold text-slate-600 mb-3">By Evaluation Dimension</h3>
+      <canvas id="judge-dim-chart" height="180"></canvas>
+    </div>
+    <div class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm">
+      <h3 class="text-sm font-semibold text-slate-600 mb-3">By Query Type</h3>
+      <canvas id="judge-type-chart" height="180"></canvas>
+    </div>
+  </div>
+
+  <!-- Overall totals -->
+  <div id="judge-totals" class="grid grid-cols-3 gap-4 mb-6 max-w-lg">
+    <!-- filled by app.js -->
+  </div>
+
+  <!-- Answer explorer -->
+  <div class="bg-white rounded-xl border border-slate-200 p-5 shadow-sm">
+    <h3 class="text-sm font-semibold text-slate-600 mb-3">Answer Explorer</h3>
+    <div class="flex flex-col md:flex-row gap-3 mb-4">
+      <input id="judge-search" type="text" placeholder="Search questions..."
+             class="flex-1 border border-slate-200 rounded-lg px-3 py-2 text-sm
+                    focus:outline-none focus:ring-2 focus:ring-blue-300"/>
+      <select id="judge-type-filter" class="border border-slate-200 rounded-lg px-3 py-2 text-sm">
+        <option value="">All query types</option>
+        <option value="single_entity">single_entity</option>
+        <option value="bridge">bridge</option>
+        <option value="multi_entity">multi_entity</option>
+        <option value="broad">broad</option>
+      </select>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <!-- Question list -->
+      <div class="border border-slate-100 rounded-lg overflow-y-auto" style="max-height:420px">
+        <div id="judge-question-list" class="divide-y divide-slate-100"></div>
+      </div>
+
+      <!-- Answer comparison -->
+      <div class="lg:col-span-2">
+        <div id="judge-answer-panel" class="text-sm text-slate-400 italic text-center py-12">
+          Select a question to compare answers.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     SECTION D — KNOWLEDGE GRAPH EXPLORER
+════════════════════════════════════════════════════════════════════════════ -->
+<section id="graphs">
+  <div class="mb-4 flex flex-wrap items-start gap-3">
+    <div class="flex-1">
+      <h2 class="text-2xl font-bold">Knowledge Graph Explorer</h2>
+      <p class="text-sm text-slate-500 mt-1">
+        Force-directed visualisation of top nodes by degree. Node size ∝ degree; colour = entity type.
+      </p>
+    </div>
+    <button class="src-btn mt-1" id="graph-src-btn" data-files='[
+      {"label":"graph_agriculture.json (sampled)","url":"/data/graph_agriculture.json"},
+      {"label":"graph_cs.json (sampled)","url":"/data/graph_cs.json"},
+      {"label":"graph_legal.json (sampled)","url":"/data/graph_legal.json"},
+      {"label":"graph_mix.json (sampled)","url":"/data/graph_mix.json"}
+    ]'>Source files</button>
+  </div>
+
+  <!-- Domain tabs + node count selector -->
+  <div class="flex flex-wrap items-center gap-2 mb-4">
+    <div class="flex gap-2" id="graph-tabs">
+      <button class="tab-btn active" data-domain="agriculture">Agriculture</button>
+      <button class="tab-btn" data-domain="cs">CS</button>
+      <button class="tab-btn" data-domain="legal">Legal</button>
+      <button class="tab-btn" data-domain="mix">Mix</button>
+    </div>
+    <div class="flex items-center gap-2 ml-auto">
+      <label class="text-xs text-slate-500 font-medium">Show top</label>
+      <select id="graph-node-count"
+              class="border border-slate-200 rounded-lg px-2 py-1.5 text-sm">
+        <option value="50">50 nodes</option>
+        <option value="100" selected>100 nodes</option>
+        <option value="200">200 nodes</option>
+        <option value="300">300 nodes</option>
+      </select>
+      <span class="text-xs text-slate-400">by degree</span>
+    </div>
+  </div>
+
+  <!-- Stat cards -->
+  <div id="graph-stats" class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-5"></div>
+
+  <!-- Graph + legend + detail panel -->
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+    <div class="lg:col-span-3 bg-white rounded-xl border border-slate-200 shadow-sm relative">
+      <div class="absolute top-3 left-3 text-xs text-slate-400 z-10" id="graph-note"></div>
+      <svg id="graph-svg" class="w-full rounded-xl" style="height:520px"></svg>
+    </div>
+
+    <div class="space-y-4">
+      <!-- Legend -->
+      <div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm">
+        <div class="text-xs font-semibold text-slate-500 mb-2">Entity Types</div>
+        <div id="graph-legend" class="space-y-1"></div>
+      </div>
+      <!-- Node detail -->
+      <div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm">
+        <div class="text-xs font-semibold text-slate-500 mb-2">Node Detail</div>
+        <div id="graph-detail" class="text-xs text-slate-400 italic">Click a node to see details.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     SECTION E — PGR vs FLAT CONTEXT
+════════════════════════════════════════════════════════════════════════════ -->
+<section id="pgr" class="pb-12">
+  <div class="mb-4 flex flex-wrap items-start gap-3">
+    <div class="flex-1">
+      <h2 class="text-2xl font-bold">PGR vs Flat Context</h2>
+      <p class="text-sm text-slate-500 mt-1">
+        Path-Guided Reasoning places every entity and connection at a labelled step,
+        making the bridge node structurally unavoidable for the LLM.
+      </p>
+    </div>
+    <button class="src-btn mt-1" data-files='[
+      {"label":"grasp_rag.py (PGR implementation)","url":"/raw/source/grasp_rag.py"},
+      {"label":"classifier.py","url":"/raw/source/classifier.py"},
+      {"label":"retriever.py","url":"/raw/source/retriever.py"}
+    ]'>Source files</button>
+  </div>
+
+  <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+    <object data="/paper-assets/fig_context.pdf" type="application/pdf"
+            class="w-full" style="height:580px">
+      <div class="flex items-center justify-center h-48 bg-slate-100 text-slate-400 text-sm">
+        PDF unavailable — open <code>paper/assets/fig_context.pdf</code> directly
+      </div>
+    </object>
+  </div>
+
+  <div class="mt-4 bg-blue-50 border border-blue-200 rounded-xl p-5 text-sm text-slate-700">
+    <strong>Key insight:</strong>
+    Flat retrieval (PathRAG / LightRAG / NaiveRAG) gives the LLM correct passages about
+    each anchor but no explicit chain topology. The bridge entity can be omitted without
+    breaking surface fluency. PGR's step-by-step structure forces the LLM to reference
+    the bridge node at a labelled step — making a miss structurally visible and unlikely.
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     SECTION F — HOW PATH-GUIDED REASONING WORKS
+════════════════════════════════════════════════════════════════════════════ -->
+<section id="pgr-how">
+  <div class="mb-4 flex flex-wrap items-start gap-3">
+    <div class="flex-1">
+      <h2 class="text-2xl font-bold">How Path-Guided Reasoning Works</h2>
+      <p class="text-sm text-slate-500 mt-1">
+        PGR is the context-formatting step after graph retrieval. The context shape
+        matches the query shape — each motif gets its own structured scaffold.
+      </p>
+    </div>
+    <button class="src-btn mt-1" data-files='[
+      {"label":"grasp_rag.py (PGR context builders)","url":"/raw/source/grasp_rag.py"},
+      {"label":"classifier.py (prompt + logic)","url":"/raw/source/classifier.py"}
+    ]'>Source files</button>
+  </div>
+
+  <!-- Key insight -->
+  <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-5 text-sm text-slate-700">
+    <strong>Core idea:</strong> instead of dumping retrieved passages as a flat list, PGR serialises
+    the graph subgraph into a numbered scaffold that mirrors the graph topology. The LLM prompt
+    then instructs the model to follow that structure — making structural elements (like bridge nodes)
+    unavoidable rather than optional.
+  </div>
+
+  <!-- Motif tabs -->
+  <div class="flex gap-2 mb-4" id="pgr-tabs">
+    <button class="tab-btn active" data-motif="bridge">Bridge Path</button>
+    <button class="tab-btn" data-motif="single_entity">Single Entity</button>
+    <button class="tab-btn" data-motif="multi_entity">Multi-Entity</button>
+    <button class="tab-btn" data-motif="broad">Broad</button>
+  </div>
+
+  <div id="pgr-content"></div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     SECTION G — INTERACTIVE PIPELINE DEMO
+════════════════════════════════════════════════════════════════════════════ -->
+<section id="pipeline" class="pb-12">
+  <div class="mb-4 flex flex-wrap items-start gap-3">
+    <div class="flex-1">
+      <h2 class="text-2xl font-bold">Interactive Pipeline Demo</h2>
+      <p class="text-sm text-slate-500 mt-1">
+        Step-by-step pipeline — from your question to a graph-guided answer.
+        Uses the real GRASP-RAG classifier prompt via OpenAI API.
+      </p>
+    </div>
+    <button class="src-btn mt-1" data-files='[
+      {"label":"answers_agriculture.json","url":"/data/answers_agriculture.json"},
+      {"label":"answers_cs.json","url":"/data/answers_cs.json"},
+      {"label":"answers_legal.json","url":"/data/answers_legal.json"},
+      {"label":"answers_mix.json","url":"/data/answers_mix.json"},
+      {"label":"agriculture_bridge_gt.jsonl (raw answers)","url":"/raw/answers/agriculture_bridge_gt.jsonl"},
+      {"label":"classifier.py","url":"/raw/source/classifier.py"}
+    ]'>Source files</button>
+  </div>
+
+  <!-- ── Static pipeline diagram ── -->
+  <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6 mb-6">
+    <div id="pipeline-steps" class="flex flex-wrap gap-0 items-stretch justify-center"></div>
+  </div>
+
+  <!-- ── Interactive demo ── -->
+  <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-6">
+    <h3 class="text-base font-semibold mb-1">Try the Classifier</h3>
+    <p class="text-xs text-slate-400 mb-4">
+      Uses the real GRASP-RAG classifier prompt with actual knowledge graph entities.
+      Requires <code>OPENAI_API_KEY</code> in your <code>.env</code>.
+    </p>
+
+    <div class="flex flex-col md:flex-row gap-3 mb-4">
+      <input id="demo-question" type="text"
+             placeholder="e.g. What connects Rational Grazing to Polyface Farm?"
+             class="flex-1 border border-slate-200 rounded-lg px-3 py-2 text-sm
+                    focus:outline-none focus:ring-2 focus:ring-blue-300"/>
+      <select id="demo-domain"
+              class="border border-slate-200 rounded-lg px-3 py-2 text-sm">
+        <option value="agriculture">Agriculture domain</option>
+        <option value="cs">CS domain</option>
+        <option value="legal">Legal domain</option>
+        <option value="mix">Mix domain</option>
+      </select>
+      <button id="demo-run"
+              class="bg-blue-600 hover:bg-blue-700 text-white font-semibold
+                     px-5 py-2 rounded-lg text-sm transition-colors whitespace-nowrap">
+        Run Pipeline
+      </button>
+    </div>
+
+    <!-- Example questions -->
+    <div class="flex flex-wrap gap-2 mb-5" id="demo-examples"></div>
+
+    <!-- Execution trace (animated) -->
+    <div id="demo-trace" class="space-y-3"></div>
+  </div>
+</section>
+
+</div><!-- /max-w-7xl -->
+
+<!-- Tooltip -->
+<div id="graph-tooltip"
+     class="fixed hidden bg-white border border-slate-200 shadow-lg rounded-lg
+            p-3 text-xs pointer-events-none max-w-xs z-50">
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

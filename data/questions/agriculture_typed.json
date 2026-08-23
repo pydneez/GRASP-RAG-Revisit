@@ -1,0 +1,502 @@
+[
+  {
+    "question": "What is Efficiency in agriculture?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "Describe Varroa Mites.",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What role does the Honey Bee play in agriculture?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are the key characteristics of a Nuc?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What is The Food Project?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "Describe Sustainable Agriculture.",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What defines Organic Farming?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are the properties of Ganoderma Lucidum?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What is a Top Bar Hive?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What is Grass?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What is a Black Morel?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are Community Gardens?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What is Compost?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What recipes can be found in Mushroom Cookbooks?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What is T&E Meats?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What is Soil?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are Total Minerals in agriculture?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What is Agriculture?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What is Corn?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What is Nuestras Raíces?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What is the Beekeeping Industry?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are Sclerotia?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What effect does Temperature have on agriculture?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What functions does Government serve in agriculture?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What is Colony Collapse Disorder?",
+    "query_type": "single_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What is the relationship between Honey and Windbreak?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How does Varroa Destructor connect to Polyface?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What links Farming to Farm to School Programs?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How are Soil and Greenhouse related?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What is the connection between Shiitake and Africanized Bees?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How does Nuestras Raíces connect to Growing Gardens?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What links Compost to Rational Grazing?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How are Varroa Destructor and King Stropharia related?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What is the connection between Casing and Black Morel?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How does Hogs connect to Walking Fish?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What links Morel to Farm to School Programs?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How are Soil Health and Water related?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What is the relationship between Farmer and Greenhouse?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How does Corn connect to Rest Period?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What links Crops to Farm to School Programs?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How are Beekeeping and Top Bar Hive related?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What is the connection between Casing and Lion's Mane?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How does Agriculture connect to Polyface Farm?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What links Total Minerals to Rationed Grazing?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How are The Food Project and Water related?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What is the relationship between Rational Grazing and Indore Process?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How does Industrial Agriculture connect to Cover Crops?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What links Sustainable Agriculture to Hoophouse?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How are Polyface and Monsanto related?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What is the connection between Sustainability and Paddock?",
+    "query_type": "bridge",
+    "domain": "agriculture"
+  },
+  {
+    "question": "Compare Sustainable Agriculture, Organic Farming, and Conservation Agriculture in terms of their principles and practices.",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are the interactions between Varroa Mites, Honey Bees, and Colony Collapse Disorder?",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How do Soil, Compost, and Biochar collectively contribute to soil health and crop yield?",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "Analyse the roles of Efficient beekeeping practices, Nucs, and the Beekeeping Industry in enhancing honey production.",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "Compare the effects of Soil Erosion, Temperature, and Total Minerals on agricultural productivity.",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are the collaborative benefits of Community Gardens, Local Livestock farming, and Organic Farming for urban sustainability?",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "Discuss the relationships among Grass, Livestock, and Soil in the context of pasture management.",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How do Ganoderma Lucidum, Tremella Fuciformis, and Pleurotus contribute to sustainable mushroom cultivation?",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "Compare the challenges of managing Bees, Pollen, and Varroa Mites in modern agriculture.",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are the synergies between Electric Fences, Livestock, and Soil conservation practices?",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "Analyze the economic impact of T&E Meats, Nuestras Raíces, and Community Gardens on local food systems.",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How do Black Morel, Maitake, and Organic Farming practices influence mushroom harvesting?",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "Compare the roles of Worker Bees, Honey Bees, and Pollen in the pollination process.",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are the implications of Soil quality, Temperature, and Total Minerals on crop selection?",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "Discuss how the Beekeeping Industry, Colony Collapse Disorder, and Varroa Mites affect honey production sustainability.",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How does Conservation Agriculture, Soil Health, and Composting interact to promote environmental sustainability?",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "Compare the ecological roles of Grass, Livestock, and Soil in a sustainable agricultural system.",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are the combined effects of Temperature, Soil Erosion, and Total Minerals on agricultural output?",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "Analyze the impact of Community Gardens, Government policies, and Organic Farming on local food security.",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How do Electric Fences, Livestock management, and Soil conservation practices work together to protect farmland?",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are the comparative advantages of using Top Bar Hives, Nucs, and traditional beekeeping methods?",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "Discuss the relationships among Varroa Mites, Honey Bee health, and Colony Collapse Disorder.",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What roles do Tremella Fuciformis, Ganoderma Lucidum, and agriculture play in promoting biodiversity?",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "Compare the benefits of using Biochar, Compost, and Soil amendments in improving soil fertility.",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are the impacts of Agriculture, Corn production, and Soil Degradation on food systems?",
+    "query_type": "multi_entity",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are the main approaches to sustainable farming practices in agriculture?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "Summarise the key challenges facing agriculture practitioners in modern times.",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What trends have emerged in the grassroots food movement as it relates to agriculture?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How has the role of technology transformed agricultural practices?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are the critical aspects of soil health and its importance in agriculture?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How do conservation practices influence agricultural productivity?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are the main strategies for promoting biodiversity in agriculture?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "Summarise the impact of climate change on agricultural systems.",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are the common methods of pest and disease management in organic farming?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How has consumer demand shifted in relation to sustainable agriculture?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What roles do local food systems play in community resilience?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are the educational approaches to fostering agricultural practices among new farmers?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How are traditional farming techniques being integrated with modern agricultural innovations?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are the ethical considerations surrounding livestock farming?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How has public policy affected agricultural sustainability efforts?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are the emerging trends in urban agriculture?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How does agricultural training and education vary across different regions?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What impacts do invasive species have on agricultural systems?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How are farmers adapting their practices to changing environmental regulations?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What role does agroecology play in renewing agricultural landscapes?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How does the commercialization of agriculture affect small-scale farmers?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are the critical discussions surrounding food sovereignty in agriculture?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How do farming cooperatives contribute to economic viability in rural areas?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What is the relationship between agriculture and rural community development?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How can farmers balance productivity and environmental stewardship?",
+    "query_type": "broad",
+    "domain": "agriculture"
+  }
+]

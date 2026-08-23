@@ -1,0 +1,41 @@
+# secrets
+.env
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# large regenerable/generated data — graphs are reused, not rebuilt, but stay out of git
+data/working_dir/
+data/answers/
+data/answers_old/
+data/answers_old2/
+data/answers_pre_redo_gpt4o_mini/
+data/results/
+data/results_pre_redo_gpt4o_mini/
+data/labels/
+data/labels_pre_redo_gpt4o_mini/
+
+# stale snapshots kept for reference only, not meant to be versioned
+archive/*.zip
+
+# node
+dashboard/node_modules/
+
+# LaTeX build artifacts
+paper/**/*.aux
+paper/**/*.bbl
+paper/**/*.bcf
+paper/**/*.blg
+paper/**/*.log
+paper/**/*.out
+paper/**/*.run.xml
+paper/**/*.synctex.gz
+/archive
+/references
+/data/raw

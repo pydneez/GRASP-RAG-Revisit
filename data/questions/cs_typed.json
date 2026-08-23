@@ -1,0 +1,502 @@
+[
+  {
+    "question": "What is the Netfilter Subsystem?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "Describe Spark.",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What role does the ActiveDocument play in application development?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What are the key characteristics of DStream?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What is a Macro in programming?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "Describe the PointD object.",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What role does the Selection Object play in user interfaces?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What is Tokenization in natural language processing?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What is MovieStream?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What is an Application Object?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What does EndOf Method signify in programming?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What is the purpose of the Locals Window in debugging?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What is Java and what makes it popular?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What is a Database Object?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What is a Markov Chain?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What is a Database in computer science?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What is the VBA Editor used for?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What are the key features of the R programming language?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What are Triggers in database management?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What is a Variable?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What is Connection Tracking in networking?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What are Arrays in programming?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What is a Full-Text Index?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What does the Monty Hall Problem illustrate?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What is bcp in SQL Server?",
+    "query_type": "single_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What is the relationship between Population and Probability Density Function?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "How does Variable connect to Weak Law of Large Numbers in the context of cs?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "What links Naive Bayes Model to Database Object?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "How are Random Variable and Management Studio related?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "What is the connection between UserForm and Correlation?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "How does Data Warehouse connect to Regression Model?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "What links Standard Deviation to Maximum Likelihood Estimate?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "How are Database and Document Object related?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "What is the connection between Normalization and Probability Distribution?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "How does Trigger connect to Maximum Likelihood Estimate?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "What links Office Applications to Variant?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "How are UDP and IP Options related?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "What is the relationship between Excel and Locals Window?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "How does ActiveDocument connect to Database Object?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "What links AdventureWorks2008 to Cross-Validation?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "How are Cross-Validation and Naive Bayes Model related?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "What is the connection between Cgroups Subsystem and Network Device?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "How does Records connect to Database Object?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "What links Java to Covariance Matrix?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "How are Book Class and Variant related?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "What is the connection between Probability and Correlation Coefficient?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "How does Binomial Distribution connect to Bayesian Inference?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "What links Scanner to Log File?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "How are Selection and Microsoft related?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "What is the relationship between Book Class and Database Object?",
+    "query_type": "bridge",
+    "domain": "cs"
+  },
+  {
+    "question": "Compare the Netfilter Subsystem, Linux Kernel Networking Subsystem, and ICMPv6 in terms of their roles in network packet filtering and management.",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What are the interactions between Java, R, and VBA in data analysis and manipulation tasks across different environments?",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "How do Selection Object, ActiveDocument, and VBA Editor collectively contribute to enhancing user interaction in Microsoft Office applications?",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "Analyze the roles of DStream, Spark, and Data Warehouse in the context of big data processing and analytics.",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "Compare the Tokenization techniques used in Java, R, and Python in terms of their effectiveness for natural language processing.",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What are the relationships among MovieStream, DStream, and TCP in the context of real-time video streaming?",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "How do Macro, VBA, and the Application Object interact to automate tasks in Excel?",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "Compare the concepts of Markov Chain, Expected Value, and Normalization in their applications to machine learning algorithms.",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What are the differences and similarities between Full-Text Index in Database, Data Warehouse, and Database Object in terms of search efficiency?",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "Analyze how Connection Tracking, Network Namespace, and the Linux Kernel Networking Subsystem facilitate secure networking in virtual environments.",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What roles do Function Statement, Variables, and Arrays play in programming paradigms across Java, R, and VBA?",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "Compare the use of Triggers in Database, VBA, and Java in event-driven programming and data integrity.",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "How do EndOf Method, Locals Window, and Error State interact in the debugging process of Java applications?",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What are the combined effects of the Monty Hall Problem, Expected Value, and Markov Chain on decision-making strategies?",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "Analyze the significance of TCP, ICMPv6, and ActiveDocument in data transmission and digital communication protocols.",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "Compare the array handling capabilities in Java, R, and VBA with respect to performance and ease of use.",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What interactions exist among DStream, Spark, and the Full-Text Index in handling large-scale textual data?",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "How do the concepts of Database Object, Connection Tracking, and Triggers work together to ensure data integrity in relational databases?",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "Compare the programming features of Java Programming Language, R, and VBA in terms of their suitability for statistical modeling.",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "Analyze the use cases of Linux Kernel Networking Subsystem, Netfilter Subsystem, and TCP in ensuring network security.",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "How do Locals Window, EndOf Method, and Error State help developers in tracing the flow of execution in R debugging?",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What are the comparative advantages of using Array structures in Java, R, and VBA for data management tasks?",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "How do the principles of Tokenization, Normalization, and Full-Text Index improve search functionality in databases?",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "Compare how the MovieStream, DStream, and Data Warehouse systems manage and store multimedia content.",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What roles do ActiveDocument, Application Object, and Macro play in automating report generation in Microsoft Office?",
+    "query_type": "multi_entity",
+    "domain": "cs"
+  },
+  {
+    "question": "What are the main approaches to data analysis in computer science?",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "Summarise the key challenges facing programmers in modern software development.",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "What trends have emerged in the use of machine learning in software applications?",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "How has the concept of algorithmic efficiency evolved in computer science?",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "What are the emerging paradigms in programming language design?",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "Discuss the significance of user experience design in software development.",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "What are the primary techniques for handling big data within computer science?",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "How do contemporary programming practices reflect the evolution of open source methodologies?",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "What are the main ethical considerations in artificial intelligence research?",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "What strategies are being employed to improve cybersecurity in software systems?",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "How has cloud computing transformed the landscape of software architecture?",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "What are the current best practices for software project management in agile environments?",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "How do trends in data visualization impact the interpretation of complex datasets?",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "What are the foundational principles underlying object-oriented programming?",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "Discuss the role of theoretical computer science in shaping practical applications.",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "How has the field of human-computer interaction evolved with advancements in technology?",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "What are the dominant approaches to software testing in contemporary development?",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "How is parallel computing changing the landscape of high-performance computing?",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "What are the key challenges in achieving software interoperability?",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "What trends are influencing the development of mobile applications?",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "Discuss the impact of online education on the skills of computer science professionals.",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "What are the implications of quantum computing for future algorithms?",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "How do programming paradigms affect software design patterns?",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "What are the advancements in programming methodologies related to functional programming?",
+    "query_type": "broad",
+    "domain": "cs"
+  },
+  {
+    "question": "How is the integration of artificial intelligence modifying database management?",
+    "query_type": "broad",
+    "domain": "cs"
+  }
+]

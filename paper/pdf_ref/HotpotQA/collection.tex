@@ -1,0 +1,97 @@
+\section{Data Collection} \label{sec:collect}
+
+% \todo{Cite ParlAI somewhere?}
+
+The main goal of our work is to collect a diverse and explainable question answering dataset that requires multi-hop reasoning.
+% As discussed in the previous section,
+One way to do so is to define reasoning chains based on a knowledge base \cite{welbl2017constructing,talmor2018web}.
+However, the resulting datasets are limited by the incompleteness of entity relations and the lack of diversity in the question types.
+Instead, in this work, we focus on text-based question answering in order to diversify the questions and answers.
+The overall setting is that given some context paragraphs (e.g., a few paragraphs, or the entire Web) and a question, a QA system answers the question by extracting a span of text from the context, similar to \citet{rajpurkar2016squad}.
+We additionally ensure that it is necessary to perform multi-hop reasoning to correctly answer the question.
+
+It is non-trivial to collect text-based multi-hop questions.
+In our pilot studies, we found that simply giving an arbitrary set of paragraphs to crowd workers is counterproductive, because for most paragraph sets, it is difficult to ask a meaningful multi-hop question.
+To address this challenge, we carefully design a pipeline to collect text-based multi-hop questions.
+Below, we will highlight the key design choices in our pipeline.
+
+\paragraph{Building a Wikipedia Hyperlink Graph.}
+We use the entire English Wikipedia dump as our corpus.\footnote{\url{https://dumps.wikimedia.org/}}
+In this corpus, we make two observations:
+(1) hyper-links in the Wikipedia articles often naturally entail a relation between two (already disambiguated) entities in the context, which could potentially be used to facilitate multi-hop reasoning;
+(2) the first paragraph of each article often contains much information that could be queried in a meaningful way.
+Based on these observations, we extract all the hyperlinks from the first paragraphs of all Wikipedia articles.
+With these hyperlinks, we build a directed graph $G$, where each edge $(a, b)$ indicates there is a hyperlink from the first paragraph of article $a$ to article $b$.
+
+\paragraph{Generating Candidate Paragraph Pairs.}
+To generate meaningful pairs of paragraphs for multi-hop question answering with $G$, we start by considering an example question ``when was the singer and songwriter of Radiohead born?''
+To answer this question, one would need to first reason that the ``singer and songwriter of Radiohead'' is ``Thom Yorke'', and then figure out his birthday in the text.
+We call ``Thom Yorke'' a \emph{bridge entity} in this example.
+Given an edge $(a, b)$ in the hyperlink graph $G$, the entity of $b$ can usually be viewed as a bridge entity that connects $a$ and $b$.
+%In other words, bridge entities $b$ create possibilities of multi-hop reasoning.
+As we observe articles $b$ usually determine the theme of the shared context between $a$ and $b$, but not all articles $b$ are suitable for collecting multi-hop questions.
+% However, not all entity $b$'s are suitable for collecting multi-hop question, as we observe they usually determine the theme of the shared context between $a$ and $b$.
+For example, entities like countries are frequently referred to in Wikipedia, but don't necessarily have much in common with all incoming links.
+It is also difficult, for instance, for the crowd workers to ask meaningful multi-hop questions about highly technical entities like the IPv4 protocol.
+To alleviate this issue, we constrain the bridge entities to a set of manually curated pages in Wikipedia (see Appendix \ref{sec:collection_details}).
+After curating a set of pages $B$, we create candidate paragraph pairs by sampling edges $(a, b)$ from the hyperlink graph such that $b \in B$.
+
+\paragraph{Comparison Questions.}
+In addition to questions collected using bridge entities, we also collect another type of multi-hop questions---comparison questions.
+The main idea is that comparing two entities from the same category usually results in interesting multi-hop questions, e.g., ``Who has played for more NBA teams, Michael Jordan or Kobe Bryant?''
+To facilitate collecting this type of question, we manually curate 42 lists of similar entities (denoted as $L$) from Wikipedia.\footnote{This is achieved by manually curating lists from the Wikipedia ``List of lists of lists'' (\url{https://wiki.sh/y8qv}). One example is ``Highest Mountains on Earth''.}
+To generate candidate paragraph pairs, we randomly sample two paragraphs from the same list and present them to the crowd worker.
+
+To increase the diversity of multi-hop questions, we also introduce a subset of yes/no questions in comparison questions.
+This complements the original scope of comparison questions by offering new ways to require systems to reason over both paragraphs.
+For example, consider the entities Iron Maiden (from the UK) and AC/DC (from Australia).
+Questions like ``Is Iron Maiden or AC/DC from the UK?'' are not ideal, because one would deduce the answer is ``Iron Maiden'' even if one only had access to that article.
+With yes/no questions, one may ask ``Are Iron Maiden and AC/DC from the same country?'', which requires reasoning over both paragraphs.
+
+To the best of our knowledge, text-based comparison questions are a novel type of questions that have not been considered by previous datasets.
+More importantly, answering these questions usually requires arithmetic comparison, such as comparing ages given birth dates, which presents a new challenge for future model development.
+
+\paragraph{Collecting Supporting Facts.}
+To enhance the explainability of question answering systems, we want them to output a set of \emph{supporting facts} necessary to arrive at the answer, when the answer is generated.
+To this end, we also collect the sentences that determine the answers from crowd workers.
+These supporting facts can serve as strong supervision for what sentences to pay attention to.
+Moreover, we can now test the explainability of a model by comparing the predicted supporting facts to the ground truth ones.
+
+The overall procedure of data collection is illustrated in Algorithm \ref{algo:collect}.
+% We leave details about curating Wikipedia pages to Appendix \ref{sec:collection_details}.
+
+\begin{algorithm}[t]
+\small
+    \caption{Overall data collection procedure}
+    \label{algo:collect}
+\begin{algorithmic}
+    \STATE {\bfseries Input:} question type ratio $r_1=0.75$, yes/no ratio $r_2=0.5$
+    \WHILE{not finished}
+        \IF {$\mathrm{random()} < r_1$}
+            \STATE Uniformly sample an entity $b \in B$
+            \STATE Uniformly sample an edge $(a, b)$
+            \STATE Workers ask a question about paragraphs $a$ and $b$
+        \ELSE
+            \STATE Sample a list from $L$, with probabilities weighted by list sizes
+            % \todo{Aren't we doing entity uniform in the end?}
+            \STATE Uniformly sample two entities $(a, b)$ from the list
+            \IF {$\mathrm{random()} < r_2$}
+                \STATE Workers ask a yes/no question to compare $a$ and $b$
+            \ELSE
+                \STATE Workers ask a question with a span answer to compare $a$ and $b$
+            \ENDIF
+        \ENDIF
+        \STATE Workers provide the supporting facts
+    \ENDWHILE
+\end{algorithmic}
+\end{algorithm}
+
+% 1. Link graph, shortest path
+
+% 2. Filtering: Type B (pick clusteroids) and Type 4 (pick lists)
+
+% 3. UI (how are supfacts collected?)
+
+% 4. Split
+
+% 5. Settings and Distractors

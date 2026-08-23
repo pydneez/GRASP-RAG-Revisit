@@ -1,0 +1,90 @@
+[
+  {
+    "question": "What are the most effective integrated pest management (IPM) strategies identified in recent case studies from agro-climatic regions similar to the one under investigation, and how have these strategies been adapted to local conditions?",
+    "query_type": "broad",
+    "persona": {
+      "role": "Agricultural Extension Officer",
+      "goal": "To provide farmers with up-to-date, practical information on sustainable farming practices and pest management strategies.",
+      "expertise": "Advanced knowledge in agricultural science with several years of experience advising local farmers on crop cultivation and sustainability."
+    },
+    "task": "Investigate the latest sustainable pest management strategies that have been successfully implemented in similar agro-climatic regions by reviewing case studies and research articles.",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How do recent advancements in biocontrol agents and eco-friendly pesticide alternatives compare in terms of efficacy and cost-effectiveness in various agro-climatic settings, according to current research articles and field trials?",
+    "query_type": "broad",
+    "persona": {
+      "role": "Agricultural Extension Officer",
+      "goal": "To provide farmers with up-to-date, practical information on sustainable farming practices and pest management strategies.",
+      "expertise": "Advanced knowledge in agricultural science with several years of experience advising local farmers on crop cultivation and sustainability."
+    },
+    "task": "Investigate the latest sustainable pest management strategies that have been successfully implemented in similar agro-climatic regions by reviewing case studies and research articles.",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are the comparative effects of crop rotation, cover cropping, and composting on soil health parameters such as nutrient content and microbial activity based on recent empirical studies and expert analyses?",
+    "query_type": "broad",
+    "persona": {
+      "role": "Agricultural Extension Officer",
+      "goal": "To provide farmers with up-to-date, practical information on sustainable farming practices and pest management strategies.",
+      "expertise": "Advanced knowledge in agricultural science with several years of experience advising local farmers on crop cultivation and sustainability."
+    },
+    "task": "Compile a comparative analysis of different organic farming techniques to determine their efficacy on soil health and crop yield based on recent empirical studies and expert opinions.",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How do various organic farming techniques influence crop yield in diverse climatic conditions, and what empirical evidence supports these outcomes from regional studies?",
+    "query_type": "broad",
+    "persona": {
+      "role": "Agricultural Extension Officer",
+      "goal": "To provide farmers with up-to-date, practical information on sustainable farming practices and pest management strategies.",
+      "expertise": "Advanced knowledge in agricultural science with several years of experience advising local farmers on crop cultivation and sustainability."
+    },
+    "task": "Compile a comparative analysis of different organic farming techniques to determine their efficacy on soil health and crop yield based on recent empirical studies and expert opinions.",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are the comparative benefits and limitations of using compost, cover crops, and biochar as soil amendments in small-scale urban gardens, based on recent studies and case reports?",
+    "query_type": "broad",
+    "persona": {
+      "role": "Urban Farmer/Community Gardener",
+      "goal": "To discover innovative practices in soil health and organic farming that can be applied in small-scale urban settings.",
+      "expertise": "Intermediate knowledge of agricultural practices, with hands-on experience in growing food in urban environments and a keen interest in ecological and community-supported agriculture."
+    },
+    "task": "Explore the latest methods in soil amendment techniques that enhance soil health specifically for small-scale urban gardens, including the use of compost, cover crops, and biochar, by reviewing multiple studies and case reports.",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How do different combinations of compost, cover crops, and biochar influence soil health indicators such as nutrient availability and microbial activity in urban garden settings, according to current research findings?",
+    "query_type": "broad",
+    "persona": {
+      "role": "Urban Farmer/Community Gardener",
+      "goal": "To discover innovative practices in soil health and organic farming that can be applied in small-scale urban settings.",
+      "expertise": "Intermediate knowledge of agricultural practices, with hands-on experience in growing food in urban environments and a keen interest in ecological and community-supported agriculture."
+    },
+    "task": "Explore the latest methods in soil amendment techniques that enhance soil health specifically for small-scale urban gardens, including the use of compost, cover crops, and biochar, by reviewing multiple studies and case reports.",
+    "domain": "agriculture"
+  },
+  {
+    "question": "How do various urban farming initiatives successfully integrate permaculture principles with community-supported agriculture to enhance food security and biodiversity, and what lessons can be learned from their approaches and outcomes?",
+    "query_type": "broad",
+    "persona": {
+      "role": "Urban Farmer/Community Gardener",
+      "goal": "To discover innovative practices in soil health and organic farming that can be applied in small-scale urban settings.",
+      "expertise": "Intermediate knowledge of agricultural practices, with hands-on experience in growing food in urban environments and a keen interest in ecological and community-supported agriculture."
+    },
+    "task": "Investigate innovative urban farming practices that integrate permaculture principles with community-supported agriculture to promote food security and biodiversity in cities, analyzing articles, guidelines, and success stories from various urban farming initiatives.",
+    "domain": "agriculture"
+  },
+  {
+    "question": "What are the key challenges and best practices identified in the literature regarding the implementation of permaculture in urban farming systems, and how do these practices affect community engagement and food distribution in different city contexts?",
+    "query_type": "broad",
+    "persona": {
+      "role": "Urban Farmer/Community Gardener",
+      "goal": "To discover innovative practices in soil health and organic farming that can be applied in small-scale urban settings.",
+      "expertise": "Intermediate knowledge of agricultural practices, with hands-on experience in growing food in urban environments and a keen interest in ecological and community-supported agriculture."
+    },
+    "task": "Investigate innovative urban farming practices that integrate permaculture principles with community-supported agriculture to promote food security and biodiversity in cities, analyzing articles, guidelines, and success stories from various urban farming initiatives.",
+    "domain": "agriculture"
+  }
+]

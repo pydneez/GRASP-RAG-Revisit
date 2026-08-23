@@ -1,0 +1,64 @@
+\section{Introduction}
+
+\begin{figure}[!t]
+    \framebox{
+    \parbox{0.45\textwidth}{
+    \small
+    \textbf{Paragraph A, Return to Olympus:} \newline
+    \sentid{[1]} \support{Return to Olympus is the only album by the alternative rock band Malfunkshun.} \sentid{[2]} \support{It was released after the band had broken up and after lead singer Andrew Wood (later of Mother Love Bone) had died of a drug overdose in 1990.} \sentid{[3]} Stone Gossard, of Pearl Jam, had compiled the songs and released the album on his label, Loosegroove Records. \smallskip\newline
+    \textbf{Paragraph B, Mother Love Bone:} \newline
+    \sentid{[4]} \support{Mother Love Bone was an American rock band that formed in Seattle, Washington in 1987.} \sentid{[5]} The band was active from 1987 to 1990. \sentid{[6]} \support{Frontman Andrew Wood's personality and compositions helped to catapult the group to the top of the burgeoning late 1980s/early 1990s Seattle music scene.} \sentid{[7]} \support{Wood died only days before the scheduled release of the band's debut album, ``Apple'', thus ending the group's hopes of success.} \sentid{[8]} The album was finally released a few months later. \smallskip\newline
+    \textbf{Q:} What was the former band of the member of Mother Love Bone who died just before the release of ``Apple''? \newline
+    \textbf{A:} Malfunkshun \newline
+    \textbf{Supporting facts:} \sentid{1, 2, 4, 6, 7}}
+    }
+    \caption{An example of the multi-hop questions in \datasetname{}. We also highlight the supporting facts in \support{blue italics}, which are also part of the dataset.} \label{fig:example}
+\end{figure}
+
+The ability to perform reasoning and inference over natural language is an important aspect of intelligence.
+The task of question answering (QA) provides a quantifiable and objective way to test the reasoning ability of intelligent systems.
+To this end, a few large-scale QA datasets have been proposed, which sparked significant progress in this direction.
+However, existing datasets have limitations that hinder further advancements of machine reasoning over natural language, especially in testing QA systems' ability to perform \emph{multi-hop reasoning}, where the system has to reason with information taken from more than one document to arrive at the answer.
+
+First, some datasets mainly focus on testing the ability of reasoning within a single paragraph or document, or \emph{single-hop reasoning}.
+For example, in \squad{} \cite{rajpurkar2016squad} questions are designed to be answered given a single paragraph as the context, and most of the questions can in fact be answered by matching the question with a single sentence in that paragraph.
+As a result, it has fallen short at testing systems' ability to reason over a larger context.
+\triviaqa{} \cite{Joshi2017TriviaQA} and \searchqa{} \cite{dunn2017searchqa} create a more challenging setting by using information retrieval to collect multiple documents to form the context given existing question-answer pairs.
+Nevertheless, most of the questions can be answered by matching the question with a few nearby sentences in one single paragraph, which is limited as it does not require more complex reasoning (e.g., over multiple paragraphs).
+
+Second, existing datasets that target multi-hop reasoning, such as \wikihop{} \cite{welbl2017constructing} and \complexwebq{} \cite{talmor2018web}, are constructed using existing knowledge bases (KBs). As a result, these datasets are constrained by the schema of the KBs they use, and therefore the diversity of questions and answers is inherently limited.
+
+Third, all of the above datasets only provide distant supervision; i.e., the systems only know what the answer is, but do not know what supporting facts lead to it. This makes it difficult for models to learn about the underlying reasoning process, as well as to make explainable predictions.
+
+To address the above challenges, we aim at creating a QA dataset that requires reasoning over multiple documents, and does so in natural language, without constraining itself to an existing knowledge base or knowledge schema.
+% To address the above challenges, we aim at creating a QA dataset that covers challenging multi-hop reasoning over multiple documents, and does so in natural language, without constraining itself to an existing knowledge base or knowledge schema.
+We also want it to provide the system with strong supervision about what text the answer is actually derived from, to help guide systems to perform meaningful and explainable reasoning.
+
+
+% Question answering (QA) is a long-standing, challenging task, and successfully solving it requires systems to extract information from natural language, and then performing reasoning and inference to arrive at the answer.
+% The emergence of many large-scale QA datasets recently has sparked much progress in this direction.
+% However, these existing QA datasets have significant drawbacks hindering them from generalizing well to real-world scenarios.
+
+% \squad{} \cite{rajpurkar2016squad} is notable for its size and objective evaluation metrics, both of which fueled the development of powerful neural models for question answering.
+% However, \squad{} questions are designed to be answered given a single paragraph as the context, and most of the questions can further be addressed by matching a single sentence in that paragraph, which is largely unrealistic.
+% \triviaqa{} \cite{Joshi2017TriviaQA} and \searchqa{} \cite{dunn2017searchqa} expand the horizon of the QA task by looking beyond just a single paragraph, and use information retrieval to collect multiple documents as context given existing question answer pairs.
+% While this tests systems' ability to process more than one paragraph (or document), this approach to data collection is not geared towards complex questions that require multiple hops of reasoning.
+% Moreover, due to the nature of this approach, the answer is usually identified in the context with distant supervision. This not only fails to inform the QA system which appearance of the answer actually answers the question, but also cannot guarantee that the question is answerable in the first place, given the context presented.
+% More recently, \wikihop{} \cite{welbl2017constructing} and \complexwebq{} \cite{talmor2018web} presented interesting opportunities to test QA systems' ability to perform multi-hop reasoning over multiple documents.
+% However, both are constructed on top of existing knowledge bases (KBs), which present challenges when generalizing to a more realistic setting.
+% Most notably, they are constrained by the schema of the KBs they use, and therefore the types of questions and answers are inherently limited.
+
+% To ready QA systems for more real-world scenarios, we want a QA dataset that covers challenging multi-hop reasoning over multiple documents, and does so in natural language, without constraining itself to an existing knowledge base or knowledge schema.
+% We also want it to provide the system with strong supervision about where the answer is actually from, to help guide systems to perform meaningful and explainable reasoning.
+
+We present \datasetname%
+% \footnote{The name comes from the first three authors' arriving at the main idea during a discussion over hot pot.}%
+\footnote{The name comes from the first three authors' arriving at the main idea during a discussion at a hot pot restaurant.}%
+, a large-scale dataset that satisfies these desiderata.
+\datasetname{} is collected by crowdsourcing based on Wikipedia articles, where crowd workers are shown multiple supporting context documents and asked explicitly to come up with questions requiring reasoning about all of the documents.
+This ensures it covers multi-hop questions that are more natural, and are not designed with any pre-existing knowledge base schema in mind.
+Moreover, we also ask the crowd workers to provide the supporting facts they use to answer the question, which we also provide as part of the dataset (see Figure \ref{fig:example} for an example).
+%\todo{R3: lines 133-137 are really awkward (which stood out bc overall the paper is very well written). (also, "high-quality ... highly nontrivial" sounds WAY too self-aggrandizing, even if true...}
+We have carefully designed a data collection pipeline for \datasetname, since  the collection of high-quality multi-hop questions is non-trivial.
+We hope that this pipeline also sheds light on future work in this direction.
+Finally, we also collected a novel type of questions---comparison questions---as part of \datasetname, in which we require systems to compare two entities on some shared properties to test their understanding of both language and common concepts such as numerical magnitude. We make \datasetname{} publicly available at \href{https://hotpotqa.github.io}{\bf https://HotpotQA.github.io}.

@@ -1,0 +1,37 @@
+% ── Abstract ─────────────────────────────────────────────────────────────────
+\begin{abstract}
+Existing graph-based retrieval-augmented generation (RAG) systems apply a
+single fixed retrieval strategy to every query regardless of its logical
+structure.
+We present \textbf{GRASP-RAG} (Graph Retrieval with Adaptive Structured
+Paths), which introduces \emph{query-adaptive motif selection}: a lightweight
+LLM classifier identifies the logical shape of each query---single-entity,
+bridge, multi-entity, or broad---and routes it to the matching graph
+traversal algorithm (ego-network, bidirectional shortest path, Steiner-tree
+approximation, or LightRAG hybrid).
+Each motif then structures its retrieved subgraph into a topology-aware
+context that mirrors the answer's reasoning shape, so the LLM receives
+evidence in the form the question requires.
+When the classifier is uncertain, a confidence score triggers a graceful
+fallback to LightRAG hybrid rather than a hard failure.
+Evaluated on four domains of UltraDomain (Agriculture, CS, Legal, Health)
+under reference-anchored multi-judge evaluation (GPT-4o-mini, Claude Haiku,
+Gemini Flash; bias-corrected majority vote across five dimensions), GRASP-RAG
+achieves average win rates of \textbf{73.4\% against LightRAG} and
+\textbf{79.7\% against PathRAG}---the latter being consistent across all four
+domains.
+Classifier accuracy ranges from 40--72\% by domain, with bridge queries
+classified reliably (87.7\% pooled) and broad queries misclassified most
+often (10.8\%), yet per-type win rates remain positive for every query type,
+confirming that the system degrades gracefully when classification is
+imprecise.
+A controlled ablation holding routing and retrieval fixed shows that
+topology-aware context serialisation alone accounts for a 62.4\% win rate
+over flat triple serialisation on Agriculture, confirming that structured
+context presentation contributes independently of graph traversal.
+\end{abstract}
+
+\begin{IEEEkeywords}
+retrieval-augmented generation, knowledge graph, graph RAG, multi-hop
+reasoning, query classification, adaptive retrieval
+\end{IEEEkeywords}

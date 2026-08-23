@@ -1,0 +1,58 @@
+\pgfplotstableread[row sep=\\,col sep=&]{
+	l & count \\
+	10	&	11506\\
+	15	&	40554\\
+	20	&	34054\\
+	25	&	18523\\
+	30	&	8858\\
+	35	&	4398\\
+	40	&	2356\\
+	45	&	1535\\
+	50	&	1074\\
+	55	&	768\\
+	60	&	607\\
+	65	&	485\\
+	70	&	321\\
+	75	&	224\\
+	80	&	141\\
+	85	&	94\\
+	90	&	49\\
+	95	&	44\\
+	100	&	22\\
+	105	&	13\\
+	110	&	3\\
+	115	&	6\\
+	120	&	6\\
+	125	&	3\\
+	130	&	1\\
+}\mydata
+
+\pgfplotsset{compat=1.8,
+	/pgfplots/ybar legend/.style={
+		/pgfplots/legend image code/.code={%
+			%\draw[##1,/tikz/.cd,yshift=-0.25em]
+			%(0cm,0cm) rectangle (3pt,0.8em);},
+			\draw[##1,/tikz/.cd,bar width=3.5pt,yshift=-0.2em,bar shift=0pt]
+			plot coordinates {(0cm,0.8em)};},
+	},
+}
+
+\begin{tikzpicture}[font=\small]
+\begin{axis}[
+ybar=.5pt,
+xtick={10, 30, 50, 70, 90, 110, 130},
+ymin=0, ymax=45000,
+ytick={1e4, 2e4, 3e4, 4e4},
+xlabel={Question Length (tokens)},
+ylabel={Number of Examples},
+height=6.5cm,
+/pgf/bar width=3.5pt,
+xtick align=inside,
+ymajorgrids=true,
+grid style=dashed,
+]
+
+\addplot[draw opacity=0, fill=blue!50] table[x=l,y=count]{\mydata};
+
+\end{axis}
+\end{tikzpicture}

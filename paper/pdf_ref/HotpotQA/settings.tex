@@ -1,0 +1,98 @@
+\section{Processing and Benchmark Settings}
+
+We collected 112,779 valid examples in total on Amazon Mechanical Turk\footnote{\url{https://www.mturk.com/}} using the ParlAI interface \cite{miller2017parlai} (see Appendix \ref{sec:collection_details}).%
+% \footnote{See more details about data preprocessing and the Turker interface in Appendix \ref{sec:collection_details}.}
+To isolate potential single-hop questions from the desired multi-hop ones, we first split out a subset of data called \textit{train-easy}.
+Specifically, we randomly sampled questions ($\sim$3--10 per Turker) from top-contributing turkers, and categorized all their questions into the \textit{train-easy} set if an overwhelming percentage in the sample only required reasoning over one of the paragraphs.
+We sampled these turkers because they contributed more than 70\% of our data.
+% We sampled examples by top contributing workers and also investigated the statistics of individual questions such as lengths.
+% By doing so we identified an incomplete list of 18,089 examples that are answerable by only accessing any one of the paragraphs.
+This \textit{train-easy} set contains 18,089 mostly single-hop examples.%, and we call the rest multi-hop examples.
+% We mark this partition of data as \textit{train-easy} in the following text, and call the rest multi-hop examples. \todo{R3Q4: how many questions did you look at when you found the 18k "single" questions? Why did you only sample the top contributing workers?}
+
+We implemented a question answering model based on the current state-of-the-art architectures, which we discuss in detail in Section \ref{sec:baseline}.
+Based on this model, we performed a three-fold cross validation on the remaining multi-hop examples.
+Among these examples, the models were able to correctly answer 60\% of the questions with high confidence (determined by thresholding the model loss).
+% This demonstrates that given enough training data, existing neural architectures can be trained to answer multi-hop questions to some extent.
+% We marked these questions as \textit{easy} (56,814 in total, 60\% of the multi-fact examples), and the rest of the multi-fact examples as hard.
+These correctly-answered questions (56,814 in total, 60\% of the multi-hop examples) are split out and marked as the \textit{train-medium} subset, which will also be used as part of our training set.
+
+After splitting out \textit{train-easy} and \textit{train-medium}, we are left with hard examples.
+As our ultimate goal is to solve multi-hop question answering, we focus on questions that the latest modeling techniques are not able to answer.
+Thus we constrain our dev and test sets to be hard examples.
+Specifically, we randomly divide the hard examples into four subsets, \textit{train-hard}, \textit{dev}, \textit{test-distractor}, and \textit{test-fullwiki}.
+Statistics about the data split can be found in Table \ref{tab:split}. In Section \ref{sec:exp}, we will show that combining \textit{train-easy}, \textit{train-medium}, and \textit{train-hard} to train models yields the best performance, so we use the combined set as our default training set. The two test sets \textit{test-distractor} and \textit{test-fullwiki} are used in two different benchmark settings, which we introduce next.
+
+
+% We used these correctly-answered questions (56,814 in total, 60\% of the multi-hop examples, called \textit{train} in the following text) as part of our training set, and the rest of the multi-hop examples are marked as hard.
+% As to be shown in Section \ref{sec:analysis},
+% \todo{old line 322}
+
+% \footnote{See Appendix \ref{sec:fullwiki_details} for more detailed comparison.}
+ % with performance bias depending on question types.
+% \todo{R3: I don't follow your point in lines 331-335:}
+% =======
+% As to be shown in Section \ref{sec:analysis}, the ratio of multi-hop questions in \textit{train} split is similar to that of the hard examples
+% (73.3\% in \textit{train} v.s. 74.0\% in \textit{dev}, see Section \ref{sec:analysis}).
+% At the same time, we find that Type III questions (see Section \ref{sec:analysis} for definition) more frequently appear in the \textit{train} split compared to hard ones.
+% (32.0\% in \textit{train} v.s. 15.0\% in \textit{dev}, see Section \ref{sec:analysis}).
+% Above observations demonstrate that existing neural architectures can display abilities to answer multi-hop questions to a certain degree with performance bias
+% depending on question types. Moreover, according to retrieval metrics in full wiki setting (see later this section),
+% the \textit{train} split has similar level of difficulty to its hard cousins, which reveals its non-trivialness under large-scale realistic scenarios.\footnote{See Appendix \ref{sec:fullwiki_details} for more detailed comparison.}.
+% >>>>>>> dd0ced33c31072dd6e4606643b586dd4f370d3be
+
+
+% \todo{R3: The explanation of what "dev" is (hard questions only) in lines 340-342 needs to come sooner, bc in lines 322-325 you're refering to dev but we don't yet know it's all hard... (also, I think we don't yet know what "Type III", line 324, is) }More specifically, we split 50\%, 25\%, and 25\% of the hard examples into \textit{train-hard}, \textit{dev}, and \textit{test} sets respectively.
+
+
+
+\begin{table}
+\small
+    \centering
+    \begin{tabular}{l l l r}
+        \toprule
+        Name & Desc. & Usage & \# Examples \\
+        \midrule
+        train-easy & single-hop & training & 18,089 \\
+        train-medium & multi-hop & training & 56,814 \\
+        train-hard & hard multi-hop & training & 15,661 \\
+        dev & hard multi-hop & dev & 7,405 \\
+        test-distractor & hard multi-hop & test & 7,405 \\
+        test-fullwiki & hard multi-hop & test & 7,405 \\
+        \multicolumn{3}{l}{Total} & 112,779 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Data split. The splits \textit{train-easy}, \textit{train-medium}, and \textit{train-hard} are combined for training. The distractor and full wiki settings use different test sets %\textit{test-distractor} and \textit{test-fullwiki}
+    so that the gold paragraphs in the full wiki test set remain unknown to any models.} \label{tab:split}
+\end{table}
+
+We create two benchmark settings.
+In the first setting, to challenge the model to find the true supporting facts in the presence of noise, for each example we employ bigram tf-idf \cite{chen2017reading} to retrieve 8 paragraphs from Wikipedia as \textit{distractors}, using the question as the query.
+We mix them with the 2 gold paragraphs (the ones used to collect the question and answer) to construct the \textbf{distractor} setting.
+The 2 gold paragraphs and the 8 distractors are shuffled before they are fed to the model.
+In the second setting, we fully test the model's ability to locate relevant facts as well as reasoning about them by requiring it to answer the question given the first paragraphs of all Wikipedia articles without the gold paragraphs specified.
+This \textbf{full wiki} setting truly tests the performance of the systems' ability at multi-hop reasoning in the wild.\footnote{As we required the crowd workers to use complete entity names in the question, the majority of the questions are unambiguous in the full wiki setting.}
+The two settings present different levels of difficulty, and would require techniques ranging from reading comprehension to information retrieval.
+As shown in Table \ref{tab:split}, we use separate test sets for the two settings to avoid leaking information, because the gold paragraphs are available to a model in the distractor setting, but should not be accessible in the full wiki setting.
+
+% In the first setting, we provide the model with only the two paragraphs used to collect the question and answer, which we call \textbf{gold only}.
+% %The first setting is the \textbf{gold only} setting, where for each example, a model is only given the two paragraphs that we use to collect the question and answer.
+% To challenge the model to find the true supporting facts in the presence of noise, for each example we treat the question as the query and use bigram tf-idf \cite{chen2017reading} to retrieve five paragraphs from our dataset as distractors.
+% We add these to the mix of paragraphs, and dub it the \textbf{distractor} setting.
+% %The second setting is dubbed \textbf{distractor}, where five distractive paragraphs (or distractors) along with two  gold paragraphs are given to the models.
+% %In particular, for each example we treat the question as the query and use bigram tf-idf \cite{chen2017reading} to retrieve five paragraphs from our dataset as distractors.
+% The two gold paragraphs and the five distractors are shuffled before being fed to the model.
+% Finally, to fully test the model's ability to locate relevant facts as well as reasoning about them, we require it to answer the question given the first paragraphs of all Wikipedia articles without the gold paragraphs specified.
+% This \textbf{full wiki} setting truly tests the performance of the systems' ability of multi-hop reasoning in the wild.\footnote{As we required the crowd workers to use complete entity names in the question, the majority of the questions are unambiguous in the full wiki setting.}
+% %The third is a \textbf{full wiki} setting, where the model is required to answer the questions given the entire Wikipedia without the gold paragraphs specified.
+% The three settings are of different difficulty levels, and would require techniques ranging from reading comprehension to information retrieval.
+
+% Moreover, while questions in the \textit{train} split are answerable by existing models, this split is still valuable to our dataset: 1) as shown
+
+We also try to understand the model's good performance on the \textit{train-medium} split.
+Manual analysis shows that the ratio of multi-hop questions in \textit{train-medium} is similar to that of the hard examples (93.3\% in \textit{train-medium} vs.\ 92.0\% in \textit{dev}), but one of the question types appears more frequently in \textit{train-medium} compared to the hard splits (Type II: 32.0\% in \textit{train-medium} vs.\ 15.0\% in \textit{dev}, see Section \ref{sec:analysis} for the definition of Type II questions).
+These observations demonstrate that given enough training data, existing neural architectures can be trained to answer certain types and certain subsets of the multi-hop questions.
+However, \textit{train-medium} remains challenging when not just the gold paragraphs are present---we show in Appendix \ref{sec:fullwiki_details} that the retrieval problem on these examples are as difficult as that on their hard cousins.
+
+%However, according to the retrieval metrics in Appendix \ref{sec:fullwiki_details},
+%the \textit{train-medium} split has a similar level of difficulty to its hard cousins when all Wikipedia pages are considered as context, which reveals its non-trivialness under this scenario.

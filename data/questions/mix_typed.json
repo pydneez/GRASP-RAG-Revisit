@@ -1,0 +1,502 @@
+[
+  {
+    "question": "What is Carotid Artery Tumor?",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "Describe the Ordered Model.",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What are the key characteristics of PLM?",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What is the Quadratic Frequency Response Function (QFRF)?",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What role does the Muscovy Company play in its context?",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What is the Runge-Kutta Method used for?",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What is Arjuna in this context?",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "Explain the Berezinskii-Kosterlitz-Thouless Transition.",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What are the properties of the Linear Frequency Response Function (LFRF)?",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What is Pseudolikelihood Maximization?",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What is the significance of New Statesman?",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "Can you describe Q Magazine?",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What is the Reconstruction Problem?",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "Who is Kyzaghan?",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What are Sparse Interactions?",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "Define Volterra Kernel Functions.",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What is the PLM Method?",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "How is Statistical Inference defined?",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "Who or what is Kara Han?",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "Explain the Pole-Residue Method.",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What is the historical significance of the Virgin Mary?",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What is a Bushwacker?",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What are the characteristics of Cubic Stiffness?",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What is the premise of I Declare Me...?",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What does the Recording Industry Association of America (RIAA) do?",
+    "query_type": "single_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What is the relationship between Q Magazine and Canadian Recording Industry Association (CRIA)?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "How does National Recording Registry connect to Library of Congress in the context of mix?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "What links Recording Industry Association of America to Make-A-Wish Foundation?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "How are Sire Records and Billboard related?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "What is the connection between Nielsen SoundScan and I Declare Me...?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "How does Virgin Mary relate to Rolling Stone?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "What links Nielsen SoundScan to Recording Industry Association of America?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "How are Virgin Mary and Billboard connected?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "What is the relationship between Nielsen SoundScan and Make-A-Wish Foundation?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "How does The Inc. connect to LidRock in the context of mix?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "What links 100m Sprint Record to LidRock?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "How are Nielsen SoundScan and Virgin Mary related?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "What is the connection between British Library and New Statesman?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "How does Recording Industry Association of America (RIAA) relate to Recording Industry Association of America?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "What links Q Magazine to Rose Royce?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "How are Q Magazine and Reagan Era connected?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "What is the relationship between 100m Sprint Record and Recording Industry Association of America (RIAA)?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "How does Rolling Stone connect to Reagan Era in the context of mix?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "What links National Recording Registry to Rose Royce?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "How are Response Function and Second-Order Response related?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "What is the connection between Temperature and True Positive Curves?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "How does Recording Industry Association of America relate to LidRock?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "What links British Phonographic Industry (BPI) to Make-A-Wish Foundation?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "How are Billboard and Rose Royce connected?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "What is the relationship between Bones and Italian Descent?",
+    "query_type": "bridge",
+    "domain": "mix"
+  },
+  {
+    "question": "Compare Carotid Artery Tumor, Statistical Inference, and Pseudolikelihood Maximization in terms of their applications in medical research.",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What are the interactions between the Ordered Model, Runge-Kutta Method, and Quadratic Frequency Response Function (QFRF) in computational simulations?",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "How do the Polar-Residue Method, Linear Frequency Response Function (LFRF), and Volterra Kernel Functions collectively contribute to system response analysis?",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "Analyse the roles of Sparse Interactions, Complex-Valued Couplings, and Random Media in the study of statistical mechanics.",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "Compare the contributions of the New Statesman, The Guardian, and Q Magazine in shaping public discourse on contemporary issues.",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What are the similarities and differences between the Cabot Project, Kyzaghan, and the Bushwacker in their approaches to exploration and development?",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "How does the temperature behavior of muscovite, the harmonic probing algorithm, and the reconstruction problem affect material performance?",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "Examine the interplay of the Virgin Mary, Children of Marchi, and I Declare Me... in cultural representations of identity.",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What roles do the Cubic Stiffness, 100m Sprint Record, and System with Known Equation of Motion play in sports science research?",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "Discuss the impact of the Berezinskii-Kosterlitz-Thouless Transition, XY Model, and Probabilistic Inference on theoretical physics.",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "Compare the historical significance of the Muscovy Company, the Recording Industry Association of America (RIAA), and the Bushwacker in their respective fields.",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "How do the Harmonic Probing Algorithm, Response Calculation, and Temperature Behavior integrate to improve system diagnostics?",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "Examine the effects of Sparse Interactions, Pseudolikelihood Maximization, and the Reconstruction Problem on statistical modeling.",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What are the theoretical implications of the Pole-Residue Method, the Ordered Model, and the Runge-Kutta Method in differential equations?",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "Compare the influence of The Guardian, New Statesman, and Q Magazine as platforms for artistic and literary criticism.",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "How do Muscovy Company, Cubic Stiffness, and the 100m Sprint Record collectively illustrate the evolution of trade and sports?",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "Discuss the relationship between the Harmonic Probing Algorithm, Quadratic Frequency Response Function (QFRF), and Linear Frequency Response Function (LFRF) in signal processing.",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What specific roles do Arjuna, Kara Han, and the Virgin Mary play in the narrative of a transcendental experience?",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "How do the concepts of Complex-Valued Couplings, Random Media, and Sparse Interactions interact in the context of condensed matter physics?",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "Examine the cross-disciplinary applications of the PLM Method, Statistical Inference, and the Runge-Kutta Method in solving complex problems.",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "Compare the methodologies of the Cubic Stiffness, Temperature Behavior, and the Harmonic Probing Algorithm in engineering analysis.",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "Discuss how the integration of Statistical Inference, Probabilistic Inference, and Pseudolikelihood Maximization can enhance predictive modeling.",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What are the historical contexts of the Muscovy Company, the Cabot Project, and New Statesman in shaping economic policies?",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "How do Arjuna, Kara Han, and the Virgin Mary serve as cultural symbols in literature and art across various traditions?",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "Compare Carotid Artery Tumor, Pseudolikelihood Maximization, and Statistical Inference in terms of their relevance in medical research.",
+    "query_type": "multi_entity",
+    "domain": "mix"
+  },
+  {
+    "question": "What are the main themes related to storytelling in various media as reflected in the corpus?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "How do different forms of media address cultural identity within their narratives?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "What trends have emerged in character development across diverse genres?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "In what ways do historical events influence contemporary artistic expressions?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "What are the common motifs found in comedy films and their impact on audience perception?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "How is the representation of social issues portrayed in film and literature?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "What are the main approaches to addressing environmental themes in creative works?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "How does the concept of heroism vary across different cultural narratives?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "What challenges are faced when adapting stories from literature to film?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "How has the portrayal of pandemics evolved in historical and modern narratives?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "What role does humor play in navigating social commentary in various artistic forms?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "How do different regions approach the theme of war in their storytelling?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "What impact does the portrayal of historical figures have on contemporary audiences?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "How do gender representations vary across different genres of storytelling?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "What are the prevalent themes of resilience and survival in artistic narratives?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "How does the interplay of tradition and modernity manifest in films and literature?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "What are the emerging trends in representation of mental health in creative works?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "How is the concept of community depicted in various artistic expressions?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "What themes recur in discussions about the evolution of board games?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "How do digital platforms transform the landscape of traditional narrative forms?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "What are the common threads of innovation that connect different artistic disciplines?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "How does audience engagement with media change with the rise of social platforms?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "What influences shape the development of cultural festivals as depicted in the corpus?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "How do various forms of media explore the theme of loss and recovery?",
+    "query_type": "broad",
+    "domain": "mix"
+  },
+  {
+    "question": "What are the ethical considerations surrounding creative practices in the context of historical narratives?",
+    "query_type": "broad",
+    "domain": "mix"
+  }
+]

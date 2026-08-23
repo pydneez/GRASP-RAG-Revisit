@@ -1,0 +1,372 @@
+% Standalone: GRASP-RAG PGR Context Formats — all four motifs
+% Compile: pdflatex fig_pgr_all.tex
+\documentclass{article}
+\usepackage[paperwidth=24cm, paperheight=34cm,
+            top=0.7cm, bottom=0.7cm, left=0.7cm, right=0.7cm]{geometry}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.misc}
+\usepackage{array}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+% ── Palette ──────────────────────────────────────────────────────────────────
+\definecolor{graspblue}{RGB}{37,99,235}
+\definecolor{stepbg}{RGB}{239,246,255}
+\definecolor{stepborder}{RGB}{147,197,253}
+\definecolor{connbg}{RGB}{255,247,237}
+\definecolor{connborder}{RGB}{253,186,116}
+\definecolor{profilbg}{RGB}{240,253,244}
+\definecolor{profilborder}{RGB}{134,239,172}
+\definecolor{multibg}{RGB}{250,245,255}
+\definecolor{multiborder}{RGB}{196,181,253}
+\definecolor{broadbg}{RGB}{249,250,251}
+\definecolor{broadborder}{RGB}{209,213,219}
+\definecolor{supportbg}{RGB}{254,252,232}
+\definecolor{supportborder}{RGB}{253,224,71}
+\definecolor{panelbg}{RGB}{248,250,252}
+\definecolor{querybg}{RGB}{30,58,138}
+
+% ── Box types ────────────────────────────────────────────────────────────────
+% Entity step (blue)
+\newtcolorbox{entitybox}[1]{
+  colback=stepbg, colframe=stepborder, boxrule=0.7pt, arc=3pt,
+  top=2pt, bottom=2pt, left=5pt, right=4pt,
+  fonttitle=\scriptsize\bfseries\sffamily\color{graspblue},
+  title={\strut #1}, titlerule=0pt,
+  attach boxed title to top left={yshift=-1.2mm, xshift=4mm},
+  boxed title style={colback=white, colframe=stepborder, boxrule=0.5pt,
+                     arc=2pt, left=2pt, right=2pt, top=0pt, bottom=0pt},
+}
+% Connection step (orange)
+\newtcolorbox{connbox}[1]{
+  colback=connbg, colframe=connborder, boxrule=0.7pt, arc=3pt,
+  top=2pt, bottom=2pt, left=5pt, right=4pt,
+  fonttitle=\scriptsize\bfseries\sffamily\color{orange!70!black},
+  title={\strut #1}, titlerule=0pt,
+  attach boxed title to top left={yshift=-1.2mm, xshift=4mm},
+  boxed title style={colback=white, colframe=connborder, boxrule=0.5pt,
+                     arc=2pt, left=2pt, right=2pt, top=0pt, bottom=0pt},
+}
+% Entity profile (green)
+\newtcolorbox{profilebox}[1]{
+  colback=profilbg, colframe=profilborder, boxrule=0.7pt, arc=3pt,
+  top=2pt, bottom=2pt, left=5pt, right=4pt,
+  fonttitle=\scriptsize\bfseries\sffamily\color{green!50!black},
+  title={\strut #1}, titlerule=0pt,
+  attach boxed title to top left={yshift=-1.2mm, xshift=4mm},
+  boxed title style={colback=white, colframe=profilborder, boxrule=0.5pt,
+                     arc=2pt, left=2pt, right=2pt, top=0pt, bottom=0pt},
+}
+% Multi-entity block (purple)
+\newtcolorbox{multibox}[1]{
+  colback=multibg, colframe=multiborder, boxrule=0.7pt, arc=3pt,
+  top=2pt, bottom=2pt, left=5pt, right=4pt,
+  fonttitle=\scriptsize\bfseries\sffamily\color{violet!70!black},
+  title={\strut #1}, titlerule=0pt,
+  attach boxed title to top left={yshift=-1.2mm, xshift=4mm},
+  boxed title style={colback=white, colframe=multiborder, boxrule=0.5pt,
+                     arc=2pt, left=2pt, right=2pt, top=0pt, bottom=0pt},
+}
+% Supporting context (yellow)
+\newtcolorbox{supportbox}{
+  colback=supportbg, colframe=supportborder, boxrule=0.6pt, arc=3pt,
+  top=2pt, bottom=2pt, left=5pt, right=4pt,
+}
+% Broad/flat (gray)
+\newtcolorbox{broadbox}[1]{
+  colback=broadbg, colframe=broadborder, boxrule=0.7pt, arc=3pt,
+  top=2pt, bottom=2pt, left=5pt, right=4pt,
+  fonttitle=\scriptsize\bfseries\sffamily\color{gray!70},
+  title={\strut #1}, titlerule=0pt,
+  attach boxed title to top left={yshift=-1.2mm, xshift=4mm},
+  boxed title style={colback=white, colframe=broadborder, boxrule=0.5pt,
+                     arc=2pt, left=2pt, right=2pt, top=0pt, bottom=0pt},
+}
+
+% ── Shorthand ────────────────────────────────────────────────────────────────
+\newcommand{\codekw}[1]{\texttt{\color{graspblue}#1}}
+\newcommand{\fn}[1]{\texttt{\footnotesize\color{gray!70}#1}}
+\newcommand{\passagemark}{\textit{\color{gray}\scriptsize [source passage\ldots]}}
+\newcommand{\paneltitle}[3]{%
+  \begin{tcolorbox}[
+    colback=querybg, colframe=querybg,
+    boxrule=0pt, arc=4pt, top=4pt, bottom=4pt, left=6pt, right=6pt]
+    {\small\bfseries\sffamily\color{white} #1}
+    \hfill{\tiny\sffamily\color{white!70}\texttt{#2}}\\[1pt]
+    {\scriptsize\sffamily\color{white!85}\textit{``#3''}}
+  \end{tcolorbox}%
+}
+
+\begin{document}
+
+% ── Page title ────────────────────────────────────────────────────────────────
+{\centering
+{\large\bfseries\sffamily GRASP-RAG: Path-Guided Reasoning (PGR) — Context Formats}\\[2pt]
+{\small\sffamily\color{gray}
+  One shared generation prompt; motif-specific structure lives in the \textbf{context}.
+  Context builders: \fn{\_bridge\_context}, \fn{\_single\_entity\_context},
+  \fn{\_multi\_entity\_context}; broad falls through to LightRAG hybrid.}
+\par}
+
+\vspace{6pt}
+\noindent\rule{\linewidth}{0.5pt}
+\vspace{4pt}
+
+% ══════════════════════════════════════════════════════════════════════════════
+%  TWO COLUMN LAYOUT
+% ══════════════════════════════════════════════════════════════════════════════
+\begin{minipage}[t]{0.487\textwidth}
+
+%% ─────────────────────────────────────────────────────────────────────────────
+%%  (a) BRIDGE — _bridge_context
+%% ─────────────────────────────────────────────────────────────────────────────
+\paneltitle{(a) Bridge Query}{\_bridge\_context}{What connects Rational Grazing to Polyface Farm?}
+
+\vspace{4pt}
+
+{\scriptsize\sffamily\color{gray!60}
+\textit{Path selected by edge-keyword relevance to query (not shortest-path only).
+Remaining chunk budget filled via graph-guided re-query using best path's keywords.}}
+
+\vspace{4pt}
+
+\begin{entitybox}{Step 1 — Entity: Rational Grazing \normalfont\color{gray}(method)}
+\scriptsize\sffamily
+\textbf{Description:} Systematic approach to managing pasture through controlled
+grazing periods; maximises productivity and recovery\ldots\\
+\passagemark
+\end{entitybox}
+
+\vspace{3pt}
+
+\begin{connbox}{Step 2 — Connection: Rational Grazing $\boldsymbol{\rightarrow}$ \textbf{Cows}}
+\scriptsize\sffamily
+\textbf{Keywords:} livestock management, rotational grazing, animal health\\
+\passagemark
+\end{connbox}
+
+\vspace{3pt}
+
+\begin{entitybox}{Step 3 — Entity: \textbf{Cows} \normalfont\color{gray}(livestock)}
+\scriptsize\sffamily
+\textbf{Description:} Central to regenerative systems; Polyface Farm uses cows
+as primary animal in rotational schedule driven by rational grazing logic\ldots\\
+\passagemark
+\end{entitybox}
+
+\vspace{3pt}
+
+\begin{connbox}{Step 4 — Connection: \textbf{Cows} $\boldsymbol{\rightarrow}$ Polyface Farm}
+\scriptsize\sffamily
+\textbf{Keywords:} rotational livestock, farm operations, pasture management\\
+\passagemark
+\end{connbox}
+
+\vspace{3pt}
+
+\begin{entitybox}{Step 5 — Entity: Polyface Farm \normalfont\color{gray}(organisation)}
+\scriptsize\sffamily
+\textbf{Description:} Joel Salatin's regenerative farm in Virginia; multi-species
+rotational model with cows, pigs, and poultry\ldots\\
+\passagemark
+\end{entitybox}
+
+\vspace{3pt}
+
+\begin{supportbox}
+\scriptsize\sffamily\color{gray!80}
+\textbf{[Supporting Context]} \textit{(alternative paths + graph-guided re-query chunks)}\\
+\ldots additional evidence for the specific connection\ldots
+\end{supportbox}
+
+\vspace{4pt}
+{\scriptsize\sffamily\color{graspblue!80}
+\textbf{Effect:} Bridge entity (\textbf{Cows}) is structurally unavoidable at Step 3;
+LLM must traverse the path to answer.}
+
+\vspace{10pt}
+
+%% ─────────────────────────────────────────────────────────────────────────────
+%%  (b) SINGLE-ENTITY — _single_entity_context
+%% ─────────────────────────────────────────────────────────────────────────────
+\paneltitle{(b) Single-Entity Query}{\_single\_entity\_context}{What is Polyface Farm?}
+
+\vspace{4pt}
+
+{\scriptsize\sffamily\color{gray!60}
+\textit{Anchor = first node of first returned path. Direct connections drawn from
+all returned paths (up to 10). Secondary chunks filled by VDB re-query.}}
+
+\vspace{4pt}
+
+\begin{profilebox}{Entity Profile: Polyface Farm}
+\scriptsize\sffamily
+\textbf{Type:} organisation\\
+\textbf{Description:} Polyface Farm is Joel Salatin's regenerative farm in
+Swoope, Virginia. Known for multi-species rotational grazing\ldots\\[3pt]
+\textbf{Connected to:}\\
+\quad $\bullet$ \textbf{Joel Salatin}: ownership, farm management\\
+\quad $\bullet$ \textbf{Cows}: rotational livestock, primary grazer\\
+\quad $\bullet$ \textbf{Rational Grazing}: grazing method, pasture recovery\\
+\quad $\bullet$ \textbf{Chickens}: multi-species rotation, following cows\\
+\quad $\bullet$ \textbf{Holistic Management}: land stewardship, philosophy\\[3pt]
+\textbf{Source Passages:}\\
+\passagemark\quad \passagemark\quad \passagemark
+\end{profilebox}
+
+\vspace{4pt}
+{\scriptsize\sffamily\color{green!50!black!90}
+\textbf{Effect:} LLM sees a rich entity profile plus all direct relations — optimised
+for definitional / factual single-entity questions.}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.487\textwidth}
+
+%% ─────────────────────────────────────────────────────────────────────────────
+%%  (c) MULTI-ENTITY — _multi_entity_context
+%% ─────────────────────────────────────────────────────────────────────────────
+\paneltitle{(c) Multi-Entity Query}{\_multi\_entity\_context}{Compare Rational Grazing, Holistic Management, and Polyface Farm.}
+
+\vspace{4pt}
+
+{\scriptsize\sffamily\color{gray!60}
+\textit{Unique nodes from all Steiner-tree paths collected as anchors.
+Per-entity profiles built first; connection map built from all path edges.}}
+
+\vspace{4pt}
+
+\begin{multibox}{Entity 1: Rational Grazing \normalfont\color{gray}(method)}
+\scriptsize\sffamily
+\textbf{Description:} Systematic pasture management through controlled grazing
+and recovery periods; maximises productivity\ldots\\
+\passagemark
+\end{multibox}
+
+\vspace{3pt}
+
+\begin{multibox}{Entity 2: Holistic Management \normalfont\color{gray}(framework)}
+\scriptsize\sffamily
+\textbf{Description:} Decision-making framework developed by Allan Savory;
+integrates social, economic, and ecological factors\ldots\\
+\passagemark
+\end{multibox}
+
+\vspace{3pt}
+
+\begin{multibox}{Entity 3: Polyface Farm \normalfont\color{gray}(organisation)}
+\scriptsize\sffamily
+\textbf{Description:} Joel Salatin's flagship regenerative farm; demonstrates
+multi-species rotation and integrated land management\ldots\\
+\passagemark
+\end{multibox}
+
+\vspace{3pt}
+
+\begin{multibox}{Steiner intermediate: Cows \normalfont\color{gray}(livestock)}
+\scriptsize\sffamily
+\textbf{Description:} Primary grazing animal linking all three above entities\ldots\\
+\passagemark
+\end{multibox}
+
+\vspace{3pt}
+
+\begin{tcolorbox}[colback=multibg!60, colframe=multiborder, boxrule=0.7pt,
+  arc=3pt, top=2pt, bottom=2pt, left=5pt, right=4pt]
+\scriptsize\sffamily\textbf{\color{violet!70!black}[Connections]}\\
+\quad $\bullet$ Rational Grazing $\leftrightarrow$ Cows: \textit{livestock management, rotation}\\
+\quad $\bullet$ Holistic Management $\leftrightarrow$ Cows: \textit{herd impact, land regeneration}\\
+\quad $\bullet$ Cows $\leftrightarrow$ Polyface Farm: \textit{rotational livestock, operations}\\
+\quad $\bullet$ Rational Grazing $\leftrightarrow$ Holistic Management: \textit{land philosophy}
+\end{tcolorbox}
+
+\vspace{4pt}
+{\scriptsize\sffamily\color{violet!70!black!90}
+\textbf{Effect:} LLM sees per-entity profiles and an explicit connection map — optimised
+for comparison and multi-hop integrative questions.}
+
+\vspace{10pt}
+
+%% ─────────────────────────────────────────────────────────────────────────────
+%%  (d) BROAD — LightRAG hybrid fallback (no custom context)
+%% ─────────────────────────────────────────────────────────────────────────────
+\paneltitle{(d) Broad Query}{LightRAG hybrid fallback}{What are the key debates in regenerative agriculture?}
+
+\vspace{4pt}
+
+{\scriptsize\sffamily\color{gray!60}
+\textit{No custom PGR format. Code calls \fn{rag.aquery(query, param=SearchParam(mode="hybrid"))}.
+Context is built by LightRAG: VDB chunk retrieval + keyword graph traversal, flat.}}
+
+\vspace{4pt}
+
+\begin{broadbox}{VDB chunks (vector similarity)}
+\scriptsize\sffamily\color{gray!80}
+Passage 1: Regenerative agriculture encompasses practices like cover cropping,
+reduced tillage, and rotational grazing\ldots\\[2pt]
+Passage 2: Critics argue that regenerative claims lack standardised
+certification and measurable carbon sequestration benchmarks\ldots\\[2pt]
+Passage 3: Holistic Management's savanna hypothesis has been contested by
+ecologists who dispute the scalability of herd impact\ldots
+\end{broadbox}
+
+\vspace{3pt}
+
+\begin{broadbox}{Graph keywords (LightRAG high-level)}
+\scriptsize\sffamily\color{gray!80}
+\textit{keywords: soil health, carbon sequestration, cover crops,
+rotational grazing, biodiversity, no-till farming, certification\ldots}
+\end{broadbox}
+
+\vspace{3pt}
+
+{\scriptsize\sffamily\color{gray!60}
+\textit{No step-by-step labels. No entity profiles. No connection map.
+Flat, unordered retrieval — same as LightRAG's own output.}}
+
+\vspace{4pt}
+\begin{tcolorbox}[colback=gray!8, colframe=gray!30, boxrule=0.6pt, arc=3pt,
+  top=3pt, bottom=3pt, left=5pt, right=4pt]
+\scriptsize\sffamily\color{gray!80}
+\textbf{Why:} Broad queries have no specific entity anchors, so graph
+traversal motifs don't apply. GRASP-RAG delegates to LightRAG hybrid,
+which is optimised for diffuse thematic retrieval.
+Win rate vs LightRAG on broad queries is 69.6\% — not structural.
+\end{tcolorbox}
+
+\end{minipage}
+
+\vspace{6pt}
+\noindent\rule{\linewidth}{0.5pt}
+\vspace{3pt}
+
+% ── Bottom legend: colour key + prompt note ───────────────────────────────────
+\begin{minipage}[t]{0.52\textwidth}
+{\scriptsize\sffamily
+\textbf{Colour key:}
+\begin{tabular}{@{}l@{\;=\;}l@{\quad}l@{\;=\;}l@{}}
+  \textcolor{graspblue}{\rule{6pt}{6pt}} & Entity step (blue) &
+  \textcolor{orange!80!black}{\rule{6pt}{6pt}} & Connection step (orange) \\
+  \textcolor{green!50!black}{\rule{6pt}{6pt}} & Entity profile (green) &
+  \textcolor{violet!70!black}{\rule{6pt}{6pt}} & Multi-entity / connections (purple) \\
+  \textcolor{yellow!70!black}{\rule{6pt}{6pt}} & Supporting context (yellow) &
+  \textcolor{gray!60}{\rule{6pt}{6pt}} & Broad / flat (gray) \\
+\end{tabular}}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.44\textwidth}
+\begin{tcolorbox}[colback=graspblue!5, colframe=graspblue!30, boxrule=0.6pt,
+  arc=3pt, top=3pt, bottom=3pt, left=5pt, right=4pt]
+\scriptsize\sffamily\color{graspblue!80}
+\textbf{One shared prompt for all motifs} (\fn{\_RESPONSE\_PROMPT}).
+Structure is entirely in the context, not in the prompt instruction.
+Each motif's context builder imposes the topology; the LLM reads it as-is.
+\end{tcolorbox}
+\end{minipage}
+
+\end{document}

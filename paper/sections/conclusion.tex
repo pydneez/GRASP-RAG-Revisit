@@ -1,0 +1,39 @@
+% ── 5. Conclusion and Future Work ─────────────────────────────────────────────
+\section{Conclusion and Future Work}
+
+We presented GRASP-RAG, a graph-based RAG system built around a single
+observation: the linguistic form of a query already encodes the answer's
+graph topology, and retrieval should match that topology rather than ignore
+it.
+A lightweight classifier routes each query to one of four motifs---ego-network,
+shortest-path, Steiner tree, or LightRAG hybrid---and each motif structures
+its retrieved subgraph into a topology-aware context that presents the
+evidence in the shape the question requires.
+
+Evaluated on four UltraDomain domains with reference-anchored multi-judge
+evaluation, GRASP-RAG achieves an average 73.4\% win rate against LightRAG
+and 79.7\% against PathRAG.
+The advantage against PathRAG is the most consistent, holding above 74\%
+in every domain including Legal, where PathRAG's flow-based pruning discards
+the low-frequency edges that bridge and relational-chain questions ask about.
+Classifier accuracy is moderate overall (40--72\% by domain), with bridge
+queries classified reliably (87.7\% pooled) and broad queries nearly failing
+(10.8\%), yet per-type win rates stay positive everywhere because the
+confidence-based fallback prevents catastrophic misroutes.
+
+Three directions remain open.
+First, the broad-query classification problem---where 52.7\% of correctly
+broad questions are misread as multi-entity---is the system's clearest
+weakness and the most tractable target for improvement.
+A classifier that explicitly represents the \emph{absence} of specific entity
+anchors, rather than detecting their presence, may handle broad queries better.
+Second, the contribution of topology-aware context structuring has not been
+isolated from the motif's retrieval guarantee; an ablation running bridge
+motif retrieval with flat versus step-by-step context would determine how much
+of the win-rate advantage comes from \emph{what} is retrieved versus \emph{how}
+it is presented.
+Third, the cascade fallback---running all three structured motifs in parallel
+when confidence is low---has not been isolated as an independent variable in
+the current evaluation; an ablation comparing cascade-on versus a single
+direct fallback to LightRAG hybrid is needed to determine whether the added
+calls are worth their cost.

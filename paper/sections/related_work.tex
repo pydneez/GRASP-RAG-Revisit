@@ -1,0 +1,58 @@
+% ── 2. Related Work ───────────────────────────────────────────────────────────
+\section{Related Work}
+\label{sec:related}
+
+\textbf{LightRAG}~\cite{guo2024lightrag} introduces dual-level retrieval:
+a low-level mode that expands the 1-hop neighborhood of entity anchors, and
+a high-level mode that traverses relation embeddings.
+Mode selection uses coarse keyword signals, not query-shape classification,
+and both modes apply the same fixed-radius expansion regardless of whether
+the question asks for a definition, a bridge traversal, or a thematic sweep.
+
+\textbf{HippoRAG}~\cite{gutierrez2024hipporag} seeds Personalized PageRank
+(PPR)~\cite{page1999pagerank} from query entities, letting relevance diffuse
+through the graph in a way that naturally captures multi-hop associations.
+The limitation is uniformity: a single-entity definitional question receives
+the same global diffusion as a question asking for synthesis across multiple
+anchors.
+PPR is well-suited to thematic queries; it is a poor fit for questions that
+require a precise path between two named entities.
+
+\textbf{G-Retriever}~\cite{he2024g} computes a prize-collecting Steiner tree
+spanning all query entities, which is effective for multi-entity questions
+but degenerates to a single node for single-entity queries---the opposite
+failure mode from HippoRAG.
+
+\textbf{PathRAG}~\cite{chen2025pathrag} is the closest prior work.
+It extracts relational paths between anchor pairs using flow-based pruning
+and presents them in reliability order, exploiting LLM recency bias to
+surface the most relevant path at the end of the context.
+This works well on bridge and relational-chain questions.
+The gap is that PathRAG's path format is the same for every query type: a
+definitional question gets a list of paths from the anchor to nearby
+entities, a thematic question gets paths between whichever entities the
+entity extractor picks.
+The key thing GRASP-RAG adds is \emph{selecting the retrieval motif and
+context format conditional on the query's logical shape}.
+
+\textbf{Layered Query Retrieval (LQR)}~\cite{huang2024layered} shares
+GRASP-RAG's core motivation---query properties should govern retrieval
+strategy---and classifies each query by complexity (binary: simple vs.\
+complex).
+Simple queries get a single BM25 retrieval pass; complex queries are
+decomposed into two sub-questions for iterative retrieval, followed by an
+NLI relevance filter.
+The binary split, however, cannot distinguish between an ego-network query
+and a bridge traversal query---both would be labelled ``complex'' and receive
+the same decomposition treatment---and LQR operates on flat text without a
+knowledge graph.
+
+\textbf{BridgeRAG}~\cite{bacellar2026bridgerag} addresses the same failure
+mode as our bridge motif from a graph-free angle.
+It conditions second-hop candidate scoring on an intermediate bridge passage
+via a tripartite judge $s(q, b, c)$, achieving strong recall on HotpotQA,
+2WikiMultiHopQA, and MuSiQue.
+Unlike GRASP-RAG, BridgeRAG has no knowledge graph and applies bridge
+conditioning uniformly to all queries; GRASP-RAG reserves bridge-path
+traversal for queries whose linguistic form signals a relational chain, while
+routing definitional and thematic questions to structurally matched motifs.

@@ -1,0 +1,57 @@
+% GRASP-RAG — APSIPA 2026 Submission
+% Compile: pdflatex main.tex && bibtex main && pdflatex main.tex && pdflatex main.tex
+
+\documentclass[conference]{IEEEtran}
+
+% ── APSIPA 2026 page geometry (A4, top=19mm, bottom=43mm, sides=13mm) ─────────
+\usepackage[a4paper,top=19mm,bottom=43mm,left=13mm,right=13mm,
+            columnsep=4mm,nohead,nofoot]{geometry}
+
+% ── Packages ─────────────────────────────────────────────────────────────────
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{microtype}
+\graphicspath{{assets/}}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,shapes.geometric,positioning,fit,backgrounds}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+% Placeholder commands
+\newcommand{\res}[1]{\textbf{\textcolor{blue}{[#1]}}}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\begin{document}
+
+\title{GRASP-RAG: Graph Retrieval with Adaptive Structured Paths}
+
+\author{\IEEEauthorblockN{Name, name, name ,name and name}
+\IEEEauthorblockA{
+Sirindhorn International Institute of Technology, Thammasat University\\
+email: \{email1, email2, email3, email4, email5\}@example.com
+}}
+
+\maketitle
+
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/related_work}
+\input{sections/method}
+\input{sections/experiments}
+\input{sections/conclusion}
+
+% ── References ────────────────────────────────────────────────────────────────
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

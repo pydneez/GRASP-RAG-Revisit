@@ -1,0 +1,540 @@
+{
+  "records": [
+    {
+      "question": "What is the relationship between Honey Bee populations and Colony Collapse Disorder?",
+      "query_type": "bridge",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Loss",
+        "logicality": "Loss",
+        "relevance": "Loss",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "Analyse the roles of Soil, Compost, and Biochar in enhancing crop productivity.",
+      "query_type": "multi_entity",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Tie",
+        "logicality": "Tie",
+        "relevance": "Loss",
+        "coherence": "Tie"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "How do Black Morel, Pleurotus, and Tremella Fuciformis collectively contribute to sustainable agriculture practices?",
+      "query_type": "multi_entity",
+      "outcome": {
+        "comprehensiveness": "Tie",
+        "diversity": "Tie",
+        "logicality": "Loss",
+        "relevance": "Loss",
+        "coherence": "Tie"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "What are the interactions between Varroa Mites, Honey Bee, and Colony Collapse Disorder in the context of the beekeeping industry?",
+      "query_type": "multi_entity",
+      "outcome": {
+        "comprehensiveness": "Tie",
+        "diversity": "Tie",
+        "logicality": "Tie",
+        "relevance": "Tie",
+        "coherence": "Tie"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "What trends have emerged in precision agriculture technology?",
+      "query_type": "broad",
+      "outcome": {
+        "comprehensiveness": "Win",
+        "diversity": "Win",
+        "logicality": "Win",
+        "relevance": "Win",
+        "coherence": "Win"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "What is The Food Project?",
+      "query_type": "single_entity",
+      "outcome": {
+        "comprehensiveness": "Tie",
+        "diversity": "Tie",
+        "logicality": "Tie",
+        "relevance": "Tie",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "What is Efficiency?",
+      "query_type": "single_entity",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Loss",
+        "logicality": "Loss",
+        "relevance": "Loss",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "How are Varroa Mites connected to the Beekeeping Industry?",
+      "query_type": "bridge",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Loss",
+        "logicality": "Loss",
+        "relevance": "Loss",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "What are the major factors influencing food security in agricultural systems?",
+      "query_type": "broad",
+      "outcome": {
+        "comprehensiveness": "Tie",
+        "diversity": "Tie",
+        "logicality": "Tie",
+        "relevance": "Loss",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "Summarise the key challenges facing agriculture practitioners in urban settings.",
+      "query_type": "broad",
+      "outcome": {
+        "comprehensiveness": "Win",
+        "diversity": "Win",
+        "logicality": "Win",
+        "relevance": "Win",
+        "coherence": "Win"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "Compare the effects of Temperature, Soil Erosion, and Total Minerals on agricultural yield in different regions.",
+      "query_type": "multi_entity",
+      "outcome": {
+        "comprehensiveness": "Tie",
+        "diversity": "Tie",
+        "logicality": "Tie",
+        "relevance": "Tie",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "Compare Sustainable Agriculture, Organic Farming, and Conservation Agriculture in terms of their impact on soil health.",
+      "query_type": "multi_entity",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Tie",
+        "logicality": "Loss",
+        "relevance": "Loss",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "What mechanisms link Organic Farming to total minerals in the soil?",
+      "query_type": "bridge",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Loss",
+        "logicality": "Loss",
+        "relevance": "Loss",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "What role does the Honey Bee play in agriculture?",
+      "query_type": "single_entity",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Loss",
+        "logicality": "Loss",
+        "relevance": "Loss",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "Describe Varroa Mites.",
+      "query_type": "single_entity",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Loss",
+        "logicality": "Loss",
+        "relevance": "Loss",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "What are the key characteristics of a Nuc?",
+      "query_type": "single_entity",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Tie",
+        "logicality": "Loss",
+        "relevance": "Loss",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "How does Sustainable Agriculture affect Soil health?",
+      "query_type": "bridge",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Loss",
+        "logicality": "Loss",
+        "relevance": "Loss",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "Why does Soil Erosion influence Agriculture productivity?",
+      "query_type": "bridge",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Win",
+        "logicality": "Loss",
+        "relevance": "Loss",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "What are the main approaches to sustainable farming practices in agriculture?",
+      "query_type": "broad",
+      "outcome": {
+        "comprehensiveness": "Win",
+        "diversity": "Win",
+        "logicality": "Win",
+        "relevance": "Win",
+        "coherence": "Win"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "How has climate change impacted crop yields and farming practices?",
+      "query_type": "broad",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Loss",
+        "logicality": "Loss",
+        "relevance": "Loss",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "What is the relationship between Honey Bee populations and Colony Collapse Disorder?",
+      "query_type": "bridge",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Loss",
+        "logicality": "Loss",
+        "relevance": "Loss",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "Analyse the roles of Soil, Compost, and Biochar in enhancing crop productivity.",
+      "query_type": "multi_entity",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Tie",
+        "logicality": "Tie",
+        "relevance": "Loss",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "How do Black Morel, Pleurotus, and Tremella Fuciformis collectively contribute to sustainable agriculture practices?",
+      "query_type": "multi_entity",
+      "outcome": {
+        "comprehensiveness": "Tie",
+        "diversity": "Tie",
+        "logicality": "Tie",
+        "relevance": "Tie",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "What are the interactions between Varroa Mites, Honey Bee, and Colony Collapse Disorder in the context of the beekeeping industry?",
+      "query_type": "multi_entity",
+      "outcome": {
+        "comprehensiveness": "Tie",
+        "diversity": "Tie",
+        "logicality": "Tie",
+        "relevance": "Tie",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "What trends have emerged in precision agriculture technology?",
+      "query_type": "broad",
+      "outcome": {
+        "comprehensiveness": "Tie",
+        "diversity": "Tie",
+        "logicality": "Tie",
+        "relevance": "Tie",
+        "coherence": "Tie"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "What is The Food Project?",
+      "query_type": "single_entity",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Tie",
+        "logicality": "Loss",
+        "relevance": "Loss",
+        "coherence": "Tie"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "What is Efficiency?",
+      "query_type": "single_entity",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Win",
+        "logicality": "Loss",
+        "relevance": "Loss",
+        "coherence": "Tie"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "How are Varroa Mites connected to the Beekeeping Industry?",
+      "query_type": "bridge",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Loss",
+        "logicality": "Loss",
+        "relevance": "Loss",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "What are the major factors influencing food security in agricultural systems?",
+      "query_type": "broad",
+      "outcome": {
+        "comprehensiveness": "Tie",
+        "diversity": "Tie",
+        "logicality": "Loss",
+        "relevance": "Loss",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "Summarise the key challenges facing agriculture practitioners in urban settings.",
+      "query_type": "broad",
+      "outcome": {
+        "comprehensiveness": "Tie",
+        "diversity": "Win",
+        "logicality": "Tie",
+        "relevance": "Tie",
+        "coherence": "Tie"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "Compare the effects of Temperature, Soil Erosion, and Total Minerals on agricultural yield in different regions.",
+      "query_type": "multi_entity",
+      "outcome": {
+        "comprehensiveness": "Win",
+        "diversity": "Win",
+        "logicality": "Win",
+        "relevance": "Win",
+        "coherence": "Win"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "Compare Sustainable Agriculture, Organic Farming, and Conservation Agriculture in terms of their impact on soil health.",
+      "query_type": "multi_entity",
+      "outcome": {
+        "comprehensiveness": "Win",
+        "diversity": "Win",
+        "logicality": "Win",
+        "relevance": "Win",
+        "coherence": "Tie"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "What mechanisms link Organic Farming to total minerals in the soil?",
+      "query_type": "bridge",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Loss",
+        "logicality": "Loss",
+        "relevance": "Loss",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "What role does the Honey Bee play in agriculture?",
+      "query_type": "single_entity",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Loss",
+        "logicality": "Loss",
+        "relevance": "Loss",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "Describe Varroa Mites.",
+      "query_type": "single_entity",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Loss",
+        "logicality": "Loss",
+        "relevance": "Loss",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "What are the key characteristics of a Nuc?",
+      "query_type": "single_entity",
+      "outcome": {
+        "comprehensiveness": "Tie",
+        "diversity": "Tie",
+        "logicality": "Tie",
+        "relevance": "Tie",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "How does Sustainable Agriculture affect Soil health?",
+      "query_type": "bridge",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Loss",
+        "logicality": "Loss",
+        "relevance": "Loss",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "Why does Soil Erosion influence Agriculture productivity?",
+      "query_type": "bridge",
+      "outcome": {
+        "comprehensiveness": "Loss",
+        "diversity": "Win",
+        "logicality": "Tie",
+        "relevance": "Loss",
+        "coherence": "Loss"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "What are the main approaches to sustainable farming practices in agriculture?",
+      "query_type": "broad",
+      "outcome": {
+        "comprehensiveness": "Tie",
+        "diversity": "Tie",
+        "logicality": "Tie",
+        "relevance": "Tie",
+        "coherence": "Tie"
+      },
+      "domain": "agriculture"
+    },
+    {
+      "question": "How has climate change impacted crop yields and farming practices?",
+      "query_type": "broad",
+      "outcome": {
+        "comprehensiveness": "Tie",
+        "diversity": "Tie",
+        "logicality": "Win",
+        "relevance": "Tie",
+        "coherence": "Win"
+      },
+      "domain": "agriculture"
+    }
+  ],
+  "summary": {
+    "by_dim": {
+      "comprehensiveness": {
+        "Win": 5,
+        "Loss": 22,
+        "Tie": 13
+      },
+      "diversity": {
+        "Win": 9,
+        "Loss": 14,
+        "Tie": 17
+      },
+      "logicality": {
+        "Win": 6,
+        "Loss": 21,
+        "Tie": 13
+      },
+      "relevance": {
+        "Win": 5,
+        "Loss": 25,
+        "Tie": 10
+      },
+      "coherence": {
+        "Win": 5,
+        "Loss": 26,
+        "Tie": 9
+      }
+    },
+    "by_type": {
+      "bridge": {
+        "Win": 2,
+        "Loss": 47,
+        "Tie": 1
+      },
+      "multi_entity": {
+        "Win": 9,
+        "Loss": 14,
+        "Tie": 27
+      },
+      "broad": {
+        "Win": 18,
+        "Loss": 10,
+        "Tie": 22
+      },
+      "single_entity": {
+        "Win": 1,
+        "Loss": 37,
+        "Tie": 12
+      }
+    },
+    "overall": {
+      "Win": 30,
+      "Loss": 108,
+      "Tie": 62
+    }
+  }
+}

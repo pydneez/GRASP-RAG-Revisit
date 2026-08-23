@@ -1,0 +1,120 @@
+% ── 1. Introduction ───────────────────────────────────────────────────────────
+\section{Introduction}
+
+Large language models (LLMs) have transformed what is possible in natural
+language processing, yet they remain unreliable when a task demands precise,
+verifiable knowledge~\cite{lewis2020retrieval}. The core problem is that
+LLMs store knowledge implicitly in their weights---there is no mechanism to
+check what they know, no way to update it without retraining, and no
+guarantee that what they generate is grounded in fact.
+Retrieval-Augmented Generation (RAG) addresses this by decoupling knowledge
+from the model~\cite{gao2023retrieval}: at query time, a retrieval system pulls
+relevant documents from an external corpus and passes them as context, so the
+LLM reasons over retrieved evidence rather than recalled parameters.
+This is especially important in knowledge-intensive domains---legal analysis,
+scientific literature review, clinical decision support---where a wrong or
+unsupported answer carries real consequences.
+
+Early RAG systems retrieve flat text chunks by vector similarity.
+For many questions this is adequate, but it breaks down when the answer
+requires connecting facts that are distributed across the corpus rather than
+co-located in a single passage.
+Graph-based RAG systems~\cite{edge2024graphrag,guo2024lightrag,
+gutierrez2024hipporag,chen2025pathrag} address this by building a knowledge
+graph (KG) from the corpus and retrieving coherent subgraphs.
+The difference is concrete: the question
+\textit{``What connects Varroa Destructor to Polyface Farm?''}
+has no answer in any single passage, but the knowledge graph contains a
+path of three edges through two intermediate nodes (Varroa Destructor
+$\to$ Beekeeping Industry $\to$ Farmers $\to$ Polyface) that a graph
+traversal can find and a vector search cannot.
+
+Despite this progress, every graph-RAG system we are aware of shares a
+critical limitation: it applies one fixed retrieval strategy to every query.
+LightRAG~\cite{guo2024lightrag} always expands a 1-hop neighborhood.
+HippoRAG~\cite{gutierrez2024hipporag} always runs Personalized PageRank.
+PathRAG~\cite{chen2025pathrag} always does flow-based path retrieval.
+None of them read the question carefully enough to know which strategy is
+appropriate.
+
+This matters because the question itself already tells you what kind of
+answer it needs~\cite{li2002learning}.
+\textit{``What is Varroa Mite?''} asks for a self-contained definition: one
+entity, its description, its immediate connections.
+\textit{``What connects Rational Grazing to Polyface Farm?''} asks for a
+mechanism: an intermediate entity and the chain of relations linking it to
+both anchors~\cite{yang2018hotpotqa}.
+\textit{``How do Varroa Mite, Colony Collapse Disorder, and Neonicotinoids
+interact?''} asks for synthesis across three anchors simultaneously~\cite{ho2020constructing}.
+\textit{``What are the major sustainability themes in modern farming?''} asks
+for a thematic sweep with no specific entity anchor at all.
+These four shapes are not arbitrary categories---they correspond directly to
+four distinct graph traversal algorithms.
+A system that ignores these linguistic cues and applies one algorithm to all
+four risks retrieving a mismatched subgraph structure for many queries.
+
+The failure is not hypothetical.
+PathRAG, applied to
+\textit{``What connects Rational Grazing to Polyface?''}, produces a
+fluent paragraph about a ``shared commitment to sustainable practices''
+without ever naming the intermediate entity---because its flow-based pruning
+assigns high reliability to the most-traversed edges (broad category links),
+not to the specific low-frequency bridge edge the question is asking about.
+This is not a retrieval error; the edge exists in the graph.
+It is a routing error: the wrong algorithm was applied to a question that
+called for a different one.
+
+We present \textbf{GRASP-RAG} (Graph Retrieval with Adaptive Structured
+Paths).
+The core idea is simple: read the query's linguistic shape before deciding
+how to traverse the graph.
+An LLM classifier maps each query to one of four retrieval \emph{motifs}:
+an ego-network for definitional questions, a bidirectional shortest-path
+traversal for relational chain questions, a Steiner tree approximation for
+multi-entity synthesis questions, and LightRAG hybrid mode for broad
+thematic questions.
+Anchor nodes are extracted from VDB candidates rather than by fuzzy string
+matching, reducing entity-linking errors from name paraphrasing; when the
+correct entity falls outside the top-20 candidates, anchor recall suffers
+instead.
+Each retrieved subgraph is then linearized into a topology-aware context
+that presents the evidence in the structure the question demands---a labeled
+step-by-step chain for bridge queries, an entity profile for single-entity
+queries, a comparison scaffold for multi-entity queries.
+When the classifier is uncertain or the retrieved subgraph is too sparse, a
+confidence score triggers a graceful fallback to LightRAG hybrid rather than
+a hard failure.
+
+Prior work has approached adjacent problems without solving this one.
+PathRAG introduces flow-based path retrieval but applies the same path
+format to every query type.
+HippoRAG's Personalized PageRank diffuses too broadly for entity-centric
+questions.
+Layered Query Retrieval~\cite{huang2024layered} classifies queries by
+complexity (simple vs.\ complex), but this binary split cannot distinguish
+an ego-network query from a bridge traversal query, and it operates on flat
+text without a knowledge graph.
+We discuss these and related approaches in detail in
+Section~\ref{sec:related}.
+
+GRASP-RAG contributes two things:
+\begin{enumerate}
+  \item \textbf{Query-adaptive motif selection}: a lightweight LLM classifier
+    maps each query to the matching graph traversal algorithm, with
+    candidate-constrained anchor extraction that reduces entity-linking
+    errors from name paraphrasing, and a confidence-based fallback that limits
+    failure on uncertain queries.
+  \item \textbf{Topology-aware context structuring}: each motif serializes its
+    retrieved subgraph into a structured context that mirrors the answer's
+    reasoning shape, so the LLM receives evidence in the form the question
+    requires---not a flat list of passages regardless of query type.
+\end{enumerate}
+
+Evaluated on four domains of UltraDomain~\cite{ding2024ultradomain}
+(Agriculture, CS, Legal, Health) using reference-anchored multi-judge
+evaluation, GRASP-RAG achieves consistent win rates against all three
+baselines, with an average of 73.4\% against LightRAG and 79.7\% against
+PathRAG, the strongest baseline.
+The system's advantage holds across query types even when the classifier
+makes errors---a robustness finding we examine alongside the main results in
+Section~\ref{sec:results}.

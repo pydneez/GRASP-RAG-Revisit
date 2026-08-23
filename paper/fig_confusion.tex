@@ -1,0 +1,57 @@
+\documentclass[border=8pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{SF Pro Text}
+\setsansfont{SF Pro Text}
+\usepackage{tikz}
+\usepackage{xcolor}
+
+% ── Row-normalised confusion matrix (pooled 4 domains, 806 questions) ─────────
+% GT rows × predicted cols: single_entity | bridge | multi_entity | broad
+%   single  54.7   34.4   10.2    0.7
+%   bridge   0.9   87.7   11.4    0.0
+%   multi    0.0    0.0  100.0    0.0
+%   broad   18.3   18.3   52.7   10.8
+
+\definecolor{confblue}{RGB}{41,105,210}
+
+\begin{document}
+\begin{tikzpicture}[font=\sffamily]
+
+  \def\sz{1.60cm}   % cell size — 4 × 1.60 = 6.40 cm square matrix
+
+  % ── Fill cells ──────────────────────────────────────────────────────────────
+  % \r/\c/pct(row-normalised)/textcolor
+  \foreach \r/\c/\pct/\tc in {
+    0/0/54.7/black,  0/1/34.4/black,  0/2/10.2/black,  0/3/0.7/black,
+    1/0/0.9/black,   1/1/87.7/white,  1/2/11.4/black,  1/3/0.0/black,
+    2/0/0.0/black,   2/1/0.0/black,   2/2/100.0/white, 2/3/0.0/black,
+    3/0/18.3/black,  3/1/18.3/black,  3/2/52.7/black,  3/3/10.8/black%
+  }{%
+    \fill[confblue!\pct!white]
+      ({\c*\sz},{-\r*\sz}) rectangle ++({\sz},{-\sz});
+    \node[\tc, font=\small\sffamily] at ({(\c+0.5)*\sz},{(-\r-0.5)*\sz})
+      {\pct\%};
+  }
+
+  % ── Grid + outer border ─────────────────────────────────────────────────────
+  \draw[gray!35, line width=0.4pt] (0,0) grid[step=\sz] ({4*\sz},{-4*\sz});
+  \draw[black!75, line width=1.0pt] (0,0) rectangle ({4*\sz},{-4*\sz});
+
+  % ── Column headers (Predicted) ──────────────────────────────────────────────
+  \foreach \lbl/\i in {Single/0, Bridge/1, Multi/2, Broad/3}
+    \node[font=\small\bfseries\sffamily, anchor=south]
+      at ({(\i+0.5)*\sz}, 0.10) {\lbl};
+
+  % ── Row headers (Ground Truth) ───────────────────────────────────────────────
+  \foreach \lbl/\i in {Single/0, Bridge/1, Multi/2, Broad/3}
+    \node[font=\small\bfseries\sffamily, anchor=east]
+      at (-0.12, {(-\i-0.5)*\sz}) {\lbl};
+
+  % ── Axis titles ──────────────────────────────────────────────────────────────
+  \node[font=\normalsize\bfseries\sffamily, anchor=south]
+    at ({2*\sz}, 0.60) {Predicted};
+  \node[font=\normalsize\bfseries\sffamily, rotate=90, anchor=south]
+    at (-0.90, {-2*\sz}) {Ground Truth};
+
+\end{tikzpicture}
+\end{document}

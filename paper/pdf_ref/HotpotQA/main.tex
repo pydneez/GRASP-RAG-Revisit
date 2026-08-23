@@ -1,0 +1,131 @@
+%
+% File emnlp2018.tex
+%
+%% Based on the style files for EMNLP 2018, which were
+%% Based on the style files for ACL 2018, which were
+%% Based on the style files for ACL-2015, with some improvements
+%%  taken from the NAACL-2016 style
+%% Based on the style files for ACL-2014, which were, in turn,
+%% based on ACL-2013, ACL-2012, ACL-2011, ACL-2010, ACL-IJCNLP-2009,
+%% EACL-2009, IJCNLP-2008...
+%% Based on the style files for EACL 2006 by
+%%e.agirre@ehu.es or Sergi.Balari@uab.es
+%% and that of ACL 08 by Joakim Nivre and Noah Smith
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[hyperref]{emnlp2018}
+\usepackage{times}
+\usepackage{latexsym}
+
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{pgfplots}
+
+\usepackage{url}
+% \usepackage{hyperref}
+
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+\aclfinalcopy % Uncomment this line for the final submission
+%\def\aclpaperid{***} %  Enter the acl Paper ID here
+
+%\setlength\titlebox{5cm}
+% You can expand the titlebox if you need extra space
+% to show all the authors. Please do not make the titlebox
+% smaller than 5cm (the original size); we will check this
+% in the camera-ready version and ask you to change it back.
+
+\newcommand\BibTeX{B{\sc ib}\TeX}
+\newcommand\confname{EMNLP 2018}
+\newcommand\conforg{SIGDAT}
+
+\newcommand\datasetname{\textsc{HotpotQA}}
+\newcommand\hotpotqa{\textsc{HotpotQA}}
+\newcommand\squad{{SQuAD}}
+\newcommand\cnn{{CNN/DailyMail}}
+\newcommand\newsqa{\textsc{NewsQA}}
+\newcommand\triviaqa{{TriviaQA}}
+\newcommand\searchqa{{SearchQA}}
+\newcommand\wikihop{{QAngaroo}}
+\newcommand\complexwebq{\textsc{ComplexWebQuestions}}
+\newcommand\parlai{{ParlAI}}
+
+\newcommand\fone{F\textsubscript{1}}
+%\newcommand\fone{F1}
+
+\newcommand{\bridge}[1]{{\color{orange} \textbf{\textit{#1}}}}
+\newcommand{\support}[1]{{\color{blue}\textit{#1}}}
+\newcommand{\answer}[1]{{\color{green!55!black}\textbf{#1}}}
+\newcommand{\sentid}[1]{{\color{green!55!black}#1}}
+
+\hyphenation{Parl-AI}
+
+\newcommand{\todo}[1]{{\color{red} \textbf{TODO:} #1}}
+\newcommand{\red}[1]{{\color{red} #1}}
+
+\title{\datasetname: A Dataset for Diverse, Explainable\\
+Multi-hop Question Answering}
+
+% \author{
+%   Zhilin Yang*$^{\spadesuit}$\quad Peng Qi*$^{\heartsuit}$ \quad Saizheng Zhang*$^{\clubsuit}$ \\
+%   \textbf{Yoshua Bengio$^{\clubsuit\diamondsuit}$ \quad William W. Cohen$^{\dagger}$} \\
+%   \textbf{Ruslan Salakhutdinov$^{\spadesuit}$ \quad Christopher D. Manning$^{\heartsuit}$} \\
+%   {\small $\spadesuit$ Carnegie Mellon University \quad $\heartsuit$ Stanford University \quad $\clubsuit$ Mila, Universit\'e de Montr\'eal}\\
+%   {\small $\diamondsuit$ CIFAR Senior Fellow \quad $\dagger$ Google AI} \\
+%   {\tt \small \{zhiliny, rsalakhu\}@cs.cmu.edu, \{pengqi, manning\}@cs.stanford.edu}\\
+%   {\tt \small saizheng.zhang@umontreal.ca, yoshua.bengio@gmail.com, wcohen@google.com} \\
+% }
+\author{
+  Zhilin Yang*$^{\spadesuit}$\quad Peng Qi*$^{\heartsuit}$ \quad Saizheng Zhang*$^{\clubsuit}$ \\
+  \textbf{Yoshua Bengio$^{\clubsuit\diamondsuit}$ \quad William W. Cohen$^{\dagger}$} \quad
+  \textbf{Ruslan Salakhutdinov$^{\spadesuit}$ \quad Christopher D. Manning$^{\heartsuit}$} \\
+  {$\spadesuit$ Carnegie Mellon University \quad $\heartsuit$ Stanford University \quad $\clubsuit$ Mila, Universit\'e de Montr\'eal}\\
+  {$\diamondsuit$ CIFAR Senior Fellow \quad $\dagger$ Google AI} \\
+  {\tt \{zhiliny, rsalakhu\}@cs.cmu.edu, \{pengqi, manning\}@cs.stanford.edu}\\
+  {\tt saizheng.zhang@umontreal.ca, yoshua.bengio@gmail.com, wcohen@google.com} \\
+}
+\date{}
+
+\begin{document}
+\maketitle
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\footnotetext[1]{These authors contributed equally. The order of authorship is decided through dice rolling.}
+\footnotetext[2]{Work done when WWC was at CMU.}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+
+\input{abstract.tex}
+
+\input{intro.tex}
+
+\input{collection.tex}
+
+\input{settings.tex}
+
+\input{analysis.tex}
+
+\input{experiments.tex}
+
+\input{related-work.tex}
+
+\input{conclusion.tex}
+
+\section*{Acknowledgements}
+This work is partly funded by the Facebook ParlAI Research Award. ZY, WWC, and RS are supported by a Google grant, the DARPA grant D17AP00001, the ONR grants N000141512791, N000141812861, and the Nvidia NVAIL Award.
+SZ and YB are supported by Mila, Universit\'e de Montr\'eal.
+PQ and CDM are supported by the National Science Foundation under Grant No.\ IIS-1514268. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.
+
+\bibliography{hotpotqa}
+\bibliographystyle{acl_natbib_nourl}
+
+\clearpage
+\appendix
+
+\input{appendix.tex}
+
+
+\end{document}
