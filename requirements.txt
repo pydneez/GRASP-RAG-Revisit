@@ -1,5 +1,11 @@
 # Core
-openai>=1.0.0
+# Pinned exact, not >=: installing PathRAG's vllm dependency once silently
+# dragged these to openai 3.14.0 / anthropic 1.5.0 (both new major lines,
+# untested against this codebase). Pinned to the latest release within the
+# major line these bounds always implied (openai 1.x, anthropic 0.x) so a
+# future `pip install` can't repeat that silently. Re-verify with a live
+# smoke call before bumping either off these pins.
+openai==1.109.1
 networkx>=3.0
 nano-vectordb
 numpy>=1.24.0
@@ -8,17 +14,40 @@ tiktoken
 python-dotenv
 aiohttp
 
+# LightRAG also needs these at runtime; not pulled in automatically by its
+# own package metadata in this environment.
+json_repair
+pipmaster
+pypinyin
+
 # Multi-judge evaluation
-anthropic>=0.40.0
+anthropic==0.125.0
 google-genai>=1.0.0
 
 # LightRAG (install as editable from cloned repo)
 # cd references/LightRAG/LightRAG && pip install -e .
 
-# PathRAG's llm.py imports these at module load time (local-HF-model fallback
-# path we never use, but the imports/device-detection are unconditional)
+# PathRAG (vendor per references/PathRAG/PINNED_COMMIT.txt, sys.path-imported,
+# not pip-installed — no setup.py/pyproject.toml at its repo root)
+# PathRAG's llm.py imports these at module load time (local-HF-model/cloud
+# fallback paths we never use, but the imports are unconditional):
 transformers
 torch
+aioboto3
+ollama
+modelscope
+# vllm is NOT installed here — it has no working CUDA build on this Windows/
+# CPU setup (pip install "succeeds" but `from vllm import LLM` fails at
+# import with a missing compiled extension). references/PathRAG/_vllm_stub/
+# provides a placeholder `vllm.LLM` that satisfies the import line without
+# it; put that directory on sys.path before importing PathRAG. See its
+# __init__.py for the full explanation.
+
+# PathRAG's storage.py also needs this exact importable name (same
+# distribution as nano-vectordb above, listed separately since PyPI's
+# hyphenated name and the underscore import name can look like two
+# different packages)
+nano_vectordb
 
 # Dataset download
 datasets

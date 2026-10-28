@@ -10,6 +10,9 @@ venv/
 # macOS
 .DS_Store
 
+# PathRAG writes its own logger here regardless of working_dir=
+PathRAG.log
+
 # large regenerable/generated data — graphs are reused, not rebuilt, but stay out of git
 data/working_dir/
 data/answers/
@@ -37,5 +40,23 @@ paper/**/*.out
 paper/**/*.run.xml
 paper/**/*.synctex.gz
 /archive
-/references
+# vendored third-party repos stay out of git; only the pins and the vllm stub are versioned
+/references/*
+!/references/LightRAG/
+/references/LightRAG/*
+!/references/LightRAG/PINNED_COMMIT.txt
+!/references/PathRAG/
+/references/PathRAG/*
+!/references/PathRAG/PINNED_COMMIT.txt
+!/references/PathRAG/_vllm_stub/
 /data/raw
+
+# OS metadata files (macOS AppleDouble etc.)
+._*
+
+# local Claude Code state
+.claude/
+
+# Experiment 3: MASHQA-derived data is not redistributed — regenerate with
+# experiments/e3_prep.py from the public MASHQA release (see EXPERIMENT_3.md)
+data/e3_data/

@@ -1,0 +1,9 @@
+lightrag-hku 1.5.7
+Cloned from https://github.com/HKUDS/LightRAG at commit 812f2d5d18794ede77b7de39b6c7420d5290164f
+Commit date: 2026-08-25 14:53:44 +0800
+Cloned: 2026-08-26, for Experiment 3 (MASHQA health-domain indexing).
+
+No known pin from the original agriculture/cs/legal indexing runs was available
+(references/ is gitignored and no commit hash was recorded anywhere in the repo's
+git history). This is main HEAD as of the date above, not verified to match
+whatever version built the existing E1/E2 graphs.

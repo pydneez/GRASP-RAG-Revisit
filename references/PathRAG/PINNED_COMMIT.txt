@@ -1,0 +1,8 @@
+Source: https://github.com/bupt-gamma/pathrag
+Pinned commit: 32567bfc93605b8393996d5fa9ccdc0edbb865b2
+Vendored at: references/PathRAG/PathRAG
+
+Same rationale as references/LightRAG/PINNED_COMMIT.txt: the upstream repo
+has no version tags, so record the exact commit used for E3's results here.
+Check this file before assuming a fresh clone of the upstream default branch
+behaves identically.
